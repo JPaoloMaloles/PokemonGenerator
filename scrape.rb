@@ -40,3 +40,5 @@ CSV.open("output.csv", "wb", write_headers: true, headers: csv_headers) do |csv|
     csv << pokemon_product
   end
 end
+
+puts html_products
