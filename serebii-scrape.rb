@@ -19,55 +19,63 @@ html_products = html_products.css("tr")
 pokemon_products = []
 
 # puts document
-# puts html_products
+puts html_products
 
 # iterating over the list of HTML products
 count = 0
 html_products.each do |html_product|
-  puts "THIS IS ITERATION--------------------------------------------------------: #{count}"
-  typeimage = "default"
-  url = nil
-  image = nil
-  count += 1
-  # tempinfo = html_product.css("tr")
-  # info = tempinfo.css("td").text
-
   info = "#{html_product.css("td").text} "
   inforaw = html_product.css("td")
-  html_inforaw = inforaw.css("img")
-  # puts "this is inforaw: #{inforaw}"
-  # puts "this is HTML inforaw: @#{html_inforaw}@"
-  if info.inspect == "\" \""
-    puts "info node is empty"
-  end
-  puts "this is info: #{info.empty?}"
-  puts "@#{info.inspect}@"
-  if !html_inforaw.empty?
-    url = "https://www.serebii.net" + html_product.css("a").first.attribute("href").value
-    image = "https://www.serebii.net" + html_product.css("img").first.attribute("src").value
-  end
-  puts "this is image: #{image}"
-  puts "this is url: #{url}"
-  linetest = "#{count}"
-  # url = "https://www.serebii.net" + html_product.css("a").first.attribute("href").value
-  # image = "https://www.serebii.net" + html_product.css("img").first.attribute("src").value
-  # name = html_product.css("h2").first.text
-  # price = html_product.css("span").first.text
+  img_check = inforaw.css("img")
   if !(info.inspect == "\" \"")
+    puts "THIS IS ITERATION--------------------------------------------------------: #{count}"
+    typeimage = []
+    url = nil
+    image = nil
+    count += 1
+    # tempinfo = html_product.css("tr")
+    # info = tempinfo.css("td").text
+
+    # puts "this is inforaw: #{inforaw}"
+    images_url = inforaw.css("img")
+    puts images_url
+    if !img_check.empty?
+      images_url.each do |image_url|
+        puts "This is image_url: #{image_url}"
+        puts "this is image_url.css: #{image_url.attribute("src").value}"
+        typeimage << "https://www.serebii.net" + image_url.attribute("src").value
+      end
+    end
+    puts "this is typeimage: #{typeimage.inspect}"
+    if info.inspect == "\" \""
+      puts "info node is empty"
+    end
+    if !img_check.empty?
+      url = "https://www.serebii.net" + html_product.css("a").first.attribute("href").value
+      image = "https://www.serebii.net" + html_product.css("img").attribute("src").value
+      image = "https://www.serebii.net" + html_product.css("img").attribute("src").value
+    end
+    # puts "this is info: #{info.empty?}"
+    # puts "@#{info.inspect}@"
+    # puts "this is image: #{image}"
+    # puts "this is url: #{url}"
+
+    linetest = "#{count}"
+
     puts "IT GOT CREATED"
     # storing the scraped data in a PokemonProduct object
     pokemon_product = PokemonProduct.new(info, linetest, image, url, typeimage)
     # adding the PokemonProduct to the list of scraped objects
     pokemon_products.push(pokemon_product)
   end
-end
 
-# defining the header row of the CSV file
-csv_headers = ["info", "linetest", "image", "url", "typeimage"]
-CSV.open("output.csv", "wb", write_headers: true, headers: csv_headers) do |csv|
-  # adding each pokemon_product as a new row
-  # to the output CSV file
-  pokemon_products.each do |pokemon_product|
-    csv << pokemon_product
+  # defining the header row of the CSV file
+  csv_headers = ["info", "linetest", "image", "url", "typeimage"]
+  CSV.open("output.csv", "wb", write_headers: true, headers: csv_headers) do |csv|
+    # adding each pokemon_product as a new row
+    # to the output CSV file
+    pokemon_products.each do |pokemon_product|
+      csv << pokemon_product
+    end
   end
 end
