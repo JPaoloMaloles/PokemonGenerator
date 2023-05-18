@@ -6,7 +6,7 @@ response = HTTParty.get("https://www.serebii.net/pokemon/nationalpokedex.shtml")
 document = Nokogiri::HTML(response.body)
 
 # defining a data structure to store the scraped data
-PokemonProduct = Struct.new(:info, :linetest, :image, :url)
+PokemonProduct = Struct.new(:info, :linetest, :image, :url, :typeimage)
 
 # # selecting all HTML product elements
 html_products = document.css("table.dextable")
@@ -19,12 +19,13 @@ html_products = html_products.css("tr")
 pokemon_products = []
 
 # puts document
-puts html_products
+# puts html_products
 
 # iterating over the list of HTML products
 count = 0
 html_products.each do |html_product|
   puts "THIS IS ITERATION--------------------------------------------------------: #{count}"
+  typeimage = "default"
   url = nil
   image = nil
   count += 1
@@ -36,6 +37,11 @@ html_products.each do |html_product|
   html_inforaw = inforaw.css("img")
   # puts "this is inforaw: #{inforaw}"
   # puts "this is HTML inforaw: @#{html_inforaw}@"
+  if info.inspect == "\" \""
+    puts "info node is empty"
+  end
+  puts "this is info: #{info.empty?}"
+  puts "@#{info.inspect}@"
   if !html_inforaw.empty?
     url = "https://www.serebii.net" + html_product.css("a").first.attribute("href").value
     image = "https://www.serebii.net" + html_product.css("img").first.attribute("src").value
@@ -47,15 +53,17 @@ html_products.each do |html_product|
   # image = "https://www.serebii.net" + html_product.css("img").first.attribute("src").value
   # name = html_product.css("h2").first.text
   # price = html_product.css("span").first.text
-
-  # storing the scraped data in a PokemonProduct object
-  pokemon_product = PokemonProduct.new(info, linetest, image, url)
-  # adding the PokemonProduct to the list of scraped objects
-  pokemon_products.push(pokemon_product)
+  if !(info.inspect == "\" \"")
+    puts "IT GOT CREATED"
+    # storing the scraped data in a PokemonProduct object
+    pokemon_product = PokemonProduct.new(info, linetest, image, url, typeimage)
+    # adding the PokemonProduct to the list of scraped objects
+    pokemon_products.push(pokemon_product)
+  end
 end
 
 # defining the header row of the CSV file
-csv_headers = ["info", "linetest", "image", "url"]
+csv_headers = ["info", "linetest", "image", "url", "typeimage"]
 CSV.open("output.csv", "wb", write_headers: true, headers: csv_headers) do |csv|
   # adding each pokemon_product as a new row
   # to the output CSV file
