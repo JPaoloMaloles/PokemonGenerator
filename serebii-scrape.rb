@@ -22,7 +22,7 @@ pokemon_products = []
 #puts html_products
 
 # iterating over the list of HTML products
-count = 0
+count = -2
 html_products.each do |html_product|
   info = "#{html_product.css("td").text} "
   inforaw = html_product.css("td")
