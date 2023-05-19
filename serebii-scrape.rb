@@ -19,7 +19,7 @@ html_products = html_products.css("tr")
 pokemon_products = []
 
 # puts document
-puts html_products
+#puts html_products
 
 # iterating over the list of HTML products
 count = 0
@@ -30,9 +30,33 @@ html_products.each do |html_product|
   if !(info.inspect == "\" \"")
     puts "THIS IS ITERATION--------------------------------------------------------: #{count}"
     typeimage = []
+    info = []
     url = nil
     image = nil
     count += 1
+
+    #this code sets the :info attribute of PokemonProduct
+    inforaw.each do |item|
+      tempinfo = []
+      clean_inspect = item.text.inspect.gsub("\\r\\n\\t", "")
+      clean_inspect = clean_inspect.gsub("\\t", "")
+      clean_inspect = clean_inspect.gsub!(/[^0-9A-Za-z\s]/, "")
+      #clean_inspect = clean_inspect.remove('\\"')
+      #clean_inspect = item.text.inspect.class
+      # puts "this is Item: #{item.text}"
+      # puts "this is Item.Inspect: #{item.text.inspect}"
+      puts "this is Clean_Inspect: #{clean_inspect}"
+      tempinfo << clean_inspect
+      puts "This is tempinfo: #{tempinfo}"
+      tempinfo.each do |item|
+        #if item != '""' && item != "" && item != '" "' && item.match?(/[0-9A-Za-z]/)
+        if item.match?(/[0-9A-Za-z]/)
+          info << item
+        end
+      end
+      puts "AGAIN WE DO THIS: #{info}"
+    end
+
     # tempinfo = html_product.css("tr")
     # info = tempinfo.css("td").text
 
@@ -77,5 +101,11 @@ html_products.each do |html_product|
     pokemon_products.each do |pokemon_product|
       csv << pokemon_product
     end
+  end
+end
+
+pokemon_products.each do |pokemon_product|
+  pokemon_product.each do |attribute|
+    puts attribute
   end
 end
