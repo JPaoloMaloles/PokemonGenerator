@@ -50,26 +50,6 @@ html_products.each do |html_product|
           info << item
         end
       end
-
-      # index = 0
-      # info_incomplete = []
-      # while index < tempinfo.length
-      #   if tempinfo[index].match?(/[0-9A-Za-z]/)
-      #     info << item
-      #   end
-      #   index += 1
-      # end
-
-      # if multiword_ability.include(info_incomplete[2])
-      # info_incomplete.each do |item|
-      #   if item[]
-      #   multiword_ability.each do |ability|
-      #     ability.gsub(" ", "_")
-      #     if ability == "Compoundeyes"
-      #       ability = "Compound_Eyes"
-      #     end
-      #   end
-      # end
       # puts "AGAIN WE DO THIS: #{info}"
     end
 
@@ -97,14 +77,6 @@ html_products.each do |html_product|
         second_type_string = second_type_string.gsub("/", "")
         second_type = second_type_string
       end
-      #------------- gsubs abilities with spaces in name
-      # multiword_ability = ["Air Lock", "Anger Point", "Anger Shell", "Arena Trap", "Armor Tail, Aroma Veil, As One, Aura Break, Bad Dreams, Ball Fetch, Battle Armor, Battle Bond, Beads of Ruin, Beast Boost, Big Pecks, Cheek Pouch, Chilling Neigh", "Clear Body", "Color Change", "Compoundeyes", "Cotton Down", "Cud Chew", "Curious Medicine", "Cursed Body", "Cute Charm", "Dark Aura", "Dauntless Shield", "Delta Stream", "Desolate Land", "Dragon's Maw", "Dry Skin", "Early Bird", "Earth Eater", "Effect Spore", "Electric Surge", "Emergency Exit", "Fairy Aura", "Flame Body", "Flame Boost", "Flash Fire", "Flower Gift", "Flower Veil", "Friend Guard", "Full Metal Body", "Fur Coat", "Gale Wings", "Good as Gold", "Gorilla Tactics", "Grass Pelt", "Grassy Surge", "Grim Neigh", "Guard Dog", "Gulp Missile", "Hadron Engine", "Heavy Metal", "Honey Gather", "Huge Power", "Hunger Switch", "Hyper Cutter", "Ice Body", "Ice Face", "Ice Scales", "Innards Out", "Inner Focus", "Intrepid Sword", "Iron Barbs", "Iron Fist", "Keen Eye", "Leaf Guard", "Light Metal", "Lightning Rod", "Lingering Aroma", "Liquid Ooze", "Liquid Voice", "Long Reach", "Magic Bounce", "Magic Guard", "Magma Armor", "Magnet Pull", "Marvel Scale", "Mega Launcher", "Mirror Armor", "Misty Surge", "Mold Breaker", "Motor Drive", "Mycelium Might", "Neutralizing Gas", "No Guard", "Orichalcum Pulse", "Own Tempo", "Parental Bond", "Pastel Veil", "Perish Body", "Poison Heal", "Poison Touch", "Power Construct", "Power of Alchemy", "Power Spot", "Primordial Sea", "Prism Armor", "Propellor Tail", "Psychic Surge", "Punk Rock", "Pure Power", "Purifying Salt", "Quark Drive", "Queenly Majesty", "Quick Draw", "Quick Feet", "Rain Dish", "RKS System", "Rock Head", "Rocky Payload", "Rough Skin", "Run Away", "Sand Force", "Sand Rush", "Sand Spit", "Sand Stream", "Sand Veil", "Sap Sipper", "Screen Cleaner", "Seed Sower", "Serene Grace", "Shadow Shield", "Shadow Tag", "Shed Skin", "Shell Armor", "Shield Dust", "Shields Down", "Skill Link", "Slow Start", "Slush Rush", "Snow Cloack", "Snow Warning", "Solar Power", "Solid Rock", "Speed Boost", "Stance Change", "Steam Engine", "Steely Spirit", "Sticky Hold", "Storm Drain", "Strong Jaw", "Suction Cups", "Super Luck", "Surge Surfer", "Sweet Veil", "Sword of Ruin", "Tablets of Ruin", "Tangled Feet", "Tangling Hair", "Thick Fat", "Tinted Lens", "Tough Claws", "Toxic Boost", "Toxic Debris", "Unseen Fist", "Vessel of Ruin", "Victory Star", "Vital Spirit", "Volt Absorb", "Wandering Spirit", "Water Absorb", "Water Bubble", "Water Veil", "Weak Armor", "Well-Baked Body", "White Smoke", "Wimp Out", "Wind Power", "Wind Rider", "Wonder Guard", "Zen Mode", "Zero to Hero"]
-      # multiword_ability.each do |ability|
-      #   ability.gsub(" ", "_")
-      #   if ability == "Compoundeyes"
-      #     ability = "Compound_Eyes"
-      #   end
-      # end
     end
     # puts "this is typeimage: #{typeimage.inspect}"
     # if !img_check.empty?
