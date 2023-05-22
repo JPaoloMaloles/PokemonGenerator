@@ -68,13 +68,11 @@ html_products.each do |html_product|
       second_type_image = typeimage[2]
 
       #--------- testing parsing out type from substring
-      first_type_string = first_type_image.match(/(?<=(type))(.*)(?=(.gif))/).to_s
-      first_type_string = first_type_string.gsub("/", "")
+      first_type_string = first_type_image.match(/(?<=type\/)(.*)(?=(.gif))/).to_s
       first_type = first_type_string
 
       if second_type_image
-        second_type_string = second_type_image.match(/(?<=(type))(.*)(?=(.gif))/).to_s
-        second_type_string = second_type_string.gsub("/", "")
+        second_type_string = second_type_image.match(/(?<=type\/)(.*)(?=(.gif))/).to_s
         second_type = second_type_string
       end
     end
