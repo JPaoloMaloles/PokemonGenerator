@@ -1,10 +1,11 @@
 require "httparty"
 require "nokogiri"
-multiword_ability = ["Air Lock", "Anger Point", "Anger Shell", "Arena Trap", "Armor Tail", "Aroma Veil", "As One", "Aura Break", "Bad Dreams", "Ball Fetch", "Battle Armor", "Battle Bond", "Beads of Ruin", "Beast Boost", "Big Pecks", "Cheek Pouch", "Chilling Neigh", "Clear Body", "Color Change", "Compoundeyes", "Cotton Down", "Cud Chew", "Curious Medicine", "Cursed Body", "Cute Charm", "Dark Aura", "Dauntless Shield", "Delta Stream", "Desolate Land", "Dragon's Maw", "Dry Skin", "Early Bird", "Earth Eater", "Effect Spore", "Electric Surge", "Emergency Exit", "Fairy Aura", "Flame Body", "Flame Boost", "Flash Fire", "Flower Gift", "Flower Veil", "Friend Guard", "Full Metal Body", "Fur Coat", "Gale Wings", "Good as Gold", "Gorilla Tactics", "Grass Pelt", "Grassy Surge", "Grim Neigh", "Guard Dog", "Gulp Missile", "Hadron Engine", "Heavy Metal", "Honey Gather", "Huge Power", "Hunger Switch", "Hyper Cutter", "Ice Body", "Ice Face", "Ice Scales", "Innards Out", "Inner Focus", "Intrepid Sword", "Iron Barbs", "Iron Fist", "Keen Eye", "Leaf Guard", "Light Metal", "Lightning Rod", "Lingering Aroma", "Liquid Ooze", "Liquid Voice", "Long Reach", "Magic Bounce", "Magic Guard", "Magma Armor", "Magnet Pull", "Marvel Scale", "Mega Launcher", "Mirror Armor", "Misty Surge", "Mold Breaker", "Motor Drive", "Mycelium Might", "Neutralizing Gas", "No Guard", "Orichalcum Pulse", "Own Tempo", "Parental Bond", "Pastel Veil", "Perish Body", "Poison Heal", "Poison Touch", "Power Construct", "Power of Alchemy", "Power Spot", "Primordial Sea", "Prism Armor", "Propellor Tail", "Psychic Surge", "Punk Rock", "Pure Power", "Purifying Salt", "Quark Drive", "Queenly Majesty", "Quick Draw", "Quick Feet", "Rain Dish", "RKS System", "Rock Head", "Rocky Payload", "Rough Skin", "Run Away", "Sand Force", "Sand Rush", "Sand Spit", "Sand Stream", "Sand Veil", "Sap Sipper", "Screen Cleaner", "Seed Sower", "Serene Grace", "Shadow Shield", "Shadow Tag", "Shed Skin", "Shell Armor", "Shield Dust", "Shields Down", "Skill Link", "Slow Start", "Slush Rush", "Snow Cloack", "Snow Warning", "Solar Power", "Solid Rock", "Speed Boost", "Stance Change", "Steam Engine", "Steely Spirit", "Sticky Hold", "Storm Drain", "Strong Jaw", "Suction Cups", "Super Luck", "Surge Surfer", "Sweet Veil", "Sword of Ruin", "Tablets of Ruin", "Tangled Feet", "Tangling Hair", "Thick Fat", "Tinted Lens", "Tough Claws", "Toxic Boost", "Toxic Debris", "Unseen Fist", "Vessel of Ruin", "Victory Star", "Vital Spirit", "Volt Absorb", "Wandering Spirit", "Water Absorb", "Water Bubble", "Water Veil", "Weak Armor", "Well-Baked Body", "White Smoke", "Wimp Out", "Wind Power", "Wind Rider", "Wonder Guard", "Zen Mode", "Zero to Hero"]
+multiword_ability = ["Air Lock", "Anger Point", "Anger Shell", "Arena Trap", "Armor Tail", "Aroma Veil", "As One", "Aura Break", "Bad Dreams", "Ball Fetch", "Battle Armor", "Battle Bond", "Beads of Ruin", "Beast Boost", "Big Pecks", "Cheek Pouch", "Chilling Neigh", "Clear Body", "Color Change", "Compoundeyes", "Cotton Down", "Cud Chew", "Curious Medicine", "Cursed Body", "Cute Charm", "Dark Aura", "Dauntless Shield", "Delta Stream", "Desolate Land", "Dragon's Maw", "Dry Skin", "Early Bird", "Earth Eater", "Effect Spore", "Electric Surge", "Emergency Exit", "Fairy Aura", "Flame Body", "Flame Boost", "Flash Fire", "Flower Gift", "Flower Veil", "Friend Guard", "Full Metal Body", "Fur Coat", "Gale Wings", "Good as Gold", "Gorilla Tactics", "Grass Pelt", "Grassy Surge", "Grim Neigh", "Guard Dog", "Gulp Missile", "Hadron Engine", "Heavy Metal", "Honey Gather", "Huge Power", "Hunger Switch", "Hyper Cutter", "Ice Body", "Ice Face", "Ice Scales", "Innards Out", "Inner Focus", "Intrepid Sword", "Iron Barbs", "Iron Fist", "Keen Eye", "Leaf Guard", "Light Metal", "Lightning Rod", "Lingering Aroma", "Liquid Ooze", "Liquid Voice", "Long Reach", "Magic Bounce", "Magic Guard", "Magma Armor", "Magnet Pull", "Marvel Scale", "Mega Launcher", "Mirror Armor", "Misty Surge", "Mold Breaker", "Motor Drive", "Mycelium Might", "Neutralizing Gas", "No Guard", "Orichalcum Pulse", "Own Tempo", "Parental Bond", "Pastel Veil", "Perish Body", "Poison Heal", "Poison Point", "Poison Touch", "Power Construct", "Power of Alchemy", "Power Spot", "Primordial Sea", "Prism Armor", "Propeller Tail", "Psychic Surge", "Punk Rock", "Pure Power", "Purifying Salt", "Quark Drive", "Queenly Majesty", "Quick Draw", "Quick Feet", "Rain Dish", "RKS System", "Rock Head", "Rocky Payload", "Rough Skin", "Run Away", "Sand Force", "Sand Rush", "Sand Spit", "Sand Stream", "Sand Veil", "Sap Sipper", "Screen Cleaner", "Seed Sower", "Serene Grace", "Shadow Shield", "Shadow Tag", "Sheer Force", "Shed Skin", "Shell Armor", "Shield Dust", "Shields Down", "Skill Link", "Slow Start", "Slush Rush", "Snow Cloack", "Snow Warning", "Solar Power", "Solid Rock", "Speed Boost", "Stance Change", "Steam Engine", "Steely Spirit", "Sticky Hold", "Storm Drain", "Strong Jaw", "Suction Cups", "Super Luck", "Surge Surfer", "Sweet Veil", "Swift Swim", "Sword of Ruin", "Tablets of Ruin", "Tangled Feet", "Tangling Hair", "Thermal Exchange", "Thick Fat", "Tinted Lens", "Tough Claws", "Toxic Boost", "Toxic Debris", "Unseen Fist", "Vessel of Ruin", "Victory Star", "Vital Spirit", "Volt Absorb", "Wandering Spirit", "Water Absorb", "Water Bubble", "Water Veil", "Weak Armor", "Well-Baked Body", "White Smoke", "Wimp Out", "Wind Power", "Wind Rider", "Wonder Guard", "Zen Mode", "Zero to Hero"]
 response = HTTParty.get("https://www.serebii.net/pokemon/nationalpokedex.shtml")
 document = Nokogiri::HTML(response.body)
 
-PokemonProduct = Struct.new(:info, :linetest, :url, :icon, :first_type_image, :second_type_image, :first_type, :second_type)
+PokemonProduct = Struct.new(:info, :linetest, :national_dex_num, :name, :first_type, :second_type, :abilities, :hp, :atk, :defe, :spa, :spd, :spe, :url, :icon, :first_type_image, :second_type_image)
+#national_dex_num, name, abilities, hp, atk, def, spa, spd, spe
 
 html_products = document.css("table.dextable")
 html_products = html_products.css("tr")
@@ -19,7 +20,16 @@ html_products.each do |html_product|
   if !(info.inspect == "\" \"")
     puts "THIS IS ITERATION--------------------------------------------------------: #{count}"
     info = []
-    typeimage = []
+    typeimage = [] #national_dex_num, name, abilities, hp, atk, def, spa, spd, spe
+    national_dex_num = ""
+    name = ""
+    abilities = ""
+    hp = ""
+    atk = ""
+    defe = ""
+    spa = ""
+    spd = ""
+    spe = ""
     url = nil
 
     count += 1
@@ -36,10 +46,9 @@ html_products.each do |html_product|
       # puts "This is tempinfo: #{tempinfo}"
       tempinfo.each do |item|
         if item.match?(/[0-9A-Za-z]/)
-          puts item
+          # puts item
           multiword_ability.each do |ability|
             if item.include?(ability)
-              puts "THERES A SPACE"
               item = item.gsub(ability, ability.gsub(" ", "_"))
             end
           end
@@ -52,6 +61,16 @@ html_products.each do |html_product|
       end
       # puts "AGAIN WE DO THIS: #{info}"
     end
+
+    national_dex_num = info[0]
+    name = info[1]
+    abilities = info[2]
+    hp = info[3]
+    atk = info[4]
+    defe = info[5]
+    spa = info[6]
+    spd = info[7]
+    spe = info[8]
 
     images_url = inforaw.css("img")
     # puts images_url
@@ -84,11 +103,11 @@ html_products.each do |html_product|
     # end
 
     linetest = "#{count}"
-    pokemon_product = PokemonProduct.new(info, linetest, url, icon, first_type_image, second_type_image, first_type, second_type)
+    pokemon_product = PokemonProduct.new(info, linetest, national_dex_num, name, first_type, second_type, abilities, hp, atk, defe, spa, spd, spe, url, icon, first_type_image, second_type_image)
     pokemon_products.push(pokemon_product)
   end
 
-  csv_headers = ["info", "linetest", "url", "icon", "first_type_image", "second_type_image", "first_type", "second_type"]
+  csv_headers = ["info", "linetest", "national_dex_num", "name", "first_type", "second_type", "abilities", "hp", "atk", "defe", "spa", "spd", "spe", "url", "icon", "first_type_image", "second_type_image"]
   CSV.open("output.csv", "wb", write_headers: true, headers: csv_headers) do |csv|
     pokemon_products.each do |pokemon_product|
       csv << pokemon_product
