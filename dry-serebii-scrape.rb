@@ -4,7 +4,7 @@ multiword_ability = ["Air Lock", "Anger Point", "Anger Shell", "Arena Trap", "Ar
 response = HTTParty.get("https://www.serebii.net/pokemon/nationalpokedex.shtml")
 document = Nokogiri::HTML(response.body)
 
-PokemonProduct = Struct.new(:info, :linetest, :national_dex_num, :name, :first_type, :second_type, :abilities, :hp, :atk, :defe, :spa, :spd, :spe, :url, :icon, :first_type_image, :second_type_image)
+PokemonProduct = Struct.new(:index, :national_dex_num, :name, :first_type, :second_type, :abilities, :hp, :atk, :defe, :spa, :spd, :spe, :url, :icon, :first_type_image, :second_type_image)
 #national_dex_num, name, abilities, hp, atk, def, spa, spd, spe
 
 html_products = document.css("table.dextable")
@@ -12,27 +12,16 @@ html_products = html_products.css("tr")
 
 pokemon_products = []
 
-count = -2
+pokemon_product_index = -2
 html_products.each do |html_product|
   info = "#{html_product.css("td").text} "
   inforaw = html_product.css("td")
   img_check = inforaw.css("img")
   if !(info.inspect == "\" \"")
-    puts "THIS IS ITERATION--------------------------------------------------------: #{count}"
+    puts "THIS IS ITERATION--------------------------------------------------------: #{pokemon_product_index}"
     info = []
-    typeimage = [] #national_dex_num, name, abilities, hp, atk, def, spa, spd, spe
-    national_dex_num = ""
-    name = ""
-    abilities = ""
-    hp = ""
-    atk = ""
-    defe = ""
-    spa = ""
-    spd = ""
-    spe = ""
-    url = nil
-
-    count += 1
+    typeimage = []
+    pokemon_product_index += 1
 
     #this code sets the :info attribute of PokemonProduct
     inforaw.each do |item|
@@ -102,21 +91,53 @@ html_products.each do |html_product|
     #   image = "https://www.serebii.net" + html_product.css("img").attribute("src").value
     # end
 
-    linetest = "#{count}"
-    pokemon_product = PokemonProduct.new(info, linetest, national_dex_num, name, first_type, second_type, abilities, hp, atk, defe, spa, spd, spe, url, icon, first_type_image, second_type_image)
+    index = "#{pokemon_product_index}"
+    pokemon_product = PokemonProduct.new(index, national_dex_num, name, first_type, second_type, abilities, hp, atk, defe, spa, spd, spe, url, icon, first_type_image, second_type_image)
     pokemon_products.push(pokemon_product)
-  end
 
-  csv_headers = ["info", "linetest", "national_dex_num", "name", "first_type", "second_type", "abilities", "hp", "atk", "defe", "spa", "spd", "spe", "url", "icon", "first_type_image", "second_type_image"]
-  CSV.open("output.csv", "wb", write_headers: true, headers: csv_headers) do |csv|
-    pokemon_products.each do |pokemon_product|
-      csv << pokemon_product
+    csv_headers = ["index", "national_dex_num", "name", "first_type", "second_type", "abilities", "hp", "atk", "defe", "spa", "spd", "spe", "url", "icon", "first_type_image", "second_type_image"]
+    CSV.open("output.csv", "wb", write_headers: true, headers: csv_headers) do |csv|
+      pokemon_products.each do |pokemon_product|
+        csv << pokemon_product
+      end
     end
   end
 end
 
-pokemon_products.each do |pokemon_product|
-  pokemon_product.each do |attribute|
-    puts attribute
+# pokemon_products.each do |pokemon_product|
+#   pokemon_product.each do |attribute|
+#     puts attribute
+#   end
+# end
+
+puts pokemon_products[2][2]
+puts "#-------------------------------------------------------------------------------"
+# # #convert to hash
+# # pokemon_products[coloumn][row]
+# # pokemon_products[2][3]
+
+# array = ["Hello", "world"]
+# array2 = ["1", "2"]
+# hash = {}
+# array.each do |key|
+#   array.each do |value|
+#     hash[key] = value
+#   end
+# end
+# puts hash
+# for
+attribute_titles = ["national_dex_num", "name", "first_type", "second_type", "abilities", "hp", "atk", "defe", "spa", "spd", "spe", "url", "icon", "first_type_image", "second_type_image"]
+pokemon_hashes = {}
+count = 0
+pokemon_products.each do |pokemon|
+  single_pokemon = {}
+  count = 0
+  if pokemon.index.to_i > 0 #just for getting a clean list, we can do this in validations later
+    while count < attribute_titles.length
+      single_pokemon[attribute_titles[count]] = pokemon[count + 1]
+      count += 1
+    end
   end
+  pokemon_hashes[pokemon.name] = single_pokemon
 end
+puts pokemon_hashes["Snorlax"]

@@ -1,0 +1,35 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  national_dex_num: MyString
+  name: MyString
+  first_type: MyString
+  second_type: MyString
+  abilities: MyString
+  hp: 9.99
+  atk: 9.99
+  defe: 9.99
+  spa: 9.99
+  spd: 9.99
+  spe: 9.99
+  url: MyString
+  icon: MyString
+  first_type_image: MyString
+  second_type_image: MyString
+
+two:
+  national_dex_num: MyString
+  name: MyString
+  first_type: MyString
+  second_type: MyString
+  abilities: MyString
+  hp: 9.99
+  atk: 9.99
+  defe: 9.99
+  spa: 9.99
+  spd: 9.99
+  spe: 9.99
+  url: MyString
+  icon: MyString
+  first_type_image: MyString
+  second_type_image: MyString
