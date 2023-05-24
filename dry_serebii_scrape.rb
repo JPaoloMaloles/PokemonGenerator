@@ -110,8 +110,8 @@ end
 #   end
 # end
 
-puts pokemon_products[2][2]
-puts "#-------------------------------------------------------------------------------"
+# puts pokemon_products[2][2]
+# puts "#-------------------------------------------------------------------------------"
 # # #convert to hash
 # # pokemon_products[coloumn][row]
 # # pokemon_products[2][3]

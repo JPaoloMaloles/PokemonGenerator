@@ -118,63 +118,6 @@ html_products.each do |html_product|
   end
 end
 
-# pokemon_products.each do |pokemon_product|
-#   pokemon_product.each do |attribute|
-#     puts attribute
-#   end
-# end
-
-puts pokemon_products[2][2]
-puts "#-------------------------------------------------------------------------------"
-# # #convert to hash
-# # pokemon_products[coloumn][row]
-# # pokemon_products[2][3]
-
-# array = ["Hello", "world"]
-# array2 = ["1", "2"]
-# hash = {}
-# array.each do |key|
-#   array.each do |value|
-#     hash[key] = value
-#   end
-# end
-# puts hash
-# for
-
-# #--------------------------------------------------------------- cleans up table
-# attribute_titles = ["national_dex_num", "name", "first_type", "second_type", "abilities", "hp", "atk", "defe", "spa", "spd", "spe", "url", "icon", "first_type_image", "second_type_image"]
-# pokemon_hashes = {}
-# count = 0
-# pokemon_products.each do |pokemon|
-#   single_pokemon = {}
-#   count = 0
-#   if pokemon.index.to_i > 0 #just for getting a clean list, we can do this in validations later
-#     while count < attribute_titles.length
-#       single_pokemon[attribute_titles[count]] = pokemon[count + 1]
-#       count += 1
-#     end
-#   end
-#   pokemon_hashes[pokemon.name] = single_pokemon
-# end
-# puts pokemon_hashes
-
-# #--------------------------------------------------------------- puts table into hashes {Pokemon_name => {nat_dex_num =>, name =>, etc.=>}}
-# # pokemon_products.each do |pokemon|
-# #   single_pokemon = {}
-# #   count = 0
-# #   if pokemon.index.to_i > 0 #just for getting a clean list, we can do this in validations later
-# #     while count < attribute_titles.length
-# #       # single_pokemon[attribute_titles[count]] = pokemon[count + 1]
-# #       count += 1
-# #     end
-# #   end
-# #   pokemon_hashes[pokemon.name] = single_pokemon
-# # end
-
-# pokemon_hashes.each do |pokemon|
-#   Pokemon.create(pokemon)
-# end
-
 attribute_titles = ["national_dex_num", "name", "first_type", "second_type", "abilities", "hp", "atk", "defe", "spa", "spd", "spe", "url", "icon", "first_type_image", "second_type_image"]
 pokemon_array = []
 count = 0

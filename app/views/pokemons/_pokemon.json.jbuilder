@@ -1,0 +1,16 @@
+json.id pokemon.id
+json.national_dex_num pokemon.national_dex_num
+json.name pokemon.name
+json.first_type pokemon.first_type
+json.second_type pokemon.second_type
+json.abilities pokemon.abilities
+json.hp pokemon.hp
+json.atk pokemon.atk
+json.defe pokemon.defe
+json.spa pokemon.spa
+json.spd pokemon.spd
+json.spe pokemon.spe
+json.url pokemon.url
+json.icon pokemon.icon
+json.first_type_image pokemon.first_type_image
+json.second_type_image pokemon.second_type_image
