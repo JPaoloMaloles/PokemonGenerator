@@ -126,18 +126,58 @@ puts "#-------------------------------------------------------------------------
 # end
 # puts hash
 # for
+
+# #--------------------------------------------------------------- cleans up table
+# attribute_titles = ["national_dex_num", "name", "first_type", "second_type", "abilities", "hp", "atk", "defe", "spa", "spd", "spe", "url", "icon", "first_type_image", "second_type_image"]
+# pokemon_hashes = {}
+# count = 0
+# pokemon_products.each do |pokemon|
+#   single_pokemon = {}
+#   count = 0
+#   if pokemon.index.to_i > 0 #just for getting a clean list, we can do this in validations later
+#     while count < attribute_titles.length
+#       single_pokemon[attribute_titles[count]] = pokemon[count + 1]
+#       count += 1
+#     end
+#   end
+#   pokemon_hashes[pokemon.name] = single_pokemon
+# end
+# puts pokemon_hashes
+
+# #--------------------------------------------------------------- puts table into hashes {Pokemon_name => {nat_dex_num =>, name =>, etc.=>}}
+# # pokemon_products.each do |pokemon|
+# #   single_pokemon = {}
+# #   count = 0
+# #   if pokemon.index.to_i > 0 #just for getting a clean list, we can do this in validations later
+# #     while count < attribute_titles.length
+# #       # single_pokemon[attribute_titles[count]] = pokemon[count + 1]
+# #       count += 1
+# #     end
+# #   end
+# #   pokemon_hashes[pokemon.name] = single_pokemon
+# # end
+
+# pokemon_hashes.each do |pokemon|
+#   Pokemon.create(pokemon)
+# end
+
 attribute_titles = ["national_dex_num", "name", "first_type", "second_type", "abilities", "hp", "atk", "defe", "spa", "spd", "spe", "url", "icon", "first_type_image", "second_type_image"]
-pokemon_hashes = {}
+pokemon_array = []
 count = 0
 pokemon_products.each do |pokemon|
   single_pokemon = {}
   count = 0
   if pokemon.index.to_i > 0 #just for getting a clean list, we can do this in validations later
     while count < attribute_titles.length
-      single_pokemon[attribute_titles[count]] = pokemon[count + 1]
+      single_pokemon[attribute_titles[count].to_sym] = pokemon[count + 1]
       count += 1
     end
+    # puts single_pokemon
+    pokemon_array << single_pokemon
   end
-  pokemon_hashes[pokemon.name] = single_pokemon
 end
-puts pokemon_hashes["Snorlax"]
+# pp pokemon_array[0]
+pokemon_array.each do |pokemon|
+  Pokemon.create(pokemon)
+end
+# return pokemon_array
