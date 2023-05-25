@@ -6,11 +6,23 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-# require "../dry_serebii_scrape.rb"
-# pokemon_array = dry_serebii_scrape
-# pokemon_array.each do |pokemon|
-#   Pokemon.create(pokemon)
-# end
+# Pokemon.create(
+#   national_dex_num: "national_dex_num",
+#   name: "name",
+#   first_type: "first_type",
+#   second_type: "second_type",
+#   abilities: "abilities",
+#   hp: 1,
+#   atk: 1,
+#   defe: 1,
+#   spa: 1,
+#   spd: 1,
+#   spe: 1,
+#   url: "url",
+#   icon: "icon",
+#   first_type_image: "first_type_image",
+#   second_type_image: "second_type_image",
+# )
 
 require "httparty"
 require "nokogiri"

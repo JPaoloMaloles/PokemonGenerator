@@ -177,7 +177,8 @@ pokemon_products.each do |pokemon|
   end
 end
 # pp pokemon_array[0]
-pokemon_array.each do |pokemon|
-  Pokemon.create(pokemon)
-end
-# return pokemon_array
+# #--------------------------------------------------------- Uncomment this in seeds.db
+# pokemon_array.each do |pokemon|
+#   Pokemon.create(pokemon)
+# end
+# # return pokemon_array

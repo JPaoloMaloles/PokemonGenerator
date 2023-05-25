@@ -3,4 +3,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  get "/pokemons/:id", controller: "pokemons", action: "show"
+  get "/pokemons", controller: "pokemons", action: "index"
+  post "/pokemons", controller: "pokemons", action: "create"
+  patch "/pokemons/:id", controller: "pokemons", action: "update"
+  delete "/pokemons/:id", controller: "pokemons", action: "destroy"
 end
