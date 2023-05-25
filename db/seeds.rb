@@ -146,7 +146,10 @@ pokemon_products.each do |pokemon|
   end
 end
 # pp pokemon_array[0]
+count = 1
 pokemon_array.each do |pokemon|
+  puts "creating pokemon model ##{count}"
   Pokemon.create(pokemon)
+  count += 1
 end
 # return pokemon_array
