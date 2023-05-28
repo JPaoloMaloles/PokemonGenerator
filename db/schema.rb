@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_28_074646) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_28_075141) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -34,6 +34,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_28_074646) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "unique_pokemons", force: :cascade do |t|
+    t.string "nickname"
+    t.string "nature"
+    t.string "gender"
+    t.boolean "shiny"
+    t.integer "ev"
+    t.integer "iv"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
@@ -42,4 +53,5 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_28_074646) do
     t.datetime "updated_at", null: false
     t.boolean "admin"
   end
+
 end
