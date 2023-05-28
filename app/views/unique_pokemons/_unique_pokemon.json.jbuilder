@@ -16,3 +16,5 @@ json.spa_iv unique_pokemon.spa_iv
 json.spd_iv unique_pokemon.spd_iv
 json.spe_iv unique_pokemon.spe_iv
 json.user_id unique_pokemon.user_id
+json.pokemon_id unique_pokemon.pokemon_id
+json.pokemon unique_pokemon.pokemon

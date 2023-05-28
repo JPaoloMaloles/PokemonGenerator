@@ -29,6 +29,7 @@ class UniquePokemonsController < ApplicationController
         spd_iv: params["spd_iv"],
         spe_iv: params["spe_iv"],
         user_id: nil,
+        pokemon_id: rand(1..Pokemon.count),
       )
       @unique_pokemon.save
       render :show
