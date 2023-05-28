@@ -10,25 +10,29 @@ class PokemonsController < ApplicationController
   end
 
   def create
-    @pokemon = Pokemon.new(
-      national_dex_num: params["national_dex_num"],
-      name: params["name"],
-      first_type: params["first_type"],
-      second_type: params["second_type"],
-      abilities: params["abilities"],
-      hp: params["hp"],
-      atk: params["atk"],
-      defe: params["defe"],
-      spa: params["spa"],
-      spd: params["spd"],
-      spe: params["spe"],
-      url: params["url"],
-      icon: params["icon"],
-      first_type_image: params["first_type_image"],
-      second_type_image: params["second_type_image"],
-    )
-    @pokemon.save
-    render :show
+    if current_user
+      @pokemon = Pokemon.new(
+        national_dex_num: params["national_dex_num"],
+        name: params["name"],
+        first_type: params["first_type"],
+        second_type: params["second_type"],
+        abilities: params["abilities"],
+        hp: params["hp"],
+        atk: params["atk"],
+        defe: params["defe"],
+        spa: params["spa"],
+        spd: params["spd"],
+        spe: params["spe"],
+        url: params["url"],
+        icon: params["icon"],
+        first_type_image: params["first_type_image"],
+        second_type_image: params["second_type_image"],
+      )
+      @pokemon.save
+      render :show
+    else
+      render json: { message: "Not authorized user" }
+    end
   end
 
   def update
