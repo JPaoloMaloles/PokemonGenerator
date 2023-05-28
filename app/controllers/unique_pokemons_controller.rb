@@ -1,0 +1,2 @@
+class UniquePokemonsController < ApplicationController
+end
