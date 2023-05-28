@@ -62,6 +62,6 @@ class PokemonsController < ApplicationController
   def destroy
     pokemon = Pokemon.find_by(id: params["id"])
     pokemon.destroy
-    render json: { message: "pokemon has been deleted" }
+    render json: { message: "Pokemon has been removed from database" }
   end
 end
