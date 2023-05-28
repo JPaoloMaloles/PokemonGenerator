@@ -5,13 +5,29 @@ one:
   nature: MyString
   shiny: false
   gender: MyString
-  ev: 1
-  iv: 1
-
+  defe_ev: 1
+  spa_ev: 1
+  spd_ev: 1
+  spe_ev: 1
+  hp_iv: 1
+  atk_iv: 1
+  defe_iv: 1
+  spa_iv: 1
+  spd_iv: 1
+  spe_iv: 1
+  
 two:
   nickname: MyString
   nature: MyString
   shiny: false
   gender: MyString
-  ev: 1
-  iv: 1
+  defe_ev: 1
+  spa_ev: 1
+  spd_ev: 1
+  spe_ev: 1
+  hp_iv: 1
+  atk_iv: 1
+  defe_iv: 1
+  spa_iv: 1
+  spd_iv: 1
+  spe_iv: 1
