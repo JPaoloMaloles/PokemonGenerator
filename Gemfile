@@ -7,6 +7,10 @@ ruby "3.1.3"
 gem "rails", "~> 7.0.4", ">= 7.0.4.3"
 gem 'poke-api-v2'
 gem "httparty"
+
+# Use ActiveModel has_secure_password
+gem 'bcrypt', '~> 3.1.7'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 

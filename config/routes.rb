@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   post "/pokemons", controller: "pokemons", action: "create"
   patch "/pokemons/:id", controller: "pokemons", action: "update"
   delete "/pokemons/:id", controller: "pokemons", action: "destroy"
+
+  post "/users" => "users#create"
 end
