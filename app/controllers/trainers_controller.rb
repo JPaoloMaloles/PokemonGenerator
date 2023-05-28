@@ -16,6 +16,7 @@ class TrainersController < ApplicationController
         title: params["title"],
         level: params["level"],
         experience: params["experience"],
+        user_id: current_user.id,
       )
       @trainer.save
       render :show
