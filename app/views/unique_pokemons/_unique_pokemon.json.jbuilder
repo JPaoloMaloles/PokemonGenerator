@@ -15,3 +15,4 @@ json.defe_iv unique_pokemon.defe_iv
 json.spa_iv unique_pokemon.spa_iv
 json.spd_iv unique_pokemon.spd_iv
 json.spe_iv unique_pokemon.spe_iv
+json.user_id unique_pokemon.user_id

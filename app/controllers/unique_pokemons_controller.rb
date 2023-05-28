@@ -28,6 +28,7 @@ class UniquePokemonsController < ApplicationController
         spa_iv: params["spa_iv"],
         spd_iv: params["spd_iv"],
         spe_iv: params["spe_iv"],
+        user_id: nil,
       )
       @unique_pokemon.save
       render :show
@@ -55,6 +56,7 @@ class UniquePokemonsController < ApplicationController
       spa_iv: params["spa_iv"] || params.spa_iv,
       spd_iv: params["spd_iv"] || params.spd_iv,
       spe_iv: params["spe_iv"] || params.spe_iv,
+      user_id: current_user.id,
     )
     render :show
   end
