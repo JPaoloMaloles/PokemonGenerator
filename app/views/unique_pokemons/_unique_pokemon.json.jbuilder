@@ -3,5 +3,15 @@ json.nickname unique_pokemon.nickname
 json.gender unique_pokemon.gender
 json.shiny unique_pokemon.shiny
 json.nature unique_pokemon.nature
-json.ev unique_pokemon.ev
-json.iv unique_pokemon.iv
+json.hp_ev unique_pokemon.hp_ev
+json.atk_ev unique_pokemon.atk_ev
+json.defe_ev unique_pokemon.defe_ev
+json.spa_ev unique_pokemon.spa_ev
+json.spd_ev unique_pokemon.spd_ev
+json.spe_ev unique_pokemon.spe_ev
+json.hp_iv unique_pokemon.hp_iv
+json.atk_iv unique_pokemon.atk_iv
+json.defe_iv unique_pokemon.defe_iv
+json.spa_iv unique_pokemon.spa_iv
+json.spd_iv unique_pokemon.spd_iv
+json.spe_iv unique_pokemon.spe_iv

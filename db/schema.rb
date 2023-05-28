@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_28_080521) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_28_083141) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -39,10 +39,20 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_28_080521) do
     t.string "nature"
     t.boolean "shiny"
     t.string "gender"
-    t.integer "ev"
-    t.integer "iv"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "hp_ev"
+    t.integer "atk_ev"
+    t.integer "defe_ev"
+    t.integer "spa_ev"
+    t.integer "spd_ev"
+    t.integer "spe_ev"
+    t.integer "hp_iv"
+    t.integer "atk_iv"
+    t.integer "defe_iv"
+    t.integer "spa_iv"
+    t.integer "spd_iv"
+    t.integer "spe_iv"
   end
 
   create_table "users", force: :cascade do |t|

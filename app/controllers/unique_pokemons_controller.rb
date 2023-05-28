@@ -16,8 +16,18 @@ class UniquePokemonsController < ApplicationController
         nature: params["nature"],
         gender: params["gender"],
         shiny: params["shiny"],
-        ev: params["ev"],
-        iv: params["iv"],
+        hp_ev: params["hp_ev"],
+        atk_ev: params["atk_ev"],
+        defe_ev: params["defe_ev"],
+        spa_ev: params["spa_ev"],
+        spd_ev: params["spd_ev"],
+        spe_ev: params["spe_ev"],
+        hp_iv: params["hp_iv"],
+        atk_iv: params["atk_iv"],
+        defe_iv: params["defe_iv"],
+        spa_iv: params["spa_iv"],
+        spd_iv: params["spd_iv"],
+        spe_iv: params["spe_iv"],
       )
       @unique_pokemon.save
       render :show
@@ -33,8 +43,18 @@ class UniquePokemonsController < ApplicationController
       nature: params["nature"] || params.nature,
       gender: params["gender"] || params.gender,
       shiny: params["shiny"] || params.shiny,
-      ev: params["ev"] || params.ev,
-      iv: params["iv"] || params.iv,
+      hp_ev: params["hp_ev"] || params.hp_ev,
+      atk_ev: params["atk_ev"] || params.atk_ev,
+      defe_ev: params["defe_ev"] || params.defe_ev,
+      spa_ev: params["spa_ev"] || params.spa_ev,
+      spd_ev: params["spd_ev"] || params.spd_ev,
+      spe_ev: params["spe_ev"] || params.spe_ev,
+      hp_iv: params["hp_iv"] || params.hp_iv,
+      atk_iv: params["atk_iv"] || params.atk_iv,
+      defe_iv: params["defe_iv"] || params.defe_iv,
+      spa_iv: params["spa_iv"] || params.spa_iv,
+      spd_iv: params["spd_iv"] || params.spd_iv,
+      spe_iv: params["spe_iv"] || params.spe_iv,
     )
     render :show
   end
