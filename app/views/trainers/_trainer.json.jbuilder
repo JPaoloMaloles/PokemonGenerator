@@ -1,2 +1,5 @@
-json.extract! trainer, :id, :created_at, :updated_at
-json.url trainer_url(trainer, format: :json)
+json.id trainer.id
+json.name trainer.name
+json.title trainer.title
+json.level trainer.level
+json.experience trainer.experience
