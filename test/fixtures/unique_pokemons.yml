@@ -3,15 +3,15 @@
 one:
   nickname: MyString
   nature: MyString
-  gender: MyString
   shiny: false
+  gender: MyString
   ev: 1
   iv: 1
 
 two:
   nickname: MyString
   nature: MyString
-  gender: MyString
   shiny: false
+  gender: MyString
   ev: 1
   iv: 1
