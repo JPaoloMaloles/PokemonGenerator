@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   delete "/pokemons/:id", controller: "pokemons", action: "destroy"
 
   post "/users" => "users#create"
+  post "/sessions" => "sessions#create"
+  
 end
