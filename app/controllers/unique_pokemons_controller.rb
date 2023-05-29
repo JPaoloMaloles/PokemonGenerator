@@ -1,11 +1,11 @@
 class UniquePokemonsController < ApplicationController
   def show
-    @unique_pokemon = UniquePokemon.find_by(id: params["id"])
+    @unique_pokemon = UniquePokemon.find_by(id: params["id"]) #current_user.unique_pokemon.find_by(id: params["id"])
     render :show
   end
 
   def index
-    @unique_pokemons = UniquePokemon.where(user_id: current_user.id) #Unique_Pokemon.where(trainer_id: current.id)
+    @unique_pokemons = UniquePokemon.where(user_id: current_user.id)
     render :index
   end
 
