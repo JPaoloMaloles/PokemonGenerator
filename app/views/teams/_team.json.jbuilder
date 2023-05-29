@@ -1,2 +1,3 @@
-json.extract! team, :id, :created_at, :updated_at
-json.url team_url(team, format: :json)
+json.id team.id
+json.trainer_id team.trainer_id
+json.name team.name

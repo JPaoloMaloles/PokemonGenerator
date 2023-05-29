@@ -25,4 +25,10 @@ Rails.application.routes.draw do
   post "/trainers", controller: "trainers", action: "create"
   patch "/trainers/:id", controller: "trainers", action: "update"
   delete "/trainers/:id", controller: "trainers", action: "destroy"
+
+  get "/teams/:id", controller: "teams", action: "show"
+  get "/teams", controller: "teams", action: "index"
+  post "/teams", controller: "teams", action: "create"
+  patch "/teams/:id", controller: "teams", action: "update"
+  delete "/teams/:id", controller: "teams", action: "destroy"
 end
