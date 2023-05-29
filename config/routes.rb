@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   post "/unique_pokemons", controller: "unique_pokemons", action: "create"
   post "/unique_pokemons/admin", controller: "unique_pokemons", action: "admin_create"
   patch "/unique_pokemons/:id", controller: "unique_pokemons", action: "update"
+  patch "/unique_pokemons/admin/:id", controller: "unique_pokemons", action: "admin_update"
   delete "/unique_pokemons/:id", controller: "unique_pokemons", action: "destroy"
 
   get "/trainers/:id", controller: "trainers", action: "show"
