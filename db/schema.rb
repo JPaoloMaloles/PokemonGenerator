@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_28_095453) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_29_083427) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -30,6 +30,19 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_28_095453) do
     t.string "icon"
     t.string "first_type_image"
     t.string "second_type_image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "teams", force: :cascade do |t|
+    t.integer "trainer_id"
+    t.string "name"
+    t.string "position_one"
+    t.string "position_two"
+    t.string "position_three"
+    t.string "position_four"
+    t.string "position_five"
+    t.string "position_six"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
