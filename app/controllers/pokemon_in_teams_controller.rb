@@ -1,4 +1,6 @@
 class PokemonInTeamsController < ApplicationController
+  before_action :authenticate_user
+  
   def show
     @pokemon_in_team = PokemonInTeam.find_by(id: params["id"])
     render :show

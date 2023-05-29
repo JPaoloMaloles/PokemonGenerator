@@ -1,4 +1,6 @@
 class TeamsController < ApplicationController
+  before_action :authenticate_user
+  
   def show
     @team = Team.find_by(id: params["id"])
     render :show

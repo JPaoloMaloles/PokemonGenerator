@@ -1,5 +1,5 @@
 class PokemonsController < ApplicationController
-  #before_action :authenticate_admin, except: [:index, :show]
+  before_action :authenticate_admin, except: [:index, :show]
 
   def show
     @pokemon = Pokemon.find_by(id: params["id"])

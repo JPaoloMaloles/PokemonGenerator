@@ -1,4 +1,6 @@
 class UniquePokemonsController < ApplicationController
+  before_action :authenticate_user
+
   def show
     unique_pokemon = current_user.unique_pokemons.find_by(id: params["id"])
     if unique_pokemon

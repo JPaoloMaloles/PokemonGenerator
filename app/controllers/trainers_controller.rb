@@ -1,4 +1,6 @@
 class TrainersController < ApplicationController
+  before_action :authenticate_user
+  
   def show
     @trainer = Trainer.find_by(id: params["id"])
     render :show
