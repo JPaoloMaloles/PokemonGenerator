@@ -1,3 +1,3 @@
 class Pokemon < ApplicationRecord
-  has_many :unique_pokemon
+  has_many :unique_pokemons
 end
