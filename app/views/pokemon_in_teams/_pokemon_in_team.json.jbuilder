@@ -1,0 +1,3 @@
+json.id pokemon_in_team.id
+json.team_id pokemon_in_team.team_id
+json.unique_pokemon_id pokemon_in_team.unique_pokemon_id

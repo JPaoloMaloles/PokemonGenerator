@@ -1,0 +1,2 @@
+module PokemonInTeamsHelper
+end

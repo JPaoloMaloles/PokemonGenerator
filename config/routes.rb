@@ -31,4 +31,10 @@ Rails.application.routes.draw do
   post "/teams", controller: "teams", action: "create"
   patch "/teams/:id", controller: "teams", action: "update"
   delete "/teams/:id", controller: "teams", action: "destroy"
+
+  get "/pokemon_in_teams/:id", controller: "pokemon_in_teams", action: "show"
+  get "/pokemon_in_teams", controller: "pokemon_in_teams", action: "index"
+  post "/pokemon_in_teams", controller: "pokemon_in_teams", action: "create"
+  patch "/pokemon_in_teams/:id", controller: "pokemon_in_teams", action: "update"
+  delete "/pokemon_in_teams/:id", controller: "pokemon_in_teams", action: "destroy"
 end
