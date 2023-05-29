@@ -10,9 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_29_083427) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_29_084019) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "pokemon_in_teams", force: :cascade do |t|
+    t.integer "team_id"
+    t.integer "unique_pokemon_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "pokemons", force: :cascade do |t|
     t.string "national_dex_num"
@@ -37,12 +44,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_29_083427) do
   create_table "teams", force: :cascade do |t|
     t.integer "trainer_id"
     t.string "name"
-    t.string "position_one"
-    t.string "position_two"
-    t.string "position_three"
-    t.string "position_four"
-    t.string "position_five"
-    t.string "position_six"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
