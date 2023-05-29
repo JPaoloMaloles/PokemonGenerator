@@ -1,6 +1,6 @@
 class UniquePokemonsController < ApplicationController
   def show
-    @unique_pokemon = UniquePokemon.find_by(id: params["id"]) #current_user.unique_pokemon.find_by(id: params["id"])
+    @unique_pokemon = current_user.unique_pokemons.find_by(id: params["id"])
     render :show
   end
 
