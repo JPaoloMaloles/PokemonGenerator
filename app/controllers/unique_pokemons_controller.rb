@@ -1,7 +1,12 @@
 class UniquePokemonsController < ApplicationController
   def show
-    @unique_pokemon = current_user.unique_pokemons.find_by(id: params["id"])
-    render :show
+    unique_pokemon = current_user.unique_pokemons.find_by(id: params["id"])
+    if unique_pokemon
+      @unique_pokemon = unique_pokemon
+      render :show
+    else
+      render json: [], status: :unauthorized
+    end
   end
 
   def index
