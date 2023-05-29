@@ -12,16 +12,12 @@ class TeamsController < ApplicationController
   end
 
   def create
-    if current_user
-      @team = Team.new(
-        trainer_id: params["trainer_id"],
-        name: params["name"],
-      )
-      @team.save
-      render :show
-    else
-      render json: { message: "Not authorized user" }
-    end
+    @team = Team.new(
+      trainer_id: params["trainer_id"],
+      name: params["name"],
+    )
+    @team.save
+    render :show
   end
 
   def update

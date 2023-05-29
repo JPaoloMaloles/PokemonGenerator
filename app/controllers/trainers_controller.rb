@@ -1,6 +1,6 @@
 class TrainersController < ApplicationController
   before_action :authenticate_user
-  
+
   def show
     @trainer = Trainer.find_by(id: params["id"])
     render :show
@@ -12,19 +12,15 @@ class TrainersController < ApplicationController
   end
 
   def create
-    if current_user
-      @trainer = Trainer.new(
-        name: params["name"],
-        title: params["title"],
-        level: params["level"],
-        experience: params["experience"],
-        user_id: current_user.id,
-      )
-      @trainer.save
-      render :show
-    else
-      render json: { message: "Not authorized user" }
-    end
+    @trainer = Trainer.new(
+      name: params["name"],
+      title: params["title"],
+      level: params["level"],
+      experience: params["experience"],
+      user_id: current_user.id,
+    )
+    @trainer.save
+    render :show
   end
 
   def update

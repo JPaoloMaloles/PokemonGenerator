@@ -1,6 +1,6 @@
 class PokemonInTeamsController < ApplicationController
   before_action :authenticate_user
-  
+
   def show
     @pokemon_in_team = PokemonInTeam.find_by(id: params["id"])
     render :show
@@ -12,16 +12,12 @@ class PokemonInTeamsController < ApplicationController
   end
 
   def create
-    if current_user
-      @pokemon_in_team = PokemonInTeam.new(
-        team_id: params["team_id"],
-        unique_pokemon_id: params["unique_pokemon_id"],
-      )
-      @pokemon_in_team.save
-      render :show
-    else
-      render json: { message: "Not authorized user" }
-    end
+    @pokemon_in_team = PokemonInTeam.new(
+      team_id: params["team_id"],
+      unique_pokemon_id: params["unique_pokemon_id"],
+    )
+    @pokemon_in_team.save
+    render :show
   end
 
   def update
