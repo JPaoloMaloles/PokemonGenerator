@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   patch "/pokemons/:id", controller: "pokemons", action: "update"
   delete "/pokemons/:id", controller: "pokemons", action: "destroy"
 
+  get "/signup" => "users#new"
   post "/users" => "users#create"
   post "/sessions" => "sessions#create"
 
