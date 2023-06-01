@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_29_084019) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_01_003531) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -27,12 +27,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_29_084019) do
     t.string "first_type"
     t.string "second_type"
     t.string "abilities"
-    t.decimal "hp", precision: 9, scale: 4
-    t.decimal "atk", precision: 9, scale: 4
-    t.decimal "defe", precision: 9, scale: 4
-    t.decimal "spa", precision: 9, scale: 4
-    t.decimal "spd", precision: 9, scale: 4
-    t.decimal "spe", precision: 9, scale: 4
+    t.integer "hp"
+    t.integer "atk"
+    t.integer "defe"
+    t.integer "spa"
+    t.integer "spd"
+    t.integer "spe"
     t.string "url"
     t.string "icon"
     t.string "first_type_image"

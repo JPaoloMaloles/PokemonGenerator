@@ -2,21 +2,16 @@
 <ul>
   <% @pokemons.each do |pokemon| %>
     <li>
-      <p>icon: <img src="<%= pokemon.icon%>"> </p>
-      <p>first_type_image: <img src="<%= pokemon.first_type_image%>"> </p>
-      <p>second_type_image: <img src="<%= pokemon.second_type_image%>"> </p>
-      <p>national_dex_num: <%= pokemon.national_dex_num %> </p>
-      <p>name: <%= pokemon.name%> </p>
-      <p>first_type: <%= pokemon.first_type%> </p>
-      <p>second_type: <%= pokemon.second_type%> </p>
-      <p>abilities: <%= pokemon.abilities%> </p>
-      <p>hp: <%= pokemon.hp%> </p>
-      <p>atk: <%= pokemon.atk%> </p>
-      <p>defe: <%= pokemon.defe%> </p>
-      <p>spa: <%= pokemon.spa%> </p>
-      <p>spd: <%= pokemon.spd%> </p>
-      <p>spe: <%= pokemon.spe%> </p>
-      <p>url: <%= pokemon.url%> </p>
+      <p><a href="<%= pokemon.url%>"> <img src="<%= pokemon.icon%>"> </a> </p>
+      <p><img src="<%= pokemon.first_type_image%>"> <img src="<%= pokemon.second_type_image%>"> #<%= pokemon.national_dex_num %></p>
+      <p><h3><%= pokemon.name%></h3> </p>
+      <p><b> Abilities: </b> <%= pokemon.abilities%> </p>
+      <p> <b> HP: </b> <%= pokemon.hp%> </p> 
+      <b> Atk: </b> <%= pokemon.atk%> </p> 
+      <b> Def: </b> <%= pokemon.defe%> </p> 
+      <b> SpA: </b> <%= pokemon.spa%> </p> 
+      <b> SpD: </b> <%= pokemon.spd%> </p> 
+      <b> Spe: </b> <%= pokemon.spe%> </p>
     </li>
   <% end %>
   </ul>
