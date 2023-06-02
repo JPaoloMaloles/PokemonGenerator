@@ -1,0 +1,18 @@
+<h1>New Unique Pokemon</h1>
+<%= form_with model: @unique_pokemon do |form| %>
+  <div>
+    <%= form.label :nickname %>
+    <%= form.text_field :nickname %>
+  </div>
+  <div>
+    <%= form.label :nature %>
+    <%= form.text_field :nature %>
+  </div>
+  <div>
+    <%= form.label :shiny %>
+    <%= form.text_field :shiny %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end%>
