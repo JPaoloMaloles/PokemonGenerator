@@ -1,0 +1,10 @@
+<h1>Edit Unique Pokemon</h1>
+<%= form_with model: @unique_pokemon do |form| %>
+  <div>
+    <%= form.label :nickname %>
+    <%= form.text_field :nickname %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end%>

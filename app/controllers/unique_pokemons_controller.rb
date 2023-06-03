@@ -75,10 +75,15 @@ class UniquePokemonsController < ApplicationController
     end
   end
 
+  def edit
+    @unique_pokemon = UniquePokemon.find_by(id: params[:id])
+    render :edit
+  end
+
   def update
     @unique_pokemon = UniquePokemon.find_by(id: params["id"])
     @unique_pokemon.update(
-      nickname: params["nickname"] || params.nickname,
+      nickname: params[:unique_pokemon]["nickname"],
       # nature: params["nature"] || params.nature,
       # gender: params["gender"] || params.gender,
       # shiny: params["shiny"] || params.shiny,
@@ -96,7 +101,7 @@ class UniquePokemonsController < ApplicationController
       # spe_iv: params["spe_iv"] || params.spe_iv,
       user_id: current_user.id,
     )
-    render :show
+    redirect_to "/unique_pokemons"
   end
 
   def admin_update
