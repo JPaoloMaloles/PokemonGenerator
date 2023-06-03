@@ -1,20 +1,34 @@
 <h1> Your Pokemon </h1>
+<% index = 0 %>
 <ul>
-  <% @unique_pokemons.each do |unique_pokemon|%>
-    <li>
-      <p><a href="<%= unique_pokemon.pokemon.url%>"> <img src="<%= unique_pokemon.pokemon.icon%>"> </a> </p>
-      <p><img src="<%= unique_pokemon.pokemon.first_type_image%>"> <img src="<%= unique_pokemon.pokemon.second_type_image%>"> #<%= unique_pokemon.pokemon.national_dex_num %></p>
-      <p><h3><%= link_to "#{unique_pokemon.pokemon.name}", unique_pokemon %></h3></p>
-      <p><b>Nickname: </b><%= unique_pokemon.nickname%></p>
-      <p><b> Abilities: </b> <%= unique_pokemon.pokemon.abilities%> </p>
-      <p> <b> HP: </b> <%= unique_pokemon.pokemon.hp.to_i%> </p> 
-      <b> Atk: </b> <%= unique_pokemon.pokemon.atk.to_i%> </p> 
-      <b> Def: </b> <%= unique_pokemon.pokemon.defe.to_i%> </p> 
-      <b> SpA: </b> <%= unique_pokemon.pokemon.spa.to_i%> </p> 
-      <b> SpD: </b> <%= unique_pokemon.pokemon.spd.to_i%> </p> 
-      <b> Spe: </b> <%= unique_pokemon.pokemon.spe.to_i%> </p>
-    </li>
+  <% while index < @unique_pokemons.length - 1%>
+      <div class="row">
+        <% triple = 0 %>
+        <% while triple < 3 && index < @unique_pokemons.length - 1%>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><%= @unique_pokemons[index].pokemon.name%></h5>
+                <p class="card=text"><a href="<%= @unique_pokemons[index].pokemon.url%>"> <img src="<%= @unique_pokemons[index].pokemon.icon %>"> </a> </p>
+                <p class="card=text"><img src="<%= @unique_pokemons[index].pokemon.first_type_image%>"> <img src="<%= @unique_pokemons[index].pokemon.second_type_image%>"> #<%= @unique_pokemons[index].pokemon.national_dex_num %></p>
+                <p><b>Nickname: </b><%= @unique_pokemons[index].nickname%></p>
+                <p class="card=text"><b> Abilities: </b> <%= @unique_pokemons[index].pokemon.abilities%> </p>
+                <p class="card=text"> <b> HP: </b> <%= @unique_pokemons[index].pokemon.hp.to_i%> </p> 
+                <b> Atk: </b> <%= @unique_pokemons[index].pokemon.atk.to_i%> </p> 
+                <b> Def: </b> <%= @unique_pokemons[index].pokemon.defe.to_i%> </p> 
+                <b> SpA: </b> <%= @unique_pokemons[index].pokemon.spa.to_i%> </p> 
+                <b> SpD: </b> <%= @unique_pokemons[index].pokemon.spd.to_i%> </p> 
+                <b> Spe: </b> <%= @unique_pokemons[index].pokemon.spe.to_i%> </p>
+              </div>
+            </div>
+          </div>
+          <% triple += 1%>
+          <% index += 1%>  
+        <% end %>
+      </div>
+      <p></p>
   <% end %>
-</ul>
+  </ul>
+
 
 <%= link_to "New Unique Pokemon", new_unique_pokemon_path %>
