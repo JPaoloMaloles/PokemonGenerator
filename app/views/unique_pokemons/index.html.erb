@@ -1,4 +1,6 @@
+<%= link_to "New Unique Pokemon", new_unique_pokemon_path %>
 <h1> Your Pokemon </h1>
+
 <% index = 0 %>
 <ul>
   <% while index < @unique_pokemons.length - 1%>
@@ -30,6 +32,3 @@
       <p></p>
   <% end %>
   </ul>
-
-
-<%= link_to "New Unique Pokemon", new_unique_pokemon_path %>

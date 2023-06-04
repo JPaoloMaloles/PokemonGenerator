@@ -43,7 +43,7 @@ class UniquePokemonsController < ApplicationController
       pokemon_id: rand(1..Pokemon.count),
     )
     @unique_pokemon.save
-    redirect_to "/unique_pokemons"
+    redirect_to "/unique_pokemons/#{@unique_pokemon.id}"
   end
 
   def admin_create
