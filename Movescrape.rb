@@ -1,7 +1,7 @@
 require "httparty"
 require "nokogiri"
 # downloading the target web page
-response = HTTParty.get("https://scrapeme.live/shop/")
+response = HTTParty.get("https://pokemondb.net/move/all")
 # parsing the HTML document returned by the server
 document = Nokogiri::HTML(response.body)
 
@@ -9,8 +9,8 @@ document = Nokogiri::HTML(response.body)
 PokemonProduct = Struct.new(:url, :image, :name, :price)
 
 # selecting all HTML product elements
-html_products = document.css("li.product")
-
+html_products = document.css("table.dextable")
+html_products = html_products.css("tr")
 # initializing the list of objects
 # that will contain the scraped data
 pokemon_products = []
