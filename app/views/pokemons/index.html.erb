@@ -1,4 +1,15 @@
 
+<head>
+    <title></title>
+    <style>
+      .base_bar {
+          display: inline;
+          height: 10px;
+      }
+    </style>
+</head>
+
+<body>
 <h1> Hello pokemon </h1>
 <% index = 0 %>
 <ul>
@@ -13,12 +24,13 @@
                 <p class="card=text"><a href="<%= @pokemons[index].url%>"> <img src="<%= @pokemons[index].icon %>"> </a> </p>
                 <p class="card=text"><img src="<%= @pokemons[index].first_type_image%>"> <img src="<%= @pokemons[index].second_type_image%>"> #<%= @pokemons[index].national_dex_num %></p>
                 <p class="card=text"><b> Abilities: </b> <%= @pokemons[index].abilities%> </p>
-                <p class="card=text"> <b> HP: </b> <%= @pokemons[index].hp.to_i%> </p> 
-                <b> Atk: </b> <%= @pokemons[index].atk.to_i%> </p> 
-                <b> Def: </b> <%= @pokemons[index].defe.to_i%> </p> 
-                <b> SpA: </b> <%= @pokemons[index].spa.to_i%> </p> 
-                <b> SpD: </b> <%= @pokemons[index].spd.to_i%> </p> 
-                <b> Spe: </b> <%= @pokemons[index].spe.to_i%> </p>
+                <p class="card=text"> 
+                <b> HP: </b> <%= @pokemons[index].hp.to_i%> <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="base_bar" width=<%= @pokemons[index].hp.to_i%>> </p> 
+                <b> Atk: </b> <%= @pokemons[index].atk.to_i%> <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="base_bar" width=<%= @pokemons[index].atk.to_i%>> </p> 
+                <b> Def: </b> <%= @pokemons[index].defe.to_i%> <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="base_bar" width=<%= @pokemons[index].defe.to_i%>> </p> 
+                <b> SpA: </b> <%= @pokemons[index].spa.to_i%> <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="base_bar" width=<%= @pokemons[index].spa.to_i%>> </p> 
+                <b> SpD: </b> <%= @pokemons[index].spd.to_i%> <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="base_bar" width=<%= @pokemons[index].spd.to_i%>> </p> 
+                <b> Spe: </b> <%= @pokemons[index].spe.to_i%> <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="base_bar" width=<%= @pokemons[index].spe.to_i%>> </p>
               </div>
             </div>
           </div>
@@ -29,3 +41,4 @@
       <p></p>
   <% end %>
   </ul>
+</body>
