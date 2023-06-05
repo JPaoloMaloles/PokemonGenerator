@@ -12,7 +12,8 @@ class UniquePokemonsController < ApplicationController
   end
 
   def index
-    @unique_pokemons = UniquePokemon.where(user_id: current_user.id)
+    #@unique_pokemons = UniquePokemon.where(user_id: current_user.id)
+    @unique_pokemons = current_user.unique_pokemons
     render :index
   end
 
