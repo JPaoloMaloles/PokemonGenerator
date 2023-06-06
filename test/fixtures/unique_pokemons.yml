@@ -1,10 +1,10 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  nickname: MyString
-  nature: MyString
+  nickname: MyString1
+  nature: MyString1
   shiny: false
-  gender: MyString
+  gender: MyString1
   hp_ev: 1
   atk_ev: 1
   defe_ev: 1
@@ -21,10 +21,10 @@ one:
   pokemon_id: 1
   
 two:
-  nickname: MyString
-  nature: MyString
+  nickname: MyString2
+  nature: MyString2
   shiny: false
-  gender: MyString
+  gender: MyString2
   hp_ev: 1
   atk_ev: 1
   defe_ev: 1
