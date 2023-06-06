@@ -17,8 +17,10 @@ one:
   spa_iv: 1
   spd_iv: 1
   spe_iv: 1
-  user_id: 1
-  pokemon_id: 1
+  # user_id: 1
+  # pokemon_id: 1
+  user: one
+  pokemon: two
   
 two:
   nickname: MyString2
@@ -37,5 +39,7 @@ two:
   spa_iv: 1
   spd_iv: 1
   spe_iv: 1
-  user_id: 1
-  pokemon_id: 1
+  # user_id: 1
+  # pokemon_id: 1
+  user: two
+  pokemon: two

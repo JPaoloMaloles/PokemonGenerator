@@ -1,8 +1,8 @@
 json.id unique_pokemon.id
 json.nickname unique_pokemon.nickname
-json.gender unique_pokemon.gender
-json.shiny unique_pokemon.shiny
 json.nature unique_pokemon.nature
+json.shiny unique_pokemon.shiny
+json.gender unique_pokemon.gender
 json.hp_ev unique_pokemon.hp_ev
 json.atk_ev unique_pokemon.atk_ev
 json.defe_ev unique_pokemon.defe_ev
