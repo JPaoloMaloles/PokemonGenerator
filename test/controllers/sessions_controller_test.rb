@@ -14,4 +14,9 @@ class SessionsControllerTest < ActionDispatch::IntegrationTest
   #   data = JSON.parse(response.body)
   #   assert_equal ["jwt", "email", "user_id"], data.keys
   # end
+
+  test "create" do
+    post "/sessions", params: { email: "test@email.com", password: "password" }
+    assert_response 302
+  end
 end
