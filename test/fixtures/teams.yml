@@ -3,19 +3,7 @@
 one:
   trainer_id: 1
   name: MyString
-  position_one: MyString
-  position_two: MyString
-  position_three: MyString
-  position_four: MyString
-  position_five: MyString
-  position_six: MyString
 
 two:
   trainer_id: 1
   name: MyString
-  position_one: MyString
-  position_two: MyString
-  position_three: MyString
-  position_four: MyString
-  position_five: MyString
-  position_six: MyString
