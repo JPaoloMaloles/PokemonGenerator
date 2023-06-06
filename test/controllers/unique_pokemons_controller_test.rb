@@ -14,31 +14,12 @@ class UniquePokemonsControllerTest < ActionDispatch::IntegrationTest
     #authenticate_user = true
 
     assert_difference "UniquePokemon.count", 1 do
-      puts "before it is: #{UniquePokemon.count}"
       post "/unique_pokemons", params: { unique_pokemon: {
                                  nickname: "test_name",
                                  nature: "test_nature",
                                  shiny: true,
-                               #  gender: "test_gender",
-                               #  hp_ev: 0,
-                               #  atk_ev: 1,
-                               #  defe_ev: 1,
-                               #  spa_ev: 1,
-                               #  spd_ev: 1,
-                               #  spe_ev: 1,
-                               #  hp_iv: 1,
-                               #  atk_iv: 1,
-                               #  defe_iv: 1,
-                               #  spa_iv: 1,
-                               #  spd_iv: 1,
-                               #  spe_iv: 1,
-                               #  user_id: 1,
-                               #  pokemon_id: 1,
                                } }
-      puts "after it is: #{UniquePokemon.count}"
-      puts UniquePokemon.first.nickname
-      puts UniquePokemon.last.nickname
-      #assert_response 302
+      assert_response 302
     end
   end
 end

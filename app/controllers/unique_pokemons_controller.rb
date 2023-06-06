@@ -41,7 +41,7 @@ class UniquePokemonsController < ApplicationController
       spd_iv: rand(0..31),
       spe_iv: rand(0..31),
       user_id: current_user.id,
-      pokemon_id: rand(1..Pokemon.count),
+      pokemon_id: Pokemon.all.sample.id,
     )
     @unique_pokemon.save
     redirect_to "/unique_pokemons/#{@unique_pokemon.id}"
