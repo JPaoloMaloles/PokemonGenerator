@@ -10,9 +10,6 @@ class UniquePokemonsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "show" do
-    # get "/unique_pokemons/#{UniquePokemon.first.id}"
-    # assert_response 200
-
     @test_pokemon = UniquePokemon.create!(
       nickname: "nickname",
       nature: "nature",
@@ -38,6 +35,9 @@ class UniquePokemonsControllerTest < ActionDispatch::IntegrationTest
     # puts "the user's id: #{@user.id}"
     # puts "the test pokemon's id: #{@test_pokemon.id}"
     # puts "The last pokemon's id: #{UniquePokemon.last.id}"
+    get "/unique_pokemons/#{UniquePokemon.last.id}"
+    assert_response 200
+
     get "/unique_pokemons/#{UniquePokemon.last.id}.json"
     unique_pokemon_hash = JSON.parse(response.body)
     assert_equal ["id",
