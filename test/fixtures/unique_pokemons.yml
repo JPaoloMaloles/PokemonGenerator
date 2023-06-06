@@ -5,6 +5,8 @@ one:
   nature: MyString
   shiny: false
   gender: MyString
+  hp_ev: 1
+  atk_ev: 1
   defe_ev: 1
   spa_ev: 1
   spd_ev: 1
@@ -23,6 +25,8 @@ two:
   nature: MyString
   shiny: false
   gender: MyString
+  hp_ev: 1
+  atk_ev: 1
   defe_ev: 1
   spa_ev: 1
   spd_ev: 1

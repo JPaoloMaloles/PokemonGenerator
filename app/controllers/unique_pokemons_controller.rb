@@ -26,7 +26,7 @@ class UniquePokemonsController < ApplicationController
     @unique_pokemon = UniquePokemon.new(
       nickname: params[:unique_pokemon][:nickname],
       nature: params[:unique_pokemon][:nature], #model method, randomly choose from a list
-      gender: rand(1..2), #model method, accounts of nil gender pokemon
+      gender: "default", #model method, accounts of nil gender pokemon
       shiny: params[:unique_pokemon][:shiny], #model method, accurately represent shiny rate
       hp_ev: 0,
       atk_ev: 0,
