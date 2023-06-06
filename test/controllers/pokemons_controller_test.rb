@@ -5,7 +5,6 @@ class PokemonsControllerTest < ActionDispatch::IntegrationTest
   #   assert true
   # end
   test "show" do
-    #puts "this is: #{Pokemon.first.id}"
     get "/pokemons/#{Pokemon.first.id}"
     assert_response 200
 
