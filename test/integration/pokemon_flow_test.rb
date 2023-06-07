@@ -44,6 +44,6 @@ class PokemonFlowTest < ActionDispatch::IntegrationTest
     assert_response :redirect
     follow_redirect!
     assert_response :success
-    # assert_select "p", "Title:\n  can create"
+    assert_select "h3", UniquePokemon.last.pokemon.name
   end
 end
