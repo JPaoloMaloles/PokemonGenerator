@@ -63,9 +63,6 @@ class UniquePokemonsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "create" do
-    # write here code to assume User is installed
-    #authenticate_user = true
-
     assert_difference "UniquePokemon.count", 1 do
       post "/unique_pokemons", params: { unique_pokemon: {
                                  nickname: "test_name",
