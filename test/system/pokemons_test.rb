@@ -48,10 +48,14 @@ class PokemonsTest < ApplicationSystemTestCase
     assert_selector "h1", text: "Login"
     fill_in "Email", with: "systemtest@email.com"
     fill_in "Password", with: "password"
-    click_on "Submit"
     take_screenshot
 
+    click_on "Submit"
     assert_selector "h1", text: "Hello pokemon"
+    take_screenshot
+
+    click_on "Your Pokemon"
+    assert_selector "h1", text: "Your Pokemon"
     take_screenshot
   end
 end
