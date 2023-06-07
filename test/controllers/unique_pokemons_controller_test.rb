@@ -6,10 +6,6 @@ class UniquePokemonsControllerTest < ActionDispatch::IntegrationTest
   # end
   setup do
     @user = User.create(name: "Test", email: "test@email.com", password: "password")
-    post "/sessions", params: { email: "test@email.com", password: "password" }
-  end
-
-  test "show" do
     @test_pokemon = UniquePokemon.create!(
       nickname: "nickname",
       nature: "nature",
@@ -30,6 +26,10 @@ class UniquePokemonsControllerTest < ActionDispatch::IntegrationTest
       user_id: @user.id,
       pokemon_id: Pokemon.all.sample.id,
     )
+    post "/sessions", params: { email: "test@email.com", password: "password" }
+  end
+
+  test "show" do
     # puts "all pokemon are: #{UniquePokemon.first.id} and #{UniquePokemon.last.id}"
     # puts "There user id's are: #{UniquePokemon.first.user_id} and #{UniquePokemon.last.user_id}"
     # puts "the user's id: #{@user.id}"
