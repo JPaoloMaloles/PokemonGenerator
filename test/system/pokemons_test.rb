@@ -48,9 +48,17 @@ class PokemonsTest < ApplicationSystemTestCase
     assert_selector "h3", text: "#{UniquePokemon.last.pokemon.name}"
 
     click_on "back to your pokemon"
-    assert_selector "h5", text: "#{UniquePokemon.last.pokemon.name}"
+    assert_selector "h5", text: UniquePokemon.last.pokemon.name
 
     # click_on "Go to page"
     # assert_selector "h3", text: "#{UniquePokemon.last.pokemon.name}"
+
+    click_on "Logout"
+    assert_selector "h1", text: "Login"
+    fill_in "Email", with: "systemtest@email.com"
+    fill_in "Password", with: "password"
+    click_on "Submit"
+
+    assert_selector "h1", text: "Hello pokemon"
   end
 end
