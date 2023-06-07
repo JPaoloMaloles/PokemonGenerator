@@ -38,6 +38,7 @@ class UniquePokemonsControllerTest < ActionDispatch::IntegrationTest
     get "/unique_pokemons/#{UniquePokemon.last.id}"
     assert_response 200
 
+    # puts unique_pokemons(:one)
     get "/unique_pokemons/#{UniquePokemon.last.id}.json"
     unique_pokemon_hash = JSON.parse(response.body)
     assert_equal ["id",
