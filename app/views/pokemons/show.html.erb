@@ -18,17 +18,58 @@
           <h5 class="card-title"><%= @pokemon.name%></h5>
           <p class="card=text"><a href="<%= @pokemon.url%>"> <img src="<%= @pokemon.icon %>"> </a> </p>
           <p class="card=text"><img src="<%= @pokemon.first_type_image%>"> <img src="<%= @pokemon.second_type_image%>"> #<%= @pokemon.national_dex_num %></p>
-          <p class="card=text"><b> Abilities: </b> <%= @pokemon.abilities%> </p>
-          <p class="card=text"> 
-          <b> HP: </b> <%= @pokemon.hp.to_i%> <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="base_bar" width=<%= @pokemon.hp.to_i%>> </p> 
-          <b> Atk: </b> <%= @pokemon.atk.to_i%> <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="base_bar" width=<%= @pokemon.atk.to_i%>> </p> 
-          <b> Def: </b> <%= @pokemon.defe.to_i%> <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="base_bar" width=<%= @pokemon.defe.to_i%>> </p> 
-          <b> SpA: </b> <%= @pokemon.spa.to_i%> <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="base_bar" width=<%= @pokemon.spa.to_i%>> </p> 
-          <b> SpD: </b> <%= @pokemon.spd.to_i%> <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="base_bar" width=<%= @pokemon.spd.to_i%>> </p> 
-          <b> Spe: </b> <%= @pokemon.spe.to_i%> <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="base_bar" width=<%= @pokemon.spe.to_i%>> </p>
+          <p class="card=text"><b> Abilities: </b> <%= @pokemon.abilities%> </p> 
+          <div class="row">  
+            <div class="col-sm-3">
+              <b> HP: </b> <%= @pokemon.hp.to_i%> 
+            </div>
+            <div class="col-sm-9">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="base_bar" width=<%= @pokemon.hp.to_i%>>
+            </div>
+          </div> 
+          <div class="row">  
+            <div class="col-sm-3">
+              <b> Atk: </b> <%= @pokemon.atk.to_i%> 
+            </div>
+            <div class="col-sm-9">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="base_bar" width=<%= @pokemon.atk.to_i%>>
+            </div>
+          </div> 
+          <div class="row">  
+            <div class="col-sm-3">
+              <b> Def: </b> <%= @pokemon.defe.to_i%> 
+            </div>
+            <div class="col-sm-9">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="base_bar" width=<%= @pokemon.defe.to_i%>>
+            </div>
+          </div> 
+          <div class="row">  
+            <div class="col-sm-3">
+              <b> SpA: </b> <%= @pokemon.spa.to_i%> 
+            </div>
+            <div class="col-sm-9">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="base_bar" width=<%= @pokemon.spa.to_i%>>
+            </div>
+          </div> 
+          <div class="row">  
+            <div class="col-sm-3">
+              <b> SpD: </b> <%= @pokemon.spd.to_i%> 
+            </div>
+            <div class="col-sm-9">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="base_bar" width=<%= @pokemon.spd.to_i%>>
+            </div>
+          </div> 
+          <div class="row">  
+            <div class="col-sm-3">
+              <b> Spe: </b> <%= @pokemon.spe.to_i%> 
+            </div>
+            <div class="col-sm-9">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="base_bar" width=<%= @pokemon.spe.to_i%>>
+            </div>
+          </div> 
+          <p class="card=text"></p>
         </div>
       </div>
     </div>
-    <p></p>
 </ul>
 </body>
