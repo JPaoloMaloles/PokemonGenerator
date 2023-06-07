@@ -18,9 +18,9 @@
   <ul>
     <% while index < @unique_pokemons.length%>
         <div class="row">
-          <% triple = 0 %>
-          <% while triple < 3 && index < @unique_pokemons.length%>
-            <div class="col-sm-4">
+          <% double = 0 %>
+          <% while double < 2 && index < @unique_pokemons.length%>
+            <div class="col-sm-5">
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title"><%= @unique_pokemons[index].pokemon.name%></h5>
@@ -86,7 +86,7 @@
                 </div>
               </div>
             </div>
-            <% triple += 1%>
+            <% double += 1%>
             <% index += 1%>  
           <% end %>
         </div>

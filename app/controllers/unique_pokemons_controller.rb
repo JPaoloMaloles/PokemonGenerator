@@ -28,12 +28,12 @@ class UniquePokemonsController < ApplicationController
       nature: params[:unique_pokemon][:nature], #model method, randomly choose from a list
       gender: "default", #model method, accounts of nil gender pokemon
       shiny: params[:unique_pokemon][:shiny], #model method, accurately represent shiny rate
-      hp_ev: 0,
-      atk_ev: 0,
-      defe_ev: 0,
-      spa_ev: 0,
-      spd_ev: 0,
-      spe_ev: 0,
+      hp_ev: rand(0..252), #for presenting changed to rand, originally 0
+      atk_ev: rand(0..252),
+      defe_ev: rand(0..252),
+      spa_ev: rand(0..252),
+      spd_ev: rand(0..252),
+      spe_ev: rand(0..252),
       hp_iv: rand(0..31), #dry with model method
       atk_iv: rand(0..31),
       defe_iv: rand(0..31),
