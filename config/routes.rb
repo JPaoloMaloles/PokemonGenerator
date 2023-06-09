@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get "/" => "pokemons#index"
   # Defines the root path route ("/")
   # root "articles#index"
+  #ss
 
   resources :pokemons
   # get "/pokemons/:id", controller: "pokemons", action: "show"
