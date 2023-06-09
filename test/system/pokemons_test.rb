@@ -2,7 +2,7 @@ require "application_system_test_case"
 
 class PokemonsTest < ApplicationSystemTestCase
   test "navigating the website" do
-    visit pokemons_url
+    visit "/pokemons"
     assert_selector "h1", text: "Hello pokemon"
     take_screenshot # 1
 

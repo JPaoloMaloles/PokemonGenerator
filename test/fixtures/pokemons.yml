@@ -12,10 +12,10 @@ one:
   spa: 9.99
   spd: 9.99
   spe: 9.99
-  url: MyString
-  icon: MyString
-  first_type_image: MyString
-  second_type_image: MyString
+  url: "https://www.serebii.net/pokemon/pikachu/"
+  icon: "https://www.serebii.net/pokedex-sv/icon/new/025.png"
+  first_type_image: "https://www.serebii.net/pokedex-bw/type/electric.gif"
+  second_type_image: "https://www.serebii.net/pokedex-bw/type/electric.gif"
 
 two:
   national_dex_num: MyString
@@ -29,7 +29,7 @@ two:
   spa: 9.99
   spd: 9.99
   spe: 9.99
-  url: MyString
-  icon: MyString
-  first_type_image: MyString
-  second_type_image: MyString
+  url: "https://www.serebii.net/pokemon/pikachu/"
+  icon: "https://www.serebii.net/pokedex-sv/icon/new/025.png"
+  first_type_image: "https://www.serebii.net/pokedex-bw/type/electric.gif"
+  second_type_image: "https://www.serebii.net/pokedex-bw/type/electric.gif"
