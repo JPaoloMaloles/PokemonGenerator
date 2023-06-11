@@ -41,6 +41,7 @@ class UniquePokemonsController < ApplicationController
       spd_iv: rand(0..31),
       spe_iv: rand(0..31),
       user_id: current_user.id,
+      trainer_id: Trainer.first.id, #temporary,s withc to current_user's trainer
       pokemon_id: Pokemon.all.sample.id,
     )
     @unique_pokemon.save

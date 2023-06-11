@@ -20,7 +20,8 @@ one:
   # user_id: 1
   # pokemon_id: 1
   user: one
-  pokemon: two
+  pokemon: one
+  trainer: one
   
 two:
   nickname: MyString2
@@ -43,3 +44,4 @@ two:
   # pokemon_id: 1
   user: two
   pokemon: two
+  trainer: two

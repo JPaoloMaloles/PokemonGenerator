@@ -24,6 +24,7 @@ class UniquePokemonsControllerTest < ActionDispatch::IntegrationTest
       spd_iv: 3,
       spe_iv: 3,
       user_id: @user.id,
+      trainer_id: Trainer.first.id,
       pokemon_id: Pokemon.all.sample.id,
     )
     post "/sessions", params: { email: "test@email.com", password: "password" }
@@ -60,6 +61,7 @@ class UniquePokemonsControllerTest < ActionDispatch::IntegrationTest
                   "spe_iv",
                   "user_id",
                   "pokemon_id",
+                  "trainer_id",
                   "pokemon"], unique_pokemon_hash.keys
   end
 
