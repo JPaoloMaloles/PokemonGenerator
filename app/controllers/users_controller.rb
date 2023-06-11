@@ -11,6 +11,18 @@ class UsersController < ApplicationController
       password: params[:user][:password],
       password_confirmation: params[:user][:password_confirmation],
     )
+    @trainer = Trainer.new(
+      name: "Default Trainer #{@user.name}",
+      title: "Default Title",
+      level: 0,
+      experience: 0,
+      user_id: @user.id,
+    )
+    @trainer.save
+
+    @user.update(
+      current_trainer_id: @trainer.id,
+    )
     if @user.save
       session[:user_id] = @user.id
       redirect_to "/"
