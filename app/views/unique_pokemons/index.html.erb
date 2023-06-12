@@ -82,7 +82,7 @@
                   </div>
                   <p class="card=text"></p>
 
-                  <%= link_to "Go to page", Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index] %>
+                  <%= link_to "Go to page", Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index] %> <%= link_to "Destroy unique_pokemon", unique_pokemon_path(Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index]), data: {turbo_method: :delete} %>
                 </div>
               </div>
             </div>
