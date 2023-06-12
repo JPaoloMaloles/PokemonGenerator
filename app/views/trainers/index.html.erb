@@ -11,7 +11,7 @@
 <body>
 <%= link_to "New Trainer", new_trainer_path %>
 
-<h1> Hello Trainers </h1>
+<h1> Your Trainers </h1>
 <% index = 0 %>
 <ul>
   <% while index < current_user.trainers.length%>
@@ -25,6 +25,9 @@
                 <p class="card=text"><b> Title: </b> <%= current_user.trainers[index].title%> </p>
                 <p class="card=text"><b> Level: </b> <%= current_user.trainers[index].level%> </p>
                 <p class="card=text"><b> Experience: </b> <%= current_user.trainers[index].experience%> </p>
+                <p class="card=text"></p>
+
+                <%= link_to "Go to page", current_user.trainers[index] %>
               </div>
             </div>
           </div>

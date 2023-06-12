@@ -1,0 +1,103 @@
+<head>
+    <title></title>
+    <style>
+    </style>
+</head>
+
+<body>
+<%= link_to "back to your trainers", "/trainers" %>
+<h1> <%= @trainer.title%> <%= @trainer.name%> </h1>
+<% index = 0 %>
+<ul>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"> <%= @trainer.title%> <%= @trainer.name%></h5>
+          <p class="card=text"><b> Title: </b> <%= @trainer.title%> </p>
+          <p class="card=text"><b> Level: </b> <%= @trainer.level%> </p>
+          <p class="card=text"><b> Experience: </b> <%= @trainer.experience%> </p>
+        </div>
+      </div>
+    </div>
+</ul>
+
+<h2> Pokemon </h2>
+<ul>
+    <% while index < @trainer.unique_pokemons.length%>
+        <div class="row">
+          <% double = 0 %>
+          <% while double < 2 && index < @trainer.unique_pokemons.length%>
+            <div class="col-sm-5">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"><%= @trainer.unique_pokemons[index].pokemon.name%></h5>
+                  <p class="card=text"><a href="<%= @trainer.unique_pokemons[index].pokemon.url%>"> <img src="<%= @trainer.unique_pokemons[index].pokemon.icon %>"> </a> </p>
+                  <p class="card=text"><img src="<%= @trainer.unique_pokemons[index].pokemon.first_type_image%>"> <img src="<%= @trainer.unique_pokemons[index].pokemon.second_type_image%>"> #<%= @trainer.unique_pokemons[index].pokemon.national_dex_num %></p>
+                  <p><b>Nickname: </b><%= @trainer.unique_pokemons[index].nickname%></p>
+                  <p class="card=text"><b> Abilities: </b> <%= @trainer.unique_pokemons[index].pokemon.abilities%> </p>
+                  <div class="row">  
+                      <div class="col-sm-3" style="text-align:right;">
+                        HP: <b> <%= @trainer.unique_pokemons[index].pokemon.hp.to_i + @trainer.unique_pokemons[index].hp_iv + @trainer.unique_pokemons[index].hp_ev/4%> </b>
+                      </div>
+                      <div class="col-sm-9">
+                        <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="hp_iv_bar" display="inline" width="<%= @trainer.unique_pokemons[index].hp_iv * 1%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="hp_base_bar" display="inline" width="<%= @trainer.unique_pokemons[index].pokemon.hp.to_i * 1%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="hp_ev_bar" display="inline" width="<%= (@trainer.unique_pokemons[index].hp_ev/4) * 1%>" height="10">
+                      </div>
+                  </div>
+                  <div class="row">   
+                      <div class="col-sm-3" style="text-align:right;">
+                        Atk: <b> <%= @trainer.unique_pokemons[index].pokemon.atk.to_i + @trainer.unique_pokemons[index].atk_iv + @trainer.unique_pokemons[index].atk_ev/4%> </b> 
+                      </div>
+                      <div class="col-sm-9">
+                        <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="atk_iv_bar" display="inline" width="<%= @trainer.unique_pokemons[index].atk_iv * 1%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="atk_base_bar" display="inline" width="<%= @trainer.unique_pokemons[index].pokemon.atk.to_i * 1%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="atk_ev_bar" display="inline" width="<%= (@trainer.unique_pokemons[index].atk_ev/4) * 1%>" height="10">
+                      </div>
+                  </div>
+
+                  <div class="row">  
+                      <div class="col-sm-3" style="text-align:right;">
+                        Def: <b> <%= @trainer.unique_pokemons[index].pokemon.defe.to_i + @trainer.unique_pokemons[index].defe_iv + @trainer.unique_pokemons[index].defe_ev/4%> </b>
+                      </div>
+                      <div class="col-sm-9">
+                        <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="defe_iv_bar" display="inline" width="<%= @trainer.unique_pokemons[index].defe_iv * 1%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="defe_base_bar" display="inline" width="<%= @trainer.unique_pokemons[index].pokemon.defe.to_i * 1%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="defe_ev_bar" display="inline" width="<%= (@trainer.unique_pokemons[index].defe_ev/4) * 1%>" height="10">
+                      </div>
+                  </div>
+
+                  <div class="row">  
+                      <div class="col-sm-3" style="text-align:right;">
+                        SpA: <b> <%= @trainer.unique_pokemons[index].pokemon.spa.to_i + @trainer.unique_pokemons[index].spa_iv + @trainer.unique_pokemons[index].spa_ev/4%> </b>
+                      </div>
+                      <div class="col-sm-9">
+                        <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="spa_iv_bar" display="inline" width="<%= @trainer.unique_pokemons[index].spa_iv * 1%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="spa_base_bar" display="inline" width="<%= @trainer.unique_pokemons[index].pokemon.spa.to_i * 1%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="spa_ev_bar" display="inline" width="<%= (@trainer.unique_pokemons[index].spa_ev/4) * 1%>" height="10">
+                      </div>
+                  </div>
+
+                  <div class="row">  
+                      <div class="col-sm-3" style="text-align:right;">
+                        SpD: <b> <%= @trainer.unique_pokemons[index].pokemon.spd.to_i + @trainer.unique_pokemons[index].spd_iv + @trainer.unique_pokemons[index].spd_ev/4%> </b>
+                      </div>
+                      <div class="col-sm-9">
+                        <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="spd_iv_bar" display="inline" width="<%= @trainer.unique_pokemons[index].spd_iv * 1%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="spd_base_bar" display="inline" width="<%= @trainer.unique_pokemons[index].pokemon.spd.to_i * 1%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="spd_ev_bar" display="inline" width="<%= (@trainer.unique_pokemons[index].spd_ev/4) * 1%>" height="10">
+                      </div>
+                  </div>
+
+                  <div class="row">  
+                      <div class="col-sm-3" style="text-align:right;">
+                        Spe: <b><%= @trainer.unique_pokemons[index].pokemon.spe.to_i + @trainer.unique_pokemons[index].spe_iv + @trainer.unique_pokemons[index].spe_ev/4%> </b>
+                      </div>
+                      <div class="col-sm-9">
+                        <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="spe_iv_bar" display="inline" width="<%= @trainer.unique_pokemons[index].spe_iv * 1%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="spe_base_bar" display="inline" width="<%= @trainer.unique_pokemons[index].pokemon.spe.to_i * 1%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="spe_ev_bar" display="inline" width="<%= (@trainer.unique_pokemons[index].spe_ev/4) * 1%>" height="10">
+                      </div>
+                  </div>
+                  <p class="card=text"></p>
+
+                  <%= link_to "Go to page", @trainer.unique_pokemons[index] %>
+                </div>
+              </div>
+            </div>
+            <% double += 1%>
+            <% index += 1%>  
+          <% end %>
+        </div>
+        <p></p>
+    <% end %>
+  </ul>
+</body>
