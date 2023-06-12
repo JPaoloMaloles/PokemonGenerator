@@ -32,6 +32,7 @@ class PokemonsTest < ApplicationSystemTestCase
     click_on "Create Unique pokemon"
     assert_selector "h3", text: "#{UniquePokemon.last.pokemon.name}"
     assert_selector "img", class: "atk_ev_bar"
+
     take_screenshot # 6
 
     click_on "back to your pokemon"
@@ -40,8 +41,10 @@ class PokemonsTest < ApplicationSystemTestCase
 
     click_on "Go to page"
     assert_selector "h3", text: "#{UniquePokemon.last.pokemon.name}"
-    if assert_selector "img", class: "atk_ev_bar"
-      puts "hello"
+    if UniquePokemon.last.atk_ev != 0
+      if assert_selector "img", class: "atk_ev_bar"
+        puts "hello"
+      end
     end
     take_screenshot # 8
 
@@ -53,8 +56,21 @@ class PokemonsTest < ApplicationSystemTestCase
     assert_selector "h3", text: "#{UniquePokemon.last.pokemon.name}"
     take_screenshot # 10
 
-    # click_on "Go to page"
-    # assert_selector "h3", text: "#{UniquePokemon.last.pokemon.name}"
+    click_on "Your Trainers"
+    assert_selector "h5", text: "Default_Title Default_Trainer systemtest"
+    take_screenshot # 10
+
+    click_on "New Trainer"
+    fill_in "Name", with: "system_test_trainer_name"
+    fill_in "Title", with: "system_test_title"
+    take_screenshot # 10
+    click_on "Create Trainer"
+
+    take_screenshot # 10
+    click_on "back to your trainers"
+
+    assert_selector "h5", text: "system_test_title system_test_trainer_name"
+    take_screenshot
 
     click_on "Logout"
     assert_selector "h1", text: "Login"

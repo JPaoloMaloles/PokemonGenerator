@@ -25,7 +25,7 @@ class TrainersController < ApplicationController
       user_id: current_user.id,
     )
     @trainer.save
-    redirect_to "/trainers"
+    redirect_to "/trainers/#{@trainer.id}"
   end
 
   def update
