@@ -1,0 +1,38 @@
+<head>
+    <title></title>
+    <style>
+      .base_bar {
+          display: inline;
+          height: 10px;
+      }
+    </style>
+</head>
+
+<body>
+<%= link_to "New Trainer", new_trainer_path %>
+
+<h1> Hello Trainers </h1>
+<% index = 0 %>
+<ul>
+  <% while index < current_user.trainers.length%>
+      <div class="row">
+        <% triple = 0 %>
+        <% while triple < 3 && index < current_user.trainers.length%>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"> <%= current_user.trainers[index].title%> <%= current_user.trainers[index].name%></h5>
+                <p class="card=text"><b> Title: </b> <%= current_user.trainers[index].title%> </p>
+                <p class="card=text"><b> Level: </b> <%= current_user.trainers[index].level%> </p>
+                <p class="card=text"><b> Experience: </b> <%= current_user.trainers[index].experience%> </p>
+              </div>
+            </div>
+          </div>
+          <% triple += 1%>
+          <% index += 1%>  
+        <% end %>
+      </div>
+      <p></p>
+  <% end %>
+  </ul>
+</body>

@@ -13,8 +13,8 @@ class UsersController < ApplicationController
     )
     if @user.save
       @trainer = Trainer.new(
-        name: "Default Trainer #{@user.name}",
-        title: "Default Title",
+        name: "Default_Trainer #{@user.name}",
+        title: "Default_Title",
         level: 0,
         experience: 0,
         user_id: @user.id,

@@ -11,16 +11,21 @@ class TrainersController < ApplicationController
     render :index
   end
 
+  def new
+    @trainer = Trainer.new
+    render :new
+  end
+
   def create
     @trainer = Trainer.new(
-      name: params["name"],
-      title: params["title"],
-      level: params["level"],
-      experience: params["experience"],
+      name: params[:trainer][:name],
+      title: params[:trainer][:title],
+      level: 0,
+      experience: 0,
       user_id: current_user.id,
     )
     @trainer.save
-    render :show
+    redirect_to "/trainers"
   end
 
   def update
