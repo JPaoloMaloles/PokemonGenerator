@@ -25,11 +25,13 @@
 </ul>
 
 <h2> Pokemon </h2>
-<ul>
-    <% while index < @trainer.unique_pokemons.length%>
+
+<% index = @trainer.unique_pokemons.length - 1 %>
+  <ul>
+    <% while index >= 0%>
         <div class="row">
           <% double = 0 %>
-          <% while double < 2 && index < @trainer.unique_pokemons.length%>
+          <% while double < 2 && index >= 0%>
             <div class="col-sm-5">
               <div class="card">
                 <div class="card-body">
@@ -92,12 +94,12 @@
                   </div>
                   <p class="card=text"></p>
 
-                  <%= link_to "Go to page", @trainer.unique_pokemons[index] %>
+                  <%= link_to "Go to page", @trainer.unique_pokemons[index] %> <%= link_to "Destroy unique_pokemon", unique_pokemon_path(@trainer.unique_pokemons[index]), data: {turbo_method: :delete} %>
                 </div>
               </div>
             </div>
             <% double += 1%>
-            <% index += 1%>  
+            <% index = index - 1%>  
           <% end %>
         </div>
         <p></p>
