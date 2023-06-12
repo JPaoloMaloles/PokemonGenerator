@@ -108,13 +108,19 @@
     <% ownership = "#{@unique_pokemon.user.name}'s"%>
   <% end %>
 
+  <% name_display = nil %>
+  <% if @unique_pokemon.nickname == "" || nil %>
+    <% name_display = @unique_pokemon.pokemon.name %>
+  <% else %>
+    <% name_display = @unique_pokemon.nickname%>
+  <% end %>
+
   <%= link_to "back to your pokemon", "/unique_pokemons" %>
-  <h1> <%= ownership %> pokemon </h1>
+  <h1> <%= ownership %> <%= name_display %> </h1>
   <p></p>
   <p><a href="<%= @unique_pokemon.pokemon.url%>"> <img src="<%= @unique_pokemon.pokemon.icon%>"> </a> </p>
   <p><img src="<%= @unique_pokemon.pokemon.first_type_image%>"> <img src="<%= @unique_pokemon.pokemon.second_type_image%>"> #<%= @unique_pokemon.pokemon.national_dex_num %></p>
   <p><h3><%= @unique_pokemon.pokemon.name%></h3> </p>
-  <p><h3><%= @unique_pokemon.nickname%></h3> </p>
   <p><b> Abilities: </b> <%= @unique_pokemon.pokemon.abilities%> </p>
 
   <div class="row">
@@ -252,4 +258,7 @@
       <b><%= @unique_pokemon.pokemon.spe.to_i + @unique_pokemon.spe_iv + @unique_pokemon.spe_ev/4%></b>
     </div>
   </div>
+  <p class="card=text"></p>
+  
+  <%= link_to "Destroy unique_pokemon", unique_pokemon_path(@unique_pokemon), data: {turbo_method: :delete} %>
 </body>

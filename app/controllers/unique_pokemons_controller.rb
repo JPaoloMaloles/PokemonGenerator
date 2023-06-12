@@ -139,8 +139,8 @@ class UniquePokemonsController < ApplicationController
   end
 
   def destroy
-    unique_pokemon = UniquePokemon.find_by(id: params["id"])
-    unique_pokemon.destroy
-    render json: { message: "Unique_Pokemon has been deleted" }
+    @unique_pokemon = UniquePokemon.find_by(id: params["id"])
+    @unique_pokemon.destroy
+    redirect_to "/unique_pokemons"
   end
 end
