@@ -31,6 +31,18 @@ class UsersController < ApplicationController
     end
   end
 
+  # def edit
+  #   @trainer = Trainer.find_by(id: params[:id])
+  #   render :edit
+  # end
+
+  def change_current_trainer
+    current_user.update(
+      current_trainer_id: params[:trainer_id],
+    )
+    render :new_current_trainer
+  end
+
   # def create
   #   user = User.new(
   #     name: params[:name],

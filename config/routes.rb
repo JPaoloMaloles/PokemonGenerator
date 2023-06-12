@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   post "/sessions" => "sessions#create"
   get "/logout" => "sessions#destroy"
 
+  get "/change_trainer" => "users#change_current_trainer"
+
   resources :pokemons
   resources :unique_pokemons
   post "/unique_pokemons/admin", controller: "unique_pokemons", action: "admin_create"

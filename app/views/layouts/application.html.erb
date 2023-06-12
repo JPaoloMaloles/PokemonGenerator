@@ -31,7 +31,7 @@
           <% if current_user %>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                My Account
+                <%= Trainer.find_by(id: User.last.current_trainer_id).title %> <%= Trainer.find_by(id: User.last.current_trainer_id).name %>
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Action</a></li>

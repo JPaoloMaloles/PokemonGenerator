@@ -18,7 +18,7 @@
           <p class="card=text"><b> Experience: </b> <%= @trainer.experience%> </p>
           <p class="card=text"></p>
 
-          <%= link_to "Edit Trainer", edit_trainer_path(@trainer) %>
+          <%= link_to "Edit Trainer", edit_trainer_path(@trainer) %> <%= link_to "Set Current Trainer", change_trainer_path(:trainer_id => @trainer.id) %>
         </div>
       </div>
     </div>

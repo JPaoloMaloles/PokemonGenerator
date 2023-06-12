@@ -1,0 +1,4 @@
+<%# <% @user.update(
+    current_trainer_id: to_trainer_id,
+) %>
+<h1> Trainer was set to <%= Trainer.find_by(id: current_user.current_trainer_id).name %> </h1>
