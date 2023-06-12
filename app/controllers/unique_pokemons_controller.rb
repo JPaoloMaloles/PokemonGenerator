@@ -23,17 +23,26 @@ class UniquePokemonsController < ApplicationController
   end
 
   def create #-------------------------------- need to include level, experience, ability (taken from Pokemon model)
+    ev_pool = 510
+    ev_values = []
+    6.times do
+      ev_value = rand(0..ev_pool)
+      ev_values << ev_value
+      ev_pool = ev_pool - ev_value
+    end
+    ev_values = ev_values.shuffle
+
     @unique_pokemon = UniquePokemon.new(
       nickname: params[:unique_pokemon][:nickname],
       nature: params[:unique_pokemon][:nature], #model method, randomly choose from a list
       gender: "default", #model method, accounts of nil gender pokemon
       shiny: params[:unique_pokemon][:shiny], #model method, accurately represent shiny rate
-      hp_ev: rand(0..252), #for presenting changed to rand, originally 0
-      atk_ev: rand(0..252),
-      defe_ev: rand(0..252),
-      spa_ev: rand(0..252),
-      spd_ev: rand(0..252),
-      spe_ev: rand(0..252),
+      hp_ev: ev_values[0], #for presenting changed to rand, originally 0
+      atk_ev: ev_values[1],
+      defe_ev: ev_values[2],
+      spa_ev: ev_values[3],
+      spd_ev: ev_values[4],
+      spe_ev: ev_values[5],
       hp_iv: rand(0..31), #dry with model method
       atk_iv: rand(0..31),
       defe_iv: rand(0..31),

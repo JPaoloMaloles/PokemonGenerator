@@ -1,0 +1,9 @@
+ev_pool = 510
+ev_values = []
+6.times do
+  ev_value = rand(0..ev_pool)
+  ev_values << ev_value
+  ev_pool = ev_pool - ev_value
+end
+
+p ev_values
