@@ -12,14 +12,15 @@
 
 <body>
 <%= link_to "New Unique Pokemon", new_unique_pokemon_path %>
+<%= link_to "Instant Unique Pokemon", instant_pokemon_path(:unique_pokemon => {:nickname => nil, :nature => "", :shiny => ""}) %>
 <h1> Your Pokemon </h1>
 
-<% index = 0 %>
+<% index = Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons.length - 1 %>
   <ul>
-    <% while index < Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons.length%>
+    <% while index >= 0%>
         <div class="row">
           <% double = 0 %>
-          <% while double < 2 && index < Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons.length%>
+          <% while double < 2 && index >= 0%>
             <div class="col-sm-5">
               <div class="card">
                 <div class="card-body">
@@ -87,7 +88,7 @@
               </div>
             </div>
             <% double += 1%>
-            <% index += 1%>  
+            <% index = index - 1%>  
           <% end %>
         </div>
         <p></p>

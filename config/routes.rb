@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   resources :pokemons
   resources :unique_pokemons
   post "/unique_pokemons/admin", controller: "unique_pokemons", action: "admin_create"
+  get "/instant_pokemon" => "unique_pokemons#instant_create_unique_pokemon"
   patch "/unique_pokemons/admin/:id", controller: "unique_pokemons", action: "admin_update"
   resources :trainers
   resources :teams
