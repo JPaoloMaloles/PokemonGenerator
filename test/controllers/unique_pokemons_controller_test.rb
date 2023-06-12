@@ -33,7 +33,6 @@ class UniquePokemonsControllerTest < ActionDispatch::IntegrationTest
       spa_iv: 3,
       spd_iv: 3,
       spe_iv: 3,
-      user_id: @user.id,
       trainer_id: @user.current_trainer_id,
       pokemon_id: Pokemon.all.sample.id,
     )
@@ -69,7 +68,6 @@ class UniquePokemonsControllerTest < ActionDispatch::IntegrationTest
                   "spa_iv",
                   "spd_iv",
                   "spe_iv",
-                  "user_id",
                   "pokemon_id",
                   "trainer_id",
                   "pokemon"], unique_pokemon_hash.keys

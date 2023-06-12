@@ -100,9 +100,9 @@
 </head>
 <body>
   <% ownership = "" %>
-  <% if @unique_pokemon.user_id == nil %>
+  <% if @unique_pokemon.trainer == nil %>
     <% ownership = "A wild" %>
-  <%elsif @unique_pokemon.user_id == current_user.id %>
+  <%elsif @unique_pokemon.trainer.user_id == current_user.id %>
     <% ownership = "Your" %>
   <% else %>
     <% ownership = "#{@unique_pokemon.user.name}'s"%>

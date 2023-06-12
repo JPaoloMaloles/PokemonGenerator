@@ -40,7 +40,6 @@ class UniquePokemonsController < ApplicationController
       spa_iv: rand(0..31),
       spd_iv: rand(0..31),
       spe_iv: rand(0..31),
-      user_id: current_user.id,
       trainer_id: current_user.current_trainer_id, #temporary,s withc to current_user's trainer
       pokemon_id: Pokemon.all.sample.id,
     )
