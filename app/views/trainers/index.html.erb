@@ -27,7 +27,7 @@
                 <p class="card=text"><b> Experience: </b> <%= current_user.trainers[index].experience%> </p>
                 <p class="card=text"></p>
 
-                <%= link_to "Go to page", current_user.trainers[index] %>
+                <%= link_to "Go to page", current_user.trainers[index] %> <%= link_to "Set Current Trainer", change_trainer_path(:trainer_id => current_user.trainers[index].id) %>
               </div>
             </div>
           </div>
