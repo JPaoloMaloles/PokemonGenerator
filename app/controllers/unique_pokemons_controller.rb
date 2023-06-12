@@ -51,6 +51,10 @@ class UniquePokemonsController < ApplicationController
       spe_iv: rand(0..31),
       trainer_id: current_user.current_trainer_id, #temporary,s withc to current_user's trainer
       pokemon_id: Pokemon.all.sample.id,
+      level: rand(1..100),
+    )
+    @unique_pokemon.update(
+      hp: @unique_pokemon.hp_calculation,
     )
     @unique_pokemon.save
     redirect_to "/unique_pokemons/#{@unique_pokemon.id}"
@@ -78,7 +82,6 @@ class UniquePokemonsController < ApplicationController
         user_id: params[:unique_pokemon]["user_id"],
         pokemon_id: params[:unique_pokemon]["pokemon_id"],
       )
-      @unique_pokemon.save
       render :show
     else
       render json: { message: "Not authorized user" }
