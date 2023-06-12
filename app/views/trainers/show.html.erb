@@ -16,6 +16,9 @@
           <p class="card=text"><b> Title: </b> <%= @trainer.title%> </p>
           <p class="card=text"><b> Level: </b> <%= @trainer.level%> </p>
           <p class="card=text"><b> Experience: </b> <%= @trainer.experience%> </p>
+          <p class="card=text"></p>
+
+          <%= link_to "Edit Trainer", edit_trainer_path(@trainer) %>
         </div>
       </div>
     </div>

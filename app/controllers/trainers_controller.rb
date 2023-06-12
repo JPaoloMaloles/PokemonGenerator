@@ -28,15 +28,18 @@ class TrainersController < ApplicationController
     redirect_to "/trainers/#{@trainer.id}"
   end
 
+  def edit
+    @trainer = Trainer.find_by(id: params[:id])
+    render :edit
+  end
+
   def update
     @trainer = Trainer.find_by(id: params["id"])
     @trainer.update(
-      name: params["name"] || params.name,
-      title: params["title"] || params.title,
-      level: params["level"] || params.level,
-      experience: params["experience"] || params.experience,
+      name: params[:trainer][:name],
+      title: params[:trainer][:title],
     )
-    render :show
+    redirect_to "/trainers/#{@trainer.id}"
   end
 
   def destroy
