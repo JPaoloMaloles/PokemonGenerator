@@ -12,7 +12,7 @@ class UniquePokemon < ApplicationRecord
     # elsif
     # else
     # end
-    return (((2 * Pokemon.find_by(id: pokemon_id).hp + hp_iv + ((hp_ev) / 4) * level) / 100) * 1.5) + level + 10
+    return (((2 * Pokemon.find_by(id: pokemon_id).hp + hp_iv + ((hp_ev) / 4)) * level) / 100) * 1.5 + level + 10
   end
 
   # def other_stat_calculation(stat)

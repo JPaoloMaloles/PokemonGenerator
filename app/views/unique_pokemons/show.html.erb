@@ -3,97 +3,97 @@
     <style>
         .hp_iv_bar {
             display: inline;
-            width: <%= @unique_pokemon.hp_iv * 1%>px;
+            width: <%= (@unique_pokemon.hp_iv * 2)/(100/@unique_pokemon.level)%>px;
             height: 10px;
         }
         .hp_base_bar {
             display: inline;
-            width: <%= @unique_pokemon.pokemon.hp * 1%>px;
+            width: <%= (@unique_pokemon.pokemon.hp * 2)/(100/@unique_pokemon.level)%>px;
             height: 10px;
         }
         .hp_ev_bar {
             display: inline;
-            width: <%= (@unique_pokemon.hp_ev/4) * 1%>px;
+            width: <%= ((@unique_pokemon.hp_ev/4) * 2)/(100/@unique_pokemon.level)%>px;
             height: 10px;
         }
 
         .atk_iv_bar {
             display: inline;
-            width: <%= @unique_pokemon.atk_iv * 1%>px;
+            width: <%= (@unique_pokemon.atk_iv * 2)/(100/@unique_pokemon.level)%>px;
             height: 10px;
         }
         .atk_base_bar {
             display: inline;
-            width: <%= @unique_pokemon.pokemon.atk * 1%>px;
+            width: <%= (@unique_pokemon.pokemon.atk * 2)/(100/@unique_pokemon.level)%>px;
             height: 10px;
         }
         .atk_ev_bar {
             display: inline;
-            width: <%= (@unique_pokemon.atk_ev/4) * 1%>px;
+            width: <%= ((@unique_pokemon.atk_ev/4) * 2)/(100/@unique_pokemon.level)%>px;
             height: 10px;
         }
 
         .defe_iv_bar {
             display: inline;
-            width: <%= @unique_pokemon.defe_iv * 1%>px;
+            width: <%= (@unique_pokemon.defe_iv * 2)/(100/@unique_pokemon.level)%>px;
             height: 10px;
         }
         .defe_base_bar {
             display: inline;
-            width: <%= @unique_pokemon.pokemon.defe * 1%>px;
+            width: <%= (@unique_pokemon.pokemon.defe * 2)/(100/@unique_pokemon.level)%>px;
             height: 10px;
         }
         .defe_ev_bar {
             display: inline;
-            width: <%= (@unique_pokemon.defe_ev/4) * 1%>px;
+            width: <%= ((@unique_pokemon.defe_ev/4) * 2)/(100/@unique_pokemon.level)%>px;
             height: 10px;
         }
 
         .spa_iv_bar {
             display: inline;
-            width: <%= @unique_pokemon.spa_iv * 1%>px;
+            width: <%= (@unique_pokemon.spa_iv * 2)/(100/@unique_pokemon.level)%>px;
             height: 10px;
         }
         .spa_base_bar {
             display: inline;
-            width: <%= @unique_pokemon.pokemon.spa * 1%>px;
+            width: <%= (@unique_pokemon.pokemon.spa * 2)/(100/@unique_pokemon.level)%>px;
             height: 10px;
         }
         .spa_ev_bar {
             display: inline;
-            width: <%= (@unique_pokemon.spa_ev/4) * 1%>px;
+            width: <%= ((@unique_pokemon.spa_ev/4) * 2)/(100/@unique_pokemon.level)%>px;
             height: 10px;
         }
 
         .spd_iv_bar {
             display: inline;
-            width: <%= @unique_pokemon.spd_iv * 1%>px;
+            width: <%= (@unique_pokemon.spd_iv * 2)/(100/@unique_pokemon.level)%>px;
             height: 10px;
         }
         .spd_base_bar {
             display: inline;
-            width: <%= @unique_pokemon.pokemon.spd * 1%>px;
+            width: <%= (@unique_pokemon.pokemon.spd * 2)/(100/@unique_pokemon.level)%>px;
             height: 10px;
         }
         .spd_ev_bar {
             display: inline;
-            width: <%= (@unique_pokemon.spd_ev/4) * 1%>px;
+            width: <%= ((@unique_pokemon.spd_ev/4) * 2)/(100/@unique_pokemon.level)%>px;
             height: 10px;
         }
 
         .spe_iv_bar {
             display: inline;
-            width: <%= @unique_pokemon.spe_iv * 1%>px;
+            width: <%= (@unique_pokemon.spe_iv * 2)/(100/@unique_pokemon.level)%>px;
             height: 10px;
         }
         .spe_base_bar {
             display: inline;
-            width: <%= @unique_pokemon.pokemon.spe * 1%>px;
+            width: <%= (@unique_pokemon.pokemon.spe * 2)/(100/@unique_pokemon.level)%>px;
             height: 10px;
         }
         .spe_ev_bar {
             display: inline;
-            width: <%= (@unique_pokemon.spe_ev/4) * 1%>px;
+            width: <%= ((@unique_pokemon.spe_ev/4) * 2)/(100/@unique_pokemon.level)%>px;
             height: 10px;
         }
     </style>
@@ -119,8 +119,9 @@
   <h1> <%= ownership %> <%= name_display %> </h1>
   <p></p>
   <p><a href="<%= @unique_pokemon.pokemon.url%>"> <img src="<%= @unique_pokemon.pokemon.icon%>"> </a> </p>
-  <p><img src="<%= @unique_pokemon.pokemon.first_type_image%>"> <img src="<%= @unique_pokemon.pokemon.second_type_image%>"> #<%= @unique_pokemon.pokemon.national_dex_num %></p>
-  <p><h3><%= @unique_pokemon.pokemon.name%></h3> </p>
+  <p><img src="<%= @unique_pokemon.pokemon.first_type_image%>"> <img src="<%= @unique_pokemon.pokemon.second_type_image%>"> #<%= @unique_pokemon.pokemon.national_dex_num %> </p>
+  <p><h3><%= @unique_pokemon.pokemon.name%> </h3> </p>
+  <p><b>Level: </b> <%= @unique_pokemon.level %> </p>
   <p><b> Abilities: </b> <%= @unique_pokemon.pokemon.abilities%> </p>
 
   <div class="row">
@@ -156,7 +157,7 @@
       <%= @unique_pokemon.hp_iv%>
     </div>
         <div class="col-sm-1">
-      <b><%= @unique_pokemon.pokemon.hp.to_i + @unique_pokemon.hp_iv + @unique_pokemon.hp_ev/4%></b>
+      <b><%= @unique_pokemon.hp %></b>
     </div>
   </div>
 
