@@ -16,6 +16,7 @@ class UniquePokemon < ApplicationRecord
   end
 
   # def other_stat_calculation(stat)
-  #   return ((2 * stat + stat.iv + ((stat.ev) / 4) * level) / 100) * nature
+  #   atk: {base:, iv:, ev:}
+  #   return ((2 * ____ + ___.iv + ((___.ev) / 4) * level) / 100) * nature
   # end
 end
