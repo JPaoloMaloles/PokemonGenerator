@@ -8,5 +8,5 @@ Currenty Features:
   <li>trainer generation</li>
   <li>unique pokemon generation</li>
   <li>unique pokemon-trainer ownership</li> 
-  <li>a functional html frontend for those features<li>
+  <li>a functional html frontend for those features</li>
 </ul>
