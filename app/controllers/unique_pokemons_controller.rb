@@ -26,7 +26,11 @@ class UniquePokemonsController < ApplicationController
     ev_pool = 510
     ev_values = []
     6.times do
-      ev_value = rand(0..ev_pool)
+      if ev_pool >= 252
+        ev_value = rand(0..252)
+      else
+        ev_value = rand(0..ev_pool)
+      end
       ev_values << ev_value
       ev_pool = ev_pool - ev_value
     end
@@ -37,12 +41,12 @@ class UniquePokemonsController < ApplicationController
       nature: params[:unique_pokemon][:nature], #model method, randomly choose from a list
       gender: "default", #model method, accounts of nil gender pokemon
       shiny: params[:unique_pokemon][:shiny], #model method, accurately represent shiny rate
-      hp_ev: ev_values[0], #for presenting changed to rand, originally 0
-      atk_ev: ev_values[1],
-      defe_ev: ev_values[2],
-      spa_ev: ev_values[3],
-      spd_ev: ev_values[4],
-      spe_ev: ev_values[5],
+      hp_ev: ev_values.pop, #for presenting changed to rand, originally 0
+      atk_ev: ev_values.pop,
+      defe_ev: ev_values.pop,
+      spa_ev: ev_values.pop,
+      spd_ev: ev_values.pop,
+      spe_ev: ev_values.pop,
       hp_iv: rand(0..31), #dry with model method
       atk_iv: rand(0..31),
       defe_iv: rand(0..31),
@@ -151,7 +155,11 @@ class UniquePokemonsController < ApplicationController
     ev_pool = 510
     ev_values = []
     6.times do
-      ev_value = rand(0..ev_pool)
+      if ev_pool >= 252
+        ev_value = rand(0..252)
+      else
+        ev_value = rand(0..ev_pool)
+      end
       ev_values << ev_value
       ev_pool = ev_pool - ev_value
     end
@@ -162,12 +170,12 @@ class UniquePokemonsController < ApplicationController
       nature: params[:unique_pokemon][:nature], #model method, randomly choose from a list
       gender: "default", #model method, accounts of nil gender pokemon
       shiny: params[:unique_pokemon][:shiny], #model method, accurately represent shiny rate
-      hp_ev: ev_values[0], #for presenting changed to rand, originally 0
-      atk_ev: ev_values[1],
-      defe_ev: ev_values[2],
-      spa_ev: ev_values[3],
-      spd_ev: ev_values[4],
-      spe_ev: ev_values[5],
+      hp_ev: ev_values.pop, #for presenting changed to rand, originally 0
+      atk_ev: ev_values.pop,
+      defe_ev: ev_values.pop,
+      spa_ev: ev_values.pop,
+      spd_ev: ev_values.pop,
+      spe_ev: ev_values.pop,
       hp_iv: rand(0..31), #dry with model method
       atk_iv: rand(0..31),
       defe_iv: rand(0..31),
