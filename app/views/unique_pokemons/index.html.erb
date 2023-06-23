@@ -24,10 +24,10 @@
             <div class="col-sm-5">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title"><%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.name%></h5>
+                  <h5 class="card-title"><%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.name%> <%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].nickname != "" ? "(#{Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].nickname})" : "" %></h5>
                   <p class="card=text"><a href="<%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.url%>"> <img src="<%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.icon %>"> </a> </p>
                   <p class="card=text"><img src="<%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.first_type_image%>"> <img src="<%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.second_type_image%>"> #<%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.national_dex_num %></p>
-                  <p><b>Nickname: </b><%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].nickname%></p>
+                  <p><b>Level: </b> <%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].level %> </p>
                   <p class="card=text"><b> Abilities: </b> <%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.abilities%> </p>
                   <div class="row">  
                       <div class="col-sm-3" style="text-align:right;">
