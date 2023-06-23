@@ -186,6 +186,10 @@ class UniquePokemonsController < ApplicationController
       pokemon_id: Pokemon.all.sample.id,
       level: rand(1..100),
     )
+
+    @unique_pokemon.update(
+      hp: @unique_pokemon.hp_calculation,
+    )
     @unique_pokemon.save
     render :index
   end
