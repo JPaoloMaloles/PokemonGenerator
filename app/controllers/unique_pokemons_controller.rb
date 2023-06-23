@@ -193,7 +193,12 @@ class UniquePokemonsController < ApplicationController
     )
 
     @unique_pokemon.update(
-      hp: @unique_pokemon.hp_calculation,
+      hp: @unique_pokemon.other_stat_calculation(:hp),
+      atk: @unique_pokemon.other_stat_calculation(:atk),
+      defe: @unique_pokemon.other_stat_calculation(:defe),
+      spa: @unique_pokemon.other_stat_calculation(:spa),
+      spd: @unique_pokemon.other_stat_calculation(:spd),
+      spe: @unique_pokemon.other_stat_calculation(:spe),
     )
     @unique_pokemon.save
     render :index
