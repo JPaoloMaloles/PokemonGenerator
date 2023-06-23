@@ -41,7 +41,7 @@
                   </div>
                   <div class="row">   
                       <div class="col-sm-3" style="text-align:right;">
-                        Atk: <b> <%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.atk.to_i + Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].atk_iv + Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].atk_ev/4%> </b> 
+                        Atk: <b> <%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].atk.to_i%> </b> 
                       </div>
                       <div class="col-sm-9">
                         <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="atk_iv_bar" display="inline" width="<%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].atk_iv * 1/(100/(Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].level))%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="atk_base_bar" display="inline" width="<%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.atk.to_i * 1/(100/(Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].level))%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="atk_ev_bar" display="inline" width="<%= (Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].atk_ev/4) * 1/(100/(Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].level))%>" height="10">
@@ -50,7 +50,7 @@
 
                   <div class="row">  
                       <div class="col-sm-3" style="text-align:right;">
-                        Def: <b> <%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.defe.to_i + Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].defe_iv + Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].defe_ev/4%> </b>
+                        Def: <b> <%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].defe.to_i%> </b>
                       </div>
                       <div class="col-sm-9">
                         <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="defe_iv_bar" display="inline" width="<%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].defe_iv * 1/(100/(Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].level))%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="defe_base_bar" display="inline" width="<%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.defe.to_i * 1/(100/(Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].level))%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="defe_ev_bar" display="inline" width="<%= (Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].defe_ev/4) * 1/(100/(Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].level))%>" height="10">
@@ -59,7 +59,7 @@
 
                   <div class="row">  
                       <div class="col-sm-3" style="text-align:right;">
-                        SpA: <b> <%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.spa.to_i + Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].spa_iv + Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].spa_ev/4%> </b>
+                        SpA: <b> <%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].spa.to_i%> </b>
                       </div>
                       <div class="col-sm-9">
                         <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="spa_iv_bar" display="inline" width="<%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].spa_iv * 1/(100/(Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].level))%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="spa_base_bar" display="inline" width="<%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.spa.to_i * 1/(100/(Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].level))%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="spa_ev_bar" display="inline" width="<%= (Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].spa_ev/4) * 1/(100/(Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].level))%>" height="10">
@@ -68,7 +68,7 @@
 
                   <div class="row">  
                       <div class="col-sm-3" style="text-align:right;">
-                        SpD: <b> <%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.spd.to_i + Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].spd_iv + Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].spd_ev/4%> </b>
+                        SpD: <b> <%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].spd.to_i%> </b>
                       </div>
                       <div class="col-sm-9">
                         <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="spd_iv_bar" display="inline" width="<%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].spd_iv * 1/(100/(Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].level))%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="spd_base_bar" display="inline" width="<%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.spd.to_i * 1/(100/(Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].level))%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="spd_ev_bar" display="inline" width="<%= (Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].spd_ev/4) * 1/(100/(Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].level))%>" height="10">
@@ -77,7 +77,7 @@
 
                   <div class="row">  
                       <div class="col-sm-3" style="text-align:right;">
-                        Spe: <b><%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.spe.to_i + Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].spe_iv + Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].spe_ev/4%> </b>
+                        Spe: <b><%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].spe.to_i%> </b>
                       </div>
                       <div class="col-sm-9">
                         <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="spe_iv_bar" display="inline" width="<%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].spe_iv * 1/(100/(Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].level))%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="spe_base_bar" display="inline" width="<%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.spe.to_i * 1/(100/(Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].level))%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="spe_ev_bar" display="inline" width="<%= (Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].spe_ev/4) * 1/(100/(Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].level))%>" height="10">
