@@ -121,7 +121,16 @@
   <p><a href="<%= @unique_pokemon.pokemon.url%>"> <img src="<%= @unique_pokemon.pokemon.icon%>"> </a> </p>
   <p><img src="<%= @unique_pokemon.pokemon.first_type_image%>"> <img src="<%= @unique_pokemon.pokemon.second_type_image%>"> #<%= @unique_pokemon.pokemon.national_dex_num %> </p>
   <p><h3><%= @unique_pokemon.pokemon.name%> </h3> </p>
-  <p><b>Level: </b> <%= @unique_pokemon.level %> </p>
+  <p>
+    <div class="row">
+      <div class="col-sm-3">
+        <b>Level: </b> <%= @unique_pokemon.level %> 
+      </div>
+      <div class="col-sm-3">
+      <b>Shiny: </b> <%= @unique_pokemon.shiny %>
+      </div>
+    </div>
+  </p>
   <p><b> Abilities: </b> <%= @unique_pokemon.pokemon.abilities%> </p>
 
   <div class="row">
