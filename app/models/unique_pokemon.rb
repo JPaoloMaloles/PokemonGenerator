@@ -58,6 +58,11 @@ class UniquePokemon < ApplicationRecord
     end
   end
 
+  def determine_ability
+    abilities_array = pokemon.abilities.split(" ")
+    return abilities_array.sample.gsub(/(_)/, " ")
+  end
+
   def other_stat_calculation(stat)
     calc = {
       hp: { base: Pokemon.find_by(id: pokemon_id).hp, iv: hp_iv, ev: hp_ev },

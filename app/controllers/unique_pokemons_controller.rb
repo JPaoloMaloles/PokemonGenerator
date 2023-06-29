@@ -56,6 +56,7 @@ class UniquePokemonsController < ApplicationController
       level: rand(1..100),
     )
     @unique_pokemon.update(
+      ability: @unique_pokemon.determine_ability,
       nature: @unique_pokemon.determine_nature, #model method, randomly choose from a list
       shiny: @unique_pokemon.is_shiny, #model method, accurately represent shiny rate
       hp: @unique_pokemon.other_stat_calculation(:hp),
@@ -179,6 +180,7 @@ class UniquePokemonsController < ApplicationController
       nickname: params[:unique_pokemon][:nickname],
       gender: "default", #model method, accounts of nil gender pokemon
       hp_ev: ev_values.pop, #for presenting changed to rand, originally 0
+      ability: "aaaa",
       atk_ev: ev_values.pop,
       defe_ev: ev_values.pop,
       spa_ev: ev_values.pop,
@@ -196,6 +198,7 @@ class UniquePokemonsController < ApplicationController
     )
 
     @unique_pokemon.update(
+      ability: @unique_pokemon.determine_ability,
       nature: @unique_pokemon.determine_nature, #model method, randomly choose from a list
       shiny: @unique_pokemon.is_shiny, #model method, accurately represent shiny rate
       hp: @unique_pokemon.other_stat_calculation(:hp),

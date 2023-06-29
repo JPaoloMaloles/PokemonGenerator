@@ -28,7 +28,7 @@
                   <p class="card=text"><a href="<%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.url%>"> <img src="<%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.icon %>"> </a> </p>
                   <p class="card=text"><img src="<%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.first_type_image%>"> <img src="<%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.second_type_image%>"> #<%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.national_dex_num %></p>
                   <p><b>Level: </b> <%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].level %> </p>
-                  <p class="card=text"><b> Abilities: </b> <%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].pokemon.abilities%> </p>
+                  <p class="card=text"><b> Abilities: </b> <%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].ability%> </p>
                   <div class="row">  
                       <div class="col-sm-3" style="text-align:right;">
                         HP: <b> <%= Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons[index].hp.to_i%> </b>
