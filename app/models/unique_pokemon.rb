@@ -15,6 +15,49 @@ class UniquePokemon < ApplicationRecord
     return (((2 * Pokemon.find_by(id: pokemon_id).hp + hp_iv + ((hp_ev) / 4)) * level) / 100) * 1 + level + 10 # * 1 is the temporary nature multiplier
   end
 
+  def determine_nature
+    natures = [
+      :Hardy,
+      :Lonely,
+      :Adamant,
+      :Naughty,
+      :Brave,
+
+      :Bold,
+      :Docile,
+      :Impish,
+      :Lax,
+      :Relaxed,
+
+      :Modest,
+      :Mild,
+      :Bashful,
+      :Rash,
+      :Quiet,
+
+      :Calm,
+      :Gentle,
+      :Careful,
+      :Quirky,
+      :Sassy,
+
+      :Timid,
+      :Hasty,
+      :Jolly,
+      :Naive,
+      :Serious,
+    ]
+    return natures.sample
+  end
+
+  def is_shiny
+    if rand(1..4097) == 1
+      return true
+    else
+      return false
+    end
+  end
+
   def other_stat_calculation(stat)
     calc = {
       hp: { base: Pokemon.find_by(id: pokemon_id).hp, iv: hp_iv, ev: hp_ev },

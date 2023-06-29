@@ -36,16 +36,9 @@ class UniquePokemonsController < ApplicationController
     end
     ev_values = ev_values.shuffle
 
-    is_shiny = false
-    if rand(1..4097) == 1
-      is_shiny = true
-    end
-
     @unique_pokemon = UniquePokemon.new(
       nickname: params[:unique_pokemon][:nickname],
-      nature: params[:unique_pokemon][:nature], #model method, randomly choose from a list
       gender: "default", #model method, accounts of nil gender pokemon
-      shiny: is_shiny, #model method, accurately represent shiny rate
       hp_ev: ev_values.pop, #for presenting changed to rand, originally 0
       atk_ev: ev_values.pop,
       defe_ev: ev_values.pop,
@@ -63,6 +56,8 @@ class UniquePokemonsController < ApplicationController
       level: rand(1..100),
     )
     @unique_pokemon.update(
+      nature: @unique_pokemon.determine_nature, #model method, randomly choose from a list
+      shiny: @unique_pokemon.is_shiny, #model method, accurately represent shiny rate
       hp: @unique_pokemon.other_stat_calculation(:hp),
       atk: @unique_pokemon.other_stat_calculation(:atk),
       defe: @unique_pokemon.other_stat_calculation(:defe),
@@ -182,9 +177,7 @@ class UniquePokemonsController < ApplicationController
 
     @unique_pokemon = UniquePokemon.new(
       nickname: params[:unique_pokemon][:nickname],
-      nature: params[:unique_pokemon][:nature], #model method, randomly choose from a list
       gender: "default", #model method, accounts of nil gender pokemon
-      shiny: is_shiny, #model method, accurately represent shiny rate
       hp_ev: ev_values.pop, #for presenting changed to rand, originally 0
       atk_ev: ev_values.pop,
       defe_ev: ev_values.pop,
@@ -203,6 +196,8 @@ class UniquePokemonsController < ApplicationController
     )
 
     @unique_pokemon.update(
+      nature: @unique_pokemon.determine_nature, #model method, randomly choose from a list
+      shiny: @unique_pokemon.is_shiny, #model method, accurately represent shiny rate
       hp: @unique_pokemon.other_stat_calculation(:hp),
       atk: @unique_pokemon.other_stat_calculation(:atk),
       defe: @unique_pokemon.other_stat_calculation(:defe),

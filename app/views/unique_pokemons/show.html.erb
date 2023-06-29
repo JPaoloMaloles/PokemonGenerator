@@ -131,7 +131,15 @@
       </div>
     </div>
   </p>
-  <p><b> Abilities: </b> <%= @unique_pokemon.pokemon.abilities%> </p>
+  <p>
+    <div class="row">
+    <div class="col-sm-3">
+      <b>Abilities: </b> <%= @unique_pokemon.pokemon.abilities%> 
+    </div>
+    <div class="col-sm-3">
+    <b>Nature: </b> <%= @unique_pokemon.nature %>
+    </div>
+  </p>
 
   <div class="row">
     <div class="col-sm-1" style="text-align:right;">
