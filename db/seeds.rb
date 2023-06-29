@@ -54,7 +54,7 @@ html_products.each do |html_product|
       tempinfo = []
       clean_inspect = item.text.inspect.gsub("\\r\\n\\t", "")
       clean_inspect = clean_inspect.gsub("\\t", "")
-      clean_inspect = clean_inspect.gsub!(/[^0-9A-Za-z\s]/, "")
+      clean_inspect = clean_inspect.gsub!(/[^0-9A-Za-z\s-]/, "")
 
       # puts "this is Clean_Inspect: #{clean_inspect}"
       tempinfo << clean_inspect
