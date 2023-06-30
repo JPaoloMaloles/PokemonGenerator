@@ -8,6 +8,7 @@ gem "rails", "~> 7.0.4", ">= 7.0.4.3"
 gem 'poke-api-v2'
 gem "httparty"
 gem 'jwt'
+gem 'rack-cors'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
