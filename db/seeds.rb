@@ -156,7 +156,8 @@ end
 
 #Assigns two UniquePokemon to a Team through PokemonInTeam
 User.create!(name: "name", email: "email@gmail.com", password: "password", password_confirmation: "password", admin: true)
-Trainer.create!(title: "example title", level: 1, experience: 0, user_id: 1)
+Trainer.create!(name: "example name", title: "example title", level: 1, experience: 0, user_id: 1)
+User.update(current_trainer_id: Trainer.last.id)
 Team.create!(trainer_id: 1, name: "ExampleTeam")
 UniquePokemon.create!(nickname: "a", gender: "gender", shiny: true, nature: "nature", hp_ev: 0, atk_ev: 0, defe_ev: 0, spa_ev: 0, spd_ev: 0, spe_ev: 0, hp_iv: 0, atk_iv: 0, defe_iv: 0, spa_iv: 0, spd_iv: 0, spe_iv: 0, pokemon_id: 1, trainer_id: 1, level: 100, hp: 1, atk: 1, defe: 1, spa: 1, spd: 1, spe: 1, ability: "test1")
 UniquePokemon.create!(nickname: "a", gender: "gender", shiny: true, nature: "nature", hp_ev: 0, atk_ev: 0, defe_ev: 0, spa_ev: 0, spd_ev: 0, spe_ev: 0, hp_iv: 0, atk_iv: 0, defe_iv: 0, spa_iv: 0, spd_iv: 0, spe_iv: 0, pokemon_id: 2, trainer_id: 1, level: 100, hp: 2, atk: 2, defe: 2, spa: 2, spd: 2, spe: 2, ability: "test2")
