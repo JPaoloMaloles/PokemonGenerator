@@ -55,6 +55,11 @@ class UniquePokemonsController < ApplicationController
       pokemon_id: Pokemon.all.sample.id,
       level: rand(1..100),
     )
+    if @unique_pokemon.nickname == ""
+      @unique_pokemon.update(
+        nickname: Pokemon.find_by(id: @unique_pokemon.pokemon_id).name,
+      )
+    end
     @unique_pokemon.update(
       ability: @unique_pokemon.determine_ability,
       nature: @unique_pokemon.determine_nature, #model method, randomly choose from a list

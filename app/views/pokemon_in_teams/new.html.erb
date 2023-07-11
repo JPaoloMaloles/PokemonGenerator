@@ -1,12 +1,16 @@
 <h1>New Pokemon In Team</h1>
+
 <%= form_with model: @pokemon_in_team do |form| %>
   <div>
     <%= form.label :team_id %>
-    <%= form.text_field :team_id %>
+    <%= form.collection_select(:team_id, Team.where(trainer_id: current_user.current_trainer_id).all, :id, :name, prompt: true) %>
   </div>
   <div>
     <%= form.label :unique_pokemon_id %>
-    <%= form.text_field :unique_pokemon_id %>
+    <%= form.collection_select(:unique_pokemon_id, UniquePokemon.where(trainer_id: current_user.current_trainer_id).all, :id, :nickname, prompt: true) %>
+    <% current_user.errors.full_messages_for(:unique_pokemon_id).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
   </div>
   <div>
     <%= form.submit %>

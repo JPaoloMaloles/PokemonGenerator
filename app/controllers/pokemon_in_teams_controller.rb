@@ -21,8 +21,11 @@ class PokemonInTeamsController < ApplicationController
       team_id: params[:pokemon_in_team][:team_id],
       unique_pokemon_id: params[:pokemon_in_team][:unique_pokemon_id],
     )
-    @pokemon_in_team.save
-    redirect_to "/teams"
+    if @pokemon_in_team.save
+      redirect_to "/teams"
+    else
+      render :new, status: :unprocessable_entity
+    end
   end
 
   def update
