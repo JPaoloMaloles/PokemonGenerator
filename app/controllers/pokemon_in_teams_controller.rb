@@ -11,13 +11,18 @@ class PokemonInTeamsController < ApplicationController
     render :index
   end
 
+  def new
+    @pokemon_in_team = PokemonInTeam.new
+    render :new
+  end
+
   def create
     @pokemon_in_team = PokemonInTeam.new(
-      team_id: params["team_id"],
-      unique_pokemon_id: params["unique_pokemon_id"],
+      team_id: params[:pokemon_in_team][:team_id],
+      unique_pokemon_id: params[:pokemon_in_team][:unique_pokemon_id],
     )
     @pokemon_in_team.save
-    render :show
+    redirect_to "/teams"
   end
 
   def update

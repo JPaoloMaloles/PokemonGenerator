@@ -11,6 +11,7 @@
 
 <body>
 <%= link_to "New Team", new_team_path %>
+<%= link_to "New Pokemon In Team", new_pokemon_in_team_path %>
 
 <h1> Your Teams </h1>
 <% index = 0 %>
@@ -26,9 +27,8 @@
                 <p class="card=text">
                   <% team_pokemon_index = 0 %>
                   <% while team_pokemon_index < current_user.teams[index].pokemons.length %>
-                    <div>
-                    <img src=<% current_user.teams[index].pokemons[team_pokemon_index].icon%>/>
-                    </div>
+                   <a href="/unique_pokemons/<%= current_user.teams[index].unique_pokemons[team_pokemon_index].id%>"> <img src="<%= current_user.teams[index].pokemons[team_pokemon_index].icon%>"/> </a>
+                    <% team_pokemon_index = team_pokemon_index + 1 %>
                   <% end %>
                 </p>
 

@@ -1,0 +1,14 @@
+<h1>New Pokemon In Team</h1>
+<%= form_with model: @pokemon_in_team do |form| %>
+  <div>
+    <%= form.label :team_id %>
+    <%= form.text_field :team_id %>
+  </div>
+  <div>
+    <%= form.label :unique_pokemon_id %>
+    <%= form.text_field :unique_pokemon_id %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end%>
