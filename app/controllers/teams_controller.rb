@@ -1,6 +1,6 @@
 class TeamsController < ApplicationController
   before_action :authenticate_user
-  
+
   def show
     @team = Team.find_by(id: params["id"])
     render :show
@@ -11,13 +11,18 @@ class TeamsController < ApplicationController
     render :index
   end
 
+  def new
+    @team = Team.new
+    render :new
+  end
+
   def create
     @team = Team.new(
-      trainer_id: params["trainer_id"],
-      name: params["name"],
+      trainer_id: current_user.current_trainer_id,
+      name: params[:team][:name],
     )
     @team.save
-    render :show
+    redirect_to "/teams"
   end
 
   def update

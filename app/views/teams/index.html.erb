@@ -1,0 +1,45 @@
+
+<head>
+    <title></title>
+    <style>
+      .base_bar {
+          display: inline;
+          height: 10px;
+      }
+    </style>
+</head>
+
+<body>
+<%= link_to "New Team", new_team_path %>
+
+<h1> Your Teams </h1>
+<% index = 0 %>
+<ul>
+  <% while index < current_user.teams.length%>
+      <div class="row">
+        <% triple = 0 %>
+        <% while triple < 3 && index < current_user.teams.length%>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"> <%= current_user.teams[index].name%></h5>
+                <p class="card=text">
+                  <% team_pokemon_index = 0 %>
+                  <% while team_pokemon_index < current_user.teams[index].pokemons.length %>
+                    <div>
+                    <img src=<% current_user.teams[index].pokemons[team_pokemon_index].icon%>/>
+                    </div>
+                  <% end %>
+                </p>
+
+              </div>
+            </div>
+          </div>
+          <% triple += 1%>
+          <% index += 1%>  
+        <% end %>
+      </div>
+      <p></p>
+  <% end %>
+  </ul>
+</body>
