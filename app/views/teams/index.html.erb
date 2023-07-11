@@ -15,31 +15,33 @@
 
 <h1> Your Teams </h1>
 <% index = 0 %>
-<ul>
-  <% while index < current_user.teams.length%>
-      <div class="row">
-        <% triple = 0 %>
-        <% while triple < 3 && index < current_user.teams.length%>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title"> <%= current_user.teams[index].name%></h5>
-                <p class="card=text">
-                  <% team_pokemon_index = 0 %>
-                  <% while team_pokemon_index < current_user.teams[index].pokemons.length %>
-                   <a href="/unique_pokemons/<%= current_user.teams[index].unique_pokemons[team_pokemon_index].id%>"> <img src="<%= current_user.teams[index].pokemons[team_pokemon_index].icon%>"/> </a>
-                    <% team_pokemon_index = team_pokemon_index + 1 %>
-                  <% end %>
-                </p>
-
+<% index = Trainer.find_by(id: current_user.current_trainer_id).teams.length - 1 %>
+  <ul>
+    <% while index >= 0%>
+        <div class="row">
+          <% double = 0 %>
+          <% while double < 2 && index >= 0%>
+            <div>
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> <%= Trainer.find_by(id: current_user.current_trainer_id).teams[index].name%> - <%= Trainer.find_by(id: current_user.current_trainer_id).teams[index].id%></h5>
+                  
+                  <p class="card=text">
+                    <% team_pokemon_index = 0 %>
+                    <% while team_pokemon_index < Trainer.find_by(id: current_user.current_trainer_id).teams[index].pokemons.length %>
+                    <a href="/unique_pokemons/<%= Trainer.find_by(id: current_user.current_trainer_id).teams[index].unique_pokemons[team_pokemon_index].id%>"> <img src="<%= Trainer.find_by(id: current_user.current_trainer_id).teams[index].pokemons[team_pokemon_index].icon%>"/> </a>
+                      <% team_pokemon_index = team_pokemon_index + 1 %>
+                    <% end %>
+                  </p>
+                  <p class="card=text"></p>
               </div>
             </div>
-          </div>
-          <% triple += 1%>
-          <% index += 1%>  
-        <% end %>
-      </div>
-      <p></p>
-  <% end %>
+                              <p class="card=text"></p>
+            <% double += 1%>
+            <% index = index - 1%>  
+          <% end %>
+        </div>
+        <p></p>
+    <% end %>
   </ul>
 </body>
