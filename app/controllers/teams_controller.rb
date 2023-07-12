@@ -25,14 +25,27 @@ class TeamsController < ApplicationController
     redirect_to "/teams"
   end
 
+  def edit
+    @team = Team.find_by(id: params[:id])
+    render :edit
+  end
+
   def update
     @team = Team.find_by(id: params["id"])
     @team.update(
-      trainer_id: params["trainer_id"] || params.trainer_id,
-      name: params["name"] || params.name,
+      name: params[:team][:name],
     )
-    render :show
+    redirect_to "/teams/#{@team.id}"
   end
+
+  # def update
+  #   @team = Team.find_by(id: params["id"])
+  #   @team.update(
+  #     trainer_id: params["trainer_id"] || params.trainer_id,
+  #     name: params["name"] || params.name,
+  #   )
+  #   render :show
+  # end
 
   def destroy
     team = Team.find_by(id: params["id"])

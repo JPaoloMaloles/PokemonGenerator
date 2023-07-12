@@ -1,0 +1,16 @@
+<body>
+<%= link_to "back to your teams", "/teams" %>
+<h1> <%= @team.name%> </h1>
+<ul>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"> <%= @team.name%></h5>
+
+          <p class="card=text"></p>
+
+          <%= link_to "Edit team", edit_team_path(@team) %>
+        </div>
+      </div>
+    </div>
+</ul>
