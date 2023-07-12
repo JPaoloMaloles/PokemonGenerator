@@ -28,6 +28,7 @@
                 <p class="card=text"></p>
 
                 <%= link_to "Go to page", current_user.trainers[index] %> <%= link_to "Set Current Trainer", change_trainer_path(:trainer_id => current_user.trainers[index].id) %>
+                <%= link_to "Destroy trainer", trainer_path(current_user.trainers[index]), data: {turbo_method: :delete} %>
               </div>
             </div>
           </div>

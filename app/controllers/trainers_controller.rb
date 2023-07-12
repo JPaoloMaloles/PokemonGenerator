@@ -43,8 +43,13 @@ class TrainersController < ApplicationController
   end
 
   def destroy
-    trainer = Trainer.find_by(id: params["id"])
-    trainer.destroy
-    render json: { message: "Trainer has been deleted" }
+    @trainer = Trainer.find_by(id: params["id"])
+    @trainer.destroy
+
+    current_user.update(
+      current_trainer_id: Trainer.last.id,
+    )
+
+    redirect_to "/trainers", status: :see_other
   end
 end
