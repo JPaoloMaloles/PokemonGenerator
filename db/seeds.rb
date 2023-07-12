@@ -165,7 +165,6 @@ PokemonInTeam.create!(team_id: 1, unique_pokemon_id: 1)
 PokemonInTeam.create!(team_id: 1, unique_pokemon_id: 2)
 #Creates another team and assigns the first UniquePokemon to it
 Team.create!(trainer_id: 1, name: "ExampleTeam2")
-PokemonInTeam.create!(team_id: 2, unique_pokemon_id: 1)
 
 # UniquePokemon.create!(nickname: "a", gender: "gender", shiny: true, nature: "nature", hp_ev: 0, atk_ev: 0, defe_ev: 0, spa_ev: 0, spd_ev: 0, spe_ev: 0, hp_iv: 0, atk_iv: 0, defe_iv: 0, spa_iv: 0, spd_iv: 0, spe_iv: 0, pokemon_id: 2, user_id: 2)
 
