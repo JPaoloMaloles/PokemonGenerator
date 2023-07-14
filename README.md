@@ -5,7 +5,7 @@ Pokemon_App utilizes the HTTParty and Nokogiri gems to scrape serebii.com's nati
 <ul>
   <li> Functional User signup/login </li>
   <li> Trainer generation </li>
-  <li> Unique pokemon generation, complete with EV's, IV's, Nature's, and Levels  </li>
+  <li> Unique pokemon generation, complete with EV's, IV's, Natures, and Levels  </li>
   <li> Unique pokemon-trainer ownership </li> 
   <li> A functional html frontend for those features </li>
 </ul>
