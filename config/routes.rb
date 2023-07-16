@@ -19,4 +19,5 @@ Rails.application.routes.draw do
   resources :trainers
   resources :teams
   resources :pokemon_in_teams
+  # post "/pokemon_in_teams/new_direct", controller: "pokemon_in_teams", action: "new_direct"
 end
