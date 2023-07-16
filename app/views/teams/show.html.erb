@@ -4,76 +4,90 @@
 <ul>
   <% team_pokemon_index = 0 %>
   <% while team_pokemon_index < @team.pokemons.length %>
-    <a href="/unique_pokemons/<%= @team.unique_pokemons[team_pokemon_index].id%>"><img src="<%= @team.pokemons[team_pokemon_index].icon%>"/></a>
-    <div class="col-sm-5">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"><%= @team.unique_pokemons[team_pokemon_index].pokemon.name%> <%= @team.unique_pokemons[team_pokemon_index].nickname != "" ? "(#{@team.unique_pokemons[team_pokemon_index].nickname})" : "" %></h5>
-          <p class="card=text"><a href="<%= @team.unique_pokemons[team_pokemon_index].pokemon.url%>"> <img src="<%= @team.unique_pokemons[team_pokemon_index].pokemon.icon %>"> </a> </p>
-          <p class="card=text"><img src="<%= @team.unique_pokemons[team_pokemon_index].pokemon.first_type_image%>"> <img src="<%= @team.unique_pokemons[team_pokemon_index].pokemon.second_type_image%>"> #<%= @team.unique_pokemons[team_pokemon_index].pokemon.national_dex_num %></p>
-          <p><b>Level: </b> <%= @team.unique_pokemons[team_pokemon_index].level %> </p>
-          <p class="card=text"><b> Abilities: </b> <%= @team.unique_pokemons[team_pokemon_index].ability%> </p>
-          <div class="row">  
-              <div class="col-sm-3" style="text-align:right;">
-                HP: <b> <%= @team.unique_pokemons[team_pokemon_index].hp.to_i%> </b>
-              </div>
-              <div class="col-sm-9">
-                <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="hp_iv_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].hp_iv * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="hp_base_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].pokemon.hp.to_i * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="hp_ev_bar" display="inline" width="<%= (@team.unique_pokemons[team_pokemon_index].hp_ev/4) * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10">
-              </div>
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm-2">
+                        <div>
+                    <h5 class="card-title"><%= @team.unique_pokemons[team_pokemon_index].pokemon.name%> <%= @team.unique_pokemons[team_pokemon_index].nickname != "" ? "(#{@team.unique_pokemons[team_pokemon_index].nickname})" : "" %></h5>
+                    <p class="card=text"><a href="/unique_pokemons/<%= @team.unique_pokemons[team_pokemon_index].id%>"> <img src="<%= @team.unique_pokemons[team_pokemon_index].pokemon.icon %>"> </a> </p>
+                    <p class="card=text"><img src="<%= @team.unique_pokemons[team_pokemon_index].pokemon.first_type_image%>"> <img src="<%= @team.unique_pokemons[team_pokemon_index].pokemon.second_type_image%>"> #<%= @team.unique_pokemons[team_pokemon_index].pokemon.national_dex_num %></p>
+                    <p><b>Level: </b> <%= @team.unique_pokemons[team_pokemon_index].level %> </p>
+                    <p class="card=text"><b> Abilities: </b> <%= @team.unique_pokemons[team_pokemon_index].ability%> </p>
+                  </div>
+                  </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-5x">
+                <div class="row">  
+                    <div class="col-sm-3" style="text-align:right;">
+                      HP: <b> <%= @team.unique_pokemons[team_pokemon_index].hp.to_i%> </b>
+                    </div>
+                    <div class="col-sm-9">
+                      <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="hp_iv_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].hp_iv * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="hp_base_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].pokemon.hp.to_i * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="hp_ev_bar" display="inline" width="<%= (@team.unique_pokemons[team_pokemon_index].hp_ev/4) * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10">
+                    </div>
 
-              <%# (@unique_pokemon.hp_iv * 1/(100/(@team.unique_pokemons[team_pokemon_index].level)) %>
-          </div>
-          <div class="row">   
-              <div class="col-sm-3" style="text-align:right;">
-                Atk: <b> <%= @team.unique_pokemons[team_pokemon_index].atk.to_i%> </b> 
-              </div>
-              <div class="col-sm-9">
-                <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="atk_iv_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].atk_iv * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="atk_base_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].pokemon.atk.to_i * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="atk_ev_bar" display="inline" width="<%= (@team.unique_pokemons[team_pokemon_index].atk_ev/4) * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10">
-              </div>
-          </div>
+                    <%# (@unique_pokemon.hp_iv * 1/(100/(@team.unique_pokemons[team_pokemon_index].level)) %>
+                </div>
+                <div class="row">   
+                    <div class="col-sm-3" style="text-align:right;">
+                      Atk: <b> <%= @team.unique_pokemons[team_pokemon_index].atk.to_i%> </b> 
+                    </div>
+                    <div class="col-sm-9">
+                      <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="atk_iv_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].atk_iv * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="atk_base_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].pokemon.atk.to_i * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="atk_ev_bar" display="inline" width="<%= (@team.unique_pokemons[team_pokemon_index].atk_ev/4) * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10">
+                    </div>
+                </div>
 
-          <div class="row">  
-              <div class="col-sm-3" style="text-align:right;">
-                Def: <b> <%= @team.unique_pokemons[team_pokemon_index].defe.to_i%> </b>
-              </div>
-              <div class="col-sm-9">
-                <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="defe_iv_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].defe_iv * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="defe_base_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].pokemon.defe.to_i * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="defe_ev_bar" display="inline" width="<%= (@team.unique_pokemons[team_pokemon_index].defe_ev/4) * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10">
-              </div>
-          </div>
+                <div class="row">  
+                    <div class="col-sm-3" style="text-align:right;">
+                      Def: <b> <%= @team.unique_pokemons[team_pokemon_index].defe.to_i%> </b>
+                    </div>
+                    <div class="col-sm-9">
+                      <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="defe_iv_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].defe_iv * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="defe_base_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].pokemon.defe.to_i * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="defe_ev_bar" display="inline" width="<%= (@team.unique_pokemons[team_pokemon_index].defe_ev/4) * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10">
+                    </div>
+                </div>
 
-          <div class="row">  
-              <div class="col-sm-3" style="text-align:right;">
-                SpA: <b> <%= @team.unique_pokemons[team_pokemon_index].spa.to_i%> </b>
-              </div>
-              <div class="col-sm-9">
-                <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="spa_iv_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].spa_iv * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="spa_base_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].pokemon.spa.to_i * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="spa_ev_bar" display="inline" width="<%= (@team.unique_pokemons[team_pokemon_index].spa_ev/4) * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10">
-              </div>
-          </div>
+                <div class="row">  
+                    <div class="col-sm-3" style="text-align:right;">
+                      SpA: <b> <%= @team.unique_pokemons[team_pokemon_index].spa.to_i%> </b>
+                    </div>
+                    <div class="col-sm-9">
+                      <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="spa_iv_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].spa_iv * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="spa_base_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].pokemon.spa.to_i * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="spa_ev_bar" display="inline" width="<%= (@team.unique_pokemons[team_pokemon_index].spa_ev/4) * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10">
+                    </div>
+                </div>
 
-          <div class="row">  
-              <div class="col-sm-3" style="text-align:right;">
-                SpD: <b> <%= @team.unique_pokemons[team_pokemon_index].spd.to_i%> </b>
-              </div>
-              <div class="col-sm-9">
-                <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="spd_iv_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].spd_iv * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="spd_base_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].pokemon.spd.to_i * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="spd_ev_bar" display="inline" width="<%= (@team.unique_pokemons[team_pokemon_index].spd_ev/4) * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10">
-              </div>
-          </div>
+                <div class="row">  
+                    <div class="col-sm-3" style="text-align:right;">
+                      SpD: <b> <%= @team.unique_pokemons[team_pokemon_index].spd.to_i%> </b>
+                    </div>
+                    <div class="col-sm-9">
+                      <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="spd_iv_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].spd_iv * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="spd_base_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].pokemon.spd.to_i * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="spd_ev_bar" display="inline" width="<%= (@team.unique_pokemons[team_pokemon_index].spd_ev/4) * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10">
+                    </div>
+                </div>
 
-          <div class="row">  
-              <div class="col-sm-3" style="text-align:right;">
-                Spe: <b><%= @team.unique_pokemons[team_pokemon_index].spe.to_i%> </b>
+                <div class="row">  
+                    <div class="col-sm-3" style="text-align:right;">
+                      Spe: <b><%= @team.unique_pokemons[team_pokemon_index].spe.to_i%> </b>
+                    </div>
+                    <div class="col-sm-9">
+                      <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="spe_iv_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].spe_iv * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="spe_base_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].pokemon.spe.to_i * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="spe_ev_bar" display="inline" width="<%= (@team.unique_pokemons[team_pokemon_index].spe_ev/4) * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10">
+                    </div>
+                </div>
               </div>
-              <div class="col-sm-9">
-                <img src="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png" class="spe_iv_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].spe_iv * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Libya_%281977%E2%80%932011%2C_2-3%29.svg" class="spe_base_bar" display="inline" width="<%= @team.unique_pokemons[team_pokemon_index].pokemon.spe.to_i * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10"><img src="https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png" class="spe_ev_bar" display="inline" width="<%= (@team.unique_pokemons[team_pokemon_index].spe_ev/4) * 1/(100/(@team.unique_pokemons[team_pokemon_index].level))%>" height="10">
-              </div>
+              <p></p>
+            </div>
           </div>
-          <p class="card=text"></p>
-
-          <%= link_to "Go to page", @team.unique_pokemons[team_pokemon_index] %> <%= link_to "Destroy unique_pokemon", unique_pokemon_path(@team.unique_pokemons[team_pokemon_index]), data: {turbo_method: :delete} %>
+          <div class="col-sm-3">
+            <div><%= link_to "Go to page", @team.unique_pokemons[team_pokemon_index] %></div>
+            <div>
+            <%= link_to "Destroy unique_pokemon", unique_pokemon_path(@team.unique_pokemons[team_pokemon_index]), data: {turbo_method: :delete} %></div>
+            </div>
         </div>
       </div>
-    </div>
-    <% team_pokemon_index = team_pokemon_index + 1 %>
-  <% end %>
+      </div>
+      <% team_pokemon_index = team_pokemon_index + 1 %>
+      <p></p>
+    <% end %>
+  </div>
 <ul>
 <body>
