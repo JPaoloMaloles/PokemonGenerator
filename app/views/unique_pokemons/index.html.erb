@@ -12,7 +12,7 @@
 
 <body>
 <%= link_to "New Unique Pokemon", new_unique_pokemon_path %>
-<%= link_to "Instant Unique Pokemon", instant_pokemon_path(:unique_pokemon => {:nickname => nil, :nature => "", :shiny => ""}) %>
+<%# <%= link_to "Instant Unique Pokemon", instant_pokemon_path(:unique_pokemon => {:nickname => nil, :nature => "", :shiny => ""}) %>
 <h1> Your Pokemon </h1>
 
 <% index = Trainer.find_by(id: current_user.current_trainer_id).unique_pokemons.length - 1 %>
