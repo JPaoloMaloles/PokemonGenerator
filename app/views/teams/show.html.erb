@@ -80,9 +80,10 @@
           <div class="col-sm-3">
             <div><%= link_to "Go to page", @team.unique_pokemons[team_pokemon_index] %></div>
             <div>
-            <%= link_to "Destroy unique_pokemon", unique_pokemon_path(@team.unique_pokemons[team_pokemon_index]), data: {turbo_method: :delete} %></div>
+              <%= link_to "Remove Pokemon from team", pokemon_in_team_path(@team.pokemon_in_teams.find_by(unique_pokemon_id: @team.unique_pokemons[team_pokemon_index])), data: {turbo_method: :delete} %>
             </div>
         </div>
+      </div>
       </div>
       </div>
       <% team_pokemon_index = team_pokemon_index + 1 %>

@@ -37,9 +37,17 @@ class PokemonInTeamsController < ApplicationController
     render :show
   end
 
+  # def destroy
+  #   pokemon_in_team = PokemonInTeam.find_by(id: params["id"])
+  #   pokemon_in_team.destroy
+  #   render json: { message: "pokemon_in_team has been deleted" }
+  # end
+
   def destroy
-    pokemon_in_team = PokemonInTeam.find_by(id: params["id"])
-    pokemon_in_team.destroy
-    render json: { message: "pokemon_in_team has been deleted" }
+    @pokemon_in_team = PokemonInTeam.find_by(id: params["id"])
+    team_id = @pokemon_in_team.team_id
+    @pokemon_in_team.destroy
+
+    redirect_to "/teams/#{team_id}", status: :see_other
   end
 end
