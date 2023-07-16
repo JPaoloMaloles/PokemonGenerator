@@ -7,7 +7,7 @@
   </div>
   <div>
     <%= form.label :unique_pokemon_id %>
-    <%= form.collection_select(:unique_pokemon_id, UniquePokemon.where(trainer_id: current_user.current_trainer_id).all, :id, :nickname, prompt: true) %>
+    <%= form.collection_select(:unique_pokemon_id, UniquePokemon.where(trainer_id: current_user.current_trainer_id).where.not(id: PokemonInTeam.pluck(:unique_pokemon_id)), :id, :nickname, prompt: true) %>
     <% current_user.errors.full_messages_for(:unique_pokemon_id).each do |message| %>
       <div><%= message %></div>
     <% end %>
