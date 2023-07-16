@@ -79,6 +79,7 @@
           </div>
           <div class="col-sm-3">
             <div><%= link_to "Go to page", @team.unique_pokemons[team_pokemon_index] %></div>
+            <%= link_to "Switch to Pokemon in box", edit_pokemon_in_team_path(@team.pokemon_in_teams.find_by(unique_pokemon_id: @team.unique_pokemons[team_pokemon_index])) %>
             <div>
               <%= link_to "Remove Pokemon from team", pokemon_in_team_path(@team.pokemon_in_teams.find_by(unique_pokemon_id: @team.unique_pokemons[team_pokemon_index])), data: {turbo_method: :delete} %>
             </div>

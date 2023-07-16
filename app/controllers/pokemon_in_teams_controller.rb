@@ -28,13 +28,27 @@ class PokemonInTeamsController < ApplicationController
     end
   end
 
+  def edit
+    @pokemon_in_team = PokemonInTeam.find_by(id: params[:id])
+    render :edit
+  end
+
+  # def update
+  #   @photo = Photo.find_by(id: params[:id])
+  #   @photo.update(
+  #     name: params[:photo][:name],
+  #     width: params[:photo][:width],
+  #     height: params[:photo][:height]
+  #   )
+  #   redirect_to "/photos"
+  # end
+
   def update
-    @pokemon_in_team = PokemonInTeam.find_by(id: params["id"])
+    @pokemon_in_team = PokemonInTeam.find_by(id: params[:id])
     @pokemon_in_team.update(
-      team_id: params["team_id"] || params.team_id,
-      unique_pokemon_id: params["unique_pokemon_id"] || params.unique_pokemon_id,
+      unique_pokemon_id: params[:pokemon_in_team][:unique_pokemon_id] || params.unique_pokemon_id,
     )
-    render :show
+    redirect_to "/teams/#{@pokemon_in_team.team_id}"
   end
 
   # def destroy
