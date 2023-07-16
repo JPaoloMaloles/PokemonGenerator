@@ -34,7 +34,7 @@
                     <% end %>
                   </p>
                   <p class="card=text"></p>
-                  <%= link_to "Go to page", current_user.teams[index] %>
+                  <%= link_to "Go to page", Trainer.find_by(id: current_user.current_trainer_id).teams[index] %>
               </div>
             </div>
                               <p class="card=text"></p>
