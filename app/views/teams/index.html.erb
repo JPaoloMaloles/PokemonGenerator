@@ -35,6 +35,9 @@
                   </p>
                   <p class="card=text"></p>
                   <%= link_to "Go to page", Trainer.find_by(id: current_user.current_trainer_id).teams[index] %>
+                  <div>
+                    <%= link_to "Destroy team", team_path(Trainer.find_by(id: current_user.current_trainer_id).teams[index]), data: {turbo_method: :delete} %>
+                 </div>
               </div>
             </div>
                               <p class="card=text"></p>

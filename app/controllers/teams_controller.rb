@@ -47,9 +47,16 @@ class TeamsController < ApplicationController
   #   render :show
   # end
 
+  # def destroy
+  #   team = Team.find_by(id: params["id"])
+  #   team.destroy
+  #   render json: { message: "Team has been deleted" }
+  # end
+
   def destroy
-    team = Team.find_by(id: params["id"])
-    team.destroy
-    render json: { message: "Team has been deleted" }
+    @team = Team.find_by(id: params["id"])
+    @team.destroy
+
+    redirect_to "/teams", status: :see_other
   end
 end
