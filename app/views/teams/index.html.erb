@@ -24,7 +24,7 @@
             <div>
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title"> <%= Trainer.find_by(id: current_user.current_trainer_id).teams[index].name%> - <%= Trainer.find_by(id: current_user.current_trainer_id).teams[index].id%></h5>
+                  <h5 class="card-title"> <%= Trainer.find_by(id: current_user.current_trainer_id).teams[index].name%></h5>
                   
                   <p class="card=text">
                     <% team_pokemon_index = 0 %>
