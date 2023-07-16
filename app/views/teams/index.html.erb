@@ -29,7 +29,7 @@
                   <p class="card=text">
                     <% team_pokemon_index = 0 %>
                     <% while team_pokemon_index < Trainer.find_by(id: current_user.current_trainer_id).teams[index].pokemons.length %>
-                    <a href="/unique_pokemons/<%= Trainer.find_by(id: current_user.current_trainer_id).teams[index].unique_pokemons[team_pokemon_index].id%>"> <img src="<%= Trainer.find_by(id: current_user.current_trainer_id).teams[index].pokemons[team_pokemon_index].icon%>"/> </a>
+                      <a href="/unique_pokemons/<%= Trainer.find_by(id: current_user.current_trainer_id).teams[index].unique_pokemons[team_pokemon_index].id%>"><img src="<%= Trainer.find_by(id: current_user.current_trainer_id).teams[index].pokemons[team_pokemon_index].icon%>"/></a>
                       <% team_pokemon_index = team_pokemon_index + 1 %>
                     <% end %>
                   </p>
