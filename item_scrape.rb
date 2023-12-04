@@ -5,12 +5,13 @@ url_paths = ["pokeball","holditem","evolutionary","berry","vitamins","fossil","m
 pokemon_product_index = -1
 pokemon_products = []
 
+ItemProduct = Struct.new(:index, :image, :name, :effect)
+
 url_paths.each do |url_path|
   response = HTTParty.get("https://www.serebii.net/itemdex/list/#{url_path}.shtml")
 
   document = Nokogiri::HTML(response.body)
 
-  ItemProduct = Struct.new(:index, :image, :name, :effect)
   #national_dex_num, name, abilities, hp, atk, def, spa, spd, spe
 
   html_products = document.css("table.dextable")
@@ -37,10 +38,10 @@ url_paths.each do |url_path|
 
         # puts "this is Clean_Inspect: #{clean_inspect}"
         tempinfo << clean_inspect
-        puts "This is tempinfo: #{tempinfo}"
+        # puts "This is tempinfo: #{tempinfo}"
         tempinfo.each do |item|
           if item.match?(/[0-9A-Za-z]/)
-            puts "IT WORKS"
+            # puts "IT WORKS"
             info << item
           end
         end
@@ -50,9 +51,9 @@ url_paths.each do |url_path|
       name = info[0]
 
       if info[1]
-        puts "info1 is #{info[1]}"
+        # puts "info1 is #{info[1]}"
         description = info[1].gsub!("Pok", "Poke") || info[1]
-        puts description
+        # puts description
       end
 
 
@@ -62,9 +63,9 @@ url_paths.each do |url_path|
         item_image = "https://www.serebii.net" + inforaw.css("img").attribute("src").value
       end
 
-      p item_image
-      p name
-      p description
+      # p item_image
+      # p name
+      # p description
 
       if name != "Picture"
         pokemon_product = ItemProduct.new(pokemon_product_index, item_image, name, description)
