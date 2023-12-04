@@ -1,771 +1,905 @@
-index,image,name,effect
-0,https://www.serebii.net/itemdex/sprites/beastball.png,Beast Ball,A somewhat different Poke Ball that is not very effective when catching Pokemon.
-1,https://www.serebii.net/itemdex/sprites/cherishball.png,Cherish Ball,A quite rare Poke Ball made to commemorate a special occasion of some sort.
-2,https://www.serebii.net/itemdex/sprites/diveball.png,Dive Ball,A somewhat different Poke Ball that is more effective when catching Pokemon in or on the water.
-3,https://www.serebii.net/itemdex/sprites/dreamball.png,Dream Ball,A somewhat different Poke Ball that is more effective when catching Pokemon that are asleep.
-4,https://www.serebii.net/itemdex/sprites/duskball.png,Dusk Ball,"A somewhat different Poke Ball that is more effective when catching Pokemon at night or in dark places, such as caves."
-5,https://www.serebii.net/itemdex/sprites/fastball.png,Fast Ball,A somewhat different Poke Ball that is more effective when catching Pokemon that are usually very quick to run away.
-6,https://www.serebii.net/itemdex/sprites/featherball.png,Feather Ball,A ball that flies fast and true—ideal for catching nimble Pokemon or Pokemon that fly high in the air.
-7,https://www.serebii.net/itemdex/sprites/friendball.png,Friend Ball,A somewhat different Poke Ball that makes a wild Pokemon more friendly toward you immediately after its caught.
-8,https://www.serebii.net/itemdex/sprites/gigatonball.png,Gigaton Ball,"The ultimate iteration of the Heavy Ball. A ball that is too heavy to fly high or far, but it is highly effective if you manage to hit an unsuspecting Pokemon."
-9,https://www.serebii.net/itemdex/sprites/greatball.png,Great Ball,"A good, high-performance Poke Ball that provides a higher success rate for catching Pokemon than a standard Poke Ball."
-10,https://www.serebii.net/itemdex/sprites/greatballlegends.png,Great Ball,A mysterious ball that provides a higher success rate for catching Pokemon than a standard Poke Ball does.
-11,https://www.serebii.net/itemdex/sprites/healball.png,Heal Ball,A remedial Poke Ball that restores HP and eliminates status conditions for a Pokemon caught with it.
-12,https://www.serebii.net/itemdex/sprites/heavyball.png,Heavy Ball,A somewhat different Poke Ball that becomes more effective the heavier the Pokemon is.
-13,https://www.serebii.net/itemdex/sprites/heavyballlegends.png,Heavy Ball,"A ball that is too heavy to fly high or far, but it is highly effective if you manage to hit an unsuspecting Pokemon."
-14,https://www.serebii.net/itemdex/sprites/jetball.png,Jet Ball,The ultimate iteration of the Feather Ball. A ball that flies fast and true—ideal for catching nimble Pokemon or Pokemon that fly high in the air.
-15,https://www.serebii.net/itemdex/sprites/leadenball.png,Leaden Ball,"An improvement on the original Heavy Ball design. A ball that is too heavy to fly high or far, but it is highly effective if you manage to hit an unsuspecting Pokemon."
-16,https://www.serebii.net/itemdex/sprites/levelball.png,Level Ball,A somewhat different Poke Ball that becomes more effective the lower the level of the Pokemon compared to your own Pokemon.
-17,https://www.serebii.net/itemdex/sprites/loveball.png,Love Ball,A somewhat different Poke Ball that is more effective when catching Pokemon of the opposite gender to your own Pokemon.
-18,https://www.serebii.net/itemdex/sprites/lureball.png,Lure Ball,A somewhat different Poke Ball that is more effective when catching Pokemon in or on the water.
-19,https://www.serebii.net/itemdex/sprites/luxuryball.png,Luxury Ball,A particularly comfortable Poke Ball that makes a wild Pokemon quickly grow friendlier after being caught.
-20,https://www.serebii.net/itemdex/sprites/masterball.png,Master Ball,"The very best Poke Ball with the ultimate level of performance. With it, you will catch any wild Pokemon without fail."
-21,https://www.serebii.net/itemdex/sprites/moonball.png,Moon Ball,A somewhat different Poke Ball that is more effective when catching Pokemon that can be evolved using a Moon Stone.
-22,https://www.serebii.net/itemdex/sprites/nestball.png,Nest Ball,A somewhat different Poke Ball that becomes more effective the lower the level of the wild Pokemon.
-23,https://www.serebii.net/itemdex/sprites/netball.png,Net Ball,A somewhat different Poke Ball that is more effective when catching Water- or Bug-type Pokemon.
-24,https://www.serebii.net/itemdex/sprites/originball.png,Origin Ball,A singular and irreplicable Poke Ball that can be used to catch the frenzied Pokemon raging at the Temple of Sinnoh.
-25,https://www.serebii.net/itemdex/sprites/parkball.png,Park Ball,A special Poke Ball used in the Pal Park.
-26,https://www.serebii.net/itemdex/sprites/pokeball.png,Poke Ball,"A device for catching wild Pokemon. Its thrown like a ball at a Pokemon, comfortably encapsulating its target."
-27,https://www.serebii.net/itemdex/sprites/pokeballlegends.png,Poke Ball,A mysterious ball that can be thrown at wild Pokemon in order to catch them. These balls can be crafted by hand if you gather the necessary materials.
-28,https://www.serebii.net/itemdex/sprites/premierball.png,Premier Ball,A somewhat rare Poke Ball made to commemorate a special occasion of some sort.
-29,https://www.serebii.net/itemdex/sprites/quickball.png,Quick Ball,A somewhat different Poke Ball that is more effective at catching Pokemon when used first thing in a battle.
-30,https://www.serebii.net/itemdex/sprites/repeatball.png,Repeat Ball,A somewhat different Poke Ball that is more effective when catching a Pokemon of a species that youve caught before.
-31,https://www.serebii.net/itemdex/sprites/safariball.png,Safari Ball,A special Poke Ball used in locales such as the Safari Zone in the Kanto region and the Great Marsh in the Sinnoh region.
-32,https://www.serebii.net/itemdex/sprites/sportball.png,Sport Ball,A special Poke Ball that was used during the Bug-Catching Contest in the Johto region.
-33,https://www.serebii.net/itemdex/sprites/strangeball.png,Strange Ball,
-34,https://www.serebii.net/itemdex/sprites/timerball.png,Timer Ball,A somewhat different Poke Ball that becomes more effective at catching Pokemon the more turns that are taken in battle.
-35,https://www.serebii.net/itemdex/sprites/ultraball.png,Ultra Ball,An ultra-high-performance Poke Ball that provides a higher success rate for catching Pokemon than a Great Ball.
-36,https://www.serebii.net/itemdex/sprites/ultraballlegends.png,Ultra Ball,A mysterious ball that provides an even higher success rate for catching Pokemon than a Great Ball does.
-37,https://www.serebii.net/itemdex/sprites/wingball.png,Wing Ball,An improvement on the original Feather Ball design. A ball that flies fast and true—ideal for catching nimble Pokemon or Pokemon that fly high in the air.
-38,https://www.serebii.net/itemdex/sprites/abilityshield.png,Ability Shield,An item to be held by a Pokemon. This cute and rather unique-looking shield protects the holder from having its Ability changed by others.
-39,https://www.serebii.net/itemdex/sprites/absorbbulb.png,Absorb Bulb,An item to be held by a Pokemon. This single-use bulb boosts the Sp. Atk stat if the holder is damaged by a Water-type attack.
-40,https://www.serebii.net/itemdex/sprites/adamantcrystal.png,Adamant Crystal,"An item to be held by Dialga. This large, glowing gem wells with power and allows the Pokemon to change form."
-41,https://www.serebii.net/itemdex/sprites/adamantorb.png,Adamant Orb,A brightly shining gem to be held by Dialga. It boosts the power of Dialgas Dragon- and Steel-type moves.
-42,https://www.serebii.net/itemdex/sprites/airballoon.png,Air Balloon,"An item to be held by a Pokemon. This balloon makes the holder float in the air. If the holder is hit with an attack, the balloon will burst."
-43,https://www.serebii.net/itemdex/sprites/aloraichiumz.png,Aloraichium Z,It converts Z-Power into crystals that upgrade Alolan Raichus Thunderbolt to a Z-Move.
-44,https://www.serebii.net/itemdex/sprites/amuletcoin.png,Amulet Coin,An item to be held by a Pokemon. It doubles any prize money received as long as the holder joins the battle at least once.
-45,https://www.serebii.net/itemdex/sprites/assaultvest.png,Assault Vest,An item to be held by a Pokemon. This offensive vest boosts the holders Sp. Def stat but prevents the use of status moves.
-46,https://www.serebii.net/itemdex/sprites/berrysweet.png,Berry Sweet,"A berry-shaped sweet. When a Milcery holds this, it spins around happily."
-47,"",Berserk Gene,Boosts ATTACK but causes confusion.
-48,https://www.serebii.net/itemdex/sprites/bigroot.png,Big Root,An item to be held by a Pokemon. This root boosts the amount of HP the holder restores to itself when it uses HP-stealing moves.
-49,https://www.serebii.net/itemdex/sprites/bindingband.png,Binding Band,An item to be held by a Pokemon. This band boosts the power of binding moves used by the holder.
-50,https://www.serebii.net/itemdex/sprites/blackbelt.png,Black Belt,An item to be held by a Pokemon. This belt helps with focus and boosts the power of the holders Fighting-type moves.
-51,https://www.serebii.net/itemdex/sprites/blackglasses.png,Black Glasses,An item to be held by a Pokemon. Its a pair of shady- looking glasses that boost the power of the holders Dark-type moves.
-52,https://www.serebii.net/itemdex/sprites/blacksludge.png,Black Sludge,"An item to be held by a Pokemon. If the holder is a Poison type, this sludge will gradually restore its HP. It damages any other type."
-53,https://www.serebii.net/itemdex/sprites/blueorb.png,Blue Orb,A shiny blue orb that is said to have a deep connection to a legend of the Hoenn region.
-54,https://www.serebii.net/itemdex/sprites/bluescarf.png,Blue Scarf,"When a Pokemon holds this during a contest, it looks even more beautiful than usual."
-55,https://www.serebii.net/itemdex/sprites/blunderpolicy.png,Blunder Policy,"An item to be held by a Pokemon. If the holder misses with a move due to low accuracy, this policy will sharply boost its Speed stat."
-56,https://www.serebii.net/itemdex/sprites/boosterenergy.png,Booster Energy,An item to be held by Pokemon with certain Abilities. The energy that fills this capsule boosts the strength of the Pokemon.
-57,https://www.serebii.net/itemdex/sprites/brightpowder.png,Bright Powder,An item to be held by a Pokemon. This glittery powder casts a tricky glare that lowers the accuracy of opposing Pokemons moves.
-58,https://www.serebii.net/itemdex/sprites/buggem.png,Bug Gem,An item to be held by a Pokemon. This gem is imbued with the essence of bugs and will boost the power of a Bug-type move—but only once.
-59,https://www.serebii.net/itemdex/sprites/bugmemory.png,Bug Memory,A memory disc that contains Bug-type data. It changes the type of the holder if held by a certain species of Pokemon.
-60,https://www.serebii.net/itemdex/sprites/buginiumz.png,Buginium Z,It converts Z-Power into crystals that upgrade Bug-type moves to Bug-type Z-Moves.
-61,https://www.serebii.net/itemdex/sprites/burndrive.png,Burn Drive,A cassette to be held by Genesect. It changes Genesects Techno Blast move so it becomes Fire type.
-62,https://www.serebii.net/itemdex/sprites/cellbattery.png,Cell Battery,An item to be held by a Pokemon. This single-use battery boosts the Attack stat if the holder is damaged by an Electric-type attack.
-63,https://www.serebii.net/itemdex/sprites/charcoal.png,Charcoal,An item to be held by a Pokemon. Its a combustible fuel that boosts the power of the holders Fire-type moves.
-64,https://www.serebii.net/itemdex/sprites/chilldrive.png,Chill Drive,A cassette to be held by Genesect. It changes Genesects Techno Blast move so it becomes Ice type.
-65,https://www.serebii.net/itemdex/sprites/choiceband.png,Choice Band,An item to be held by a Pokemon. This curious headband boosts the holders Attack stat but only allows the use of a single move.
-66,https://www.serebii.net/itemdex/sprites/choicescarf.png,Choice Scarf,An item to be held by a Pokemon. This curious scarf boosts the holders Speed stat but only allows the use of a single move.
-67,https://www.serebii.net/itemdex/sprites/choicespecs.png,Choice Specs,An item to be held by a Pokemon. These curious glasses boost the holders Sp. Atk stat but only allow the use of a single move.
-68,https://www.serebii.net/itemdex/sprites/cleansetag.png,Cleanse Tag,An item to be held by a Pokemon. It helps keep wild Pokemon away when the holder is the head of the party.
-69,https://www.serebii.net/itemdex/sprites/clearamulet.png,Clear Amulet,"An item to be held by a Pokemon. This clear, sparkling amulet protects the holder from having its stats lowered by moves used against it or by other Pokemons Abilities."
-70,https://www.serebii.net/itemdex/sprites/cloversweet.png,Clover Sweet,"A clover-shaped sweet. When a Milcery holds this, it spins around happily."
-71,https://www.serebii.net/itemdex/sprites/cornerstonemask.png,Cornerstone Mask,An item to be held by Ogerpon. This carved wooden mask is adorned with crystals and allows Ogerpon to wield the Rock type during battle.
-72,https://www.serebii.net/itemdex/sprites/covertcloak.png,Covert Cloak,"An item to be held by a Pokemon. This hooded cloak conceals the holder, tricking the eyes of its enemies and protecting it from the additional effects of moves."
-73,https://www.serebii.net/itemdex/sprites/damprock.png,Damp Rock,"An item to be held by a Pokemon. When the holder changes the weather to rain, the rain will persist for longer than usual."
-74,https://www.serebii.net/itemdex/sprites/darkgem.png,Dark Gem,An item to be held by a Pokemon. This gem is imbued with the essence of darkness and will boost the power of a Dark-type move—but only once.
-75,https://www.serebii.net/itemdex/sprites/darkmemory.png,Dark Memory,A memory disc that contains Dark-type data. It changes the type of the holder if held by a certain species of Pokemon.
-76,https://www.serebii.net/itemdex/sprites/darkiniumz.png,Darkinium Z,It converts Z-Power into crystals that upgrade Dark-type moves to Dark-type Z-Moves.
-77,https://www.serebii.net/itemdex/sprites/decidiumz.png,Decidium Z,It converts Z-Power into crystals that upgrade Decidueyes Spirit Shackle to a Z-Move.
-78,https://www.serebii.net/itemdex/sprites/deepseascale.png,Deep Sea Scale,An item to be held by Clamperl. This scale shines with a faint pink and boosts Clamperls Sp. Def stat.
-79,https://www.serebii.net/itemdex/sprites/deepseatooth.png,Deep Sea Tooth,An item to be held by Clamperl. This fang gleams a sharp silver and boosts Clamperls Sp. Atk stat.
-80,https://www.serebii.net/itemdex/sprites/destinyknot.png,Destiny Knot,"An item to be held by a Pokemon. Should the holder of this bright-red thread become infatuated, the Pokemon it is infatuated with will be similarly afflicted."
-81,https://www.serebii.net/itemdex/sprites/dousedrive.png,Douse Drive,A cassette to be held by Genesect. It changes Genesects Techno Blast move so it becomes Water type.
-82,https://www.serebii.net/itemdex/sprites/dracoplate.png,Draco Plate,An item to be held by a Pokemon. This stone tablet is imbued with the essence of dragons and boosts the power of the holders Dragon-type moves.
-83,https://www.serebii.net/itemdex/sprites/dragonfang.png,Dragon Fang,"An item to be held by a Pokemon. This hard, sharp fang boosts the power of the holders Dragon-type moves."
-84,https://www.serebii.net/itemdex/sprites/dragongem.png,Dragon Gem,An item to be held by a Pokemon. This gem is imbued with the essence of dragons and will boost the power of a Dragon-type move—but only once.
-85,https://www.serebii.net/itemdex/sprites/dragonmemory.png,Dragon Memory,A memory disc that contains Dragon-type data. It changes the type of the holder if held by a certain species of Pokemon.
-86,https://www.serebii.net/itemdex/sprites/dragoniumz.png,Dragonium Z,It converts Z-Power into crystals that upgrade Dragon-type moves to Dragon-type Z-Moves.
-87,https://www.serebii.net/itemdex/sprites/dreadplate.png,Dread Plate,An item to be held by a Pokemon. This stone tablet is imbued with the essence of darkness and boosts the power of the holders Dark-type moves.
-88,https://www.serebii.net/itemdex/sprites/dubiousdisc.png,Dubious Disc,A transparent device overflowing with dubious data. Its loved by a certain Pokemon.
-89,https://www.serebii.net/itemdex/sprites/earthplate.png,Earth Plate,An item to be held by a Pokemon. This stone tablet is imbued with the essence of the earth and boosts the power of the holders Ground-type moves.
-90,https://www.serebii.net/itemdex/sprites/eeviumz.png,Eevium Z,It converts Z-Power into crystals that upgrade Eevees Last Resort to a Z-Move.
-91,https://www.serebii.net/itemdex/sprites/ejectbutton.png,Eject Button,"An item to be held by a Pokemon. If the holder is damaged by an attack, it will be switched out of battle to be replaced by another Pokemon on your team."
-92,https://www.serebii.net/itemdex/sprites/ejectpack.png,Eject Pack,"An item to be held by a Pokemon. If the holders stats are lowered, it will be switched out of battle."
-93,https://www.serebii.net/itemdex/sprites/electirizer.png,Electirizer,A box packed with a tremendous amount of electric energy. Its loved by a certain Pokemon.
-94,https://www.serebii.net/itemdex/sprites/electricgem.png,Electric Gem,An item to be held by a Pokemon. This gem is imbued with the essence of electricity and will boost the power of an Electric-type move—but only once.
-95,https://www.serebii.net/itemdex/sprites/electricmemory.png,Electric Memory,A memory disc that contains Electric-type data. It changes the type of the holder if held by a certain species of Pokemon.
-96,https://www.serebii.net/itemdex/sprites/electricseed.png,Electric Seed,"An item to be held by a Pokemon. If the terrain becomes Electric Terrain, the holder will use this seed to boost its own Defense stat."
-97,https://www.serebii.net/itemdex/sprites/electriumz.png,Electrium Z,It converts Z-Power into crystals that upgrade Electric-type moves to Electric-type Z-Moves.
-98,https://www.serebii.net/itemdex/sprites/everstone.png,Everstone,An item to be held by a Pokemon. A Pokemon holding this peculiar stone is prevented from evolving.
-99,https://www.serebii.net/itemdex/sprites/eviolite.png,Eviolite,An item to be held by a Pokemon. This mysterious evolutionary lump boosts the Defense and Sp. Def stats when held by a Pokemon that can still evolve.
-100,https://www.serebii.net/itemdex/sprites/exp.share.png,Exp. Share,Turning on this special device will allow all the Pokemon on your team to share in Exp. Points gained.
-101,https://www.serebii.net/itemdex/sprites/expertbelt.png,Expert Belt,An item to be held by a Pokemon. Its a well-worn belt that slightly boosts the power of the holders supereffective moves.
-102,https://www.serebii.net/itemdex/sprites/fairiumz.png,Fairium Z,It converts Z-Power into crystals that upgrade Fairy-type moves to Fairy-type Z-Moves.
-103,https://www.serebii.net/itemdex/sprites/fairyfeather.png,Fairy Feather,"An item to be held by a Pokemon. This feather, which gleams faintly when hit by light, boosts the power of the holders Fairy-type moves."
-104,https://www.serebii.net/itemdex/sprites/fairygem.png,Fairy Gem,An item to be held by a Pokemon. This gem is imbued with the essence of fairies and will boost the power of a Fairy-type move—but only once.
-105,https://www.serebii.net/itemdex/sprites/fairymemory.png,Fairy Memory,A memory disc that contains Fairy-type data. It changes the type of the holder if held by a certain species of Pokemon.
-106,https://www.serebii.net/itemdex/sprites/fightinggem.png,Fighting Gem,An item to be held by a Pokemon. This gem is imbued with the essence of the fighting spirit and will boost the power of a Fighting-type move—but only once.
-107,https://www.serebii.net/itemdex/sprites/fightingmemory.png,Fighting Memory,A memory disc that contains Fighting-type data. It changes the type of the holder if held by a certain species of Pokemon.
-108,https://www.serebii.net/itemdex/sprites/fightiniumz.png,Fightinium Z,It converts Z-Power into crystals that upgrade Fighting-type moves to Fighting-type Z-Moves.
-109,https://www.serebii.net/itemdex/sprites/firegem.png,Fire Gem,An item to be held by a Pokemon. This gem is imbued with the essence of fire and will boost the power of a Fire-type move—but only once.
-110,https://www.serebii.net/itemdex/sprites/firememory.png,Fire Memory,A memory disc that contains Fire-type data. It changes the type of the holder if held by a certain species of Pokemon.
-111,https://www.serebii.net/itemdex/sprites/firiumz.png,Firium Z,It converts Z-Power into crystals that upgrade Fire-type moves to Fire-type Z-Moves.
-112,https://www.serebii.net/itemdex/sprites/fistplate.png,Fist Plate,An item to be held by a Pokemon. This stone tablet is imbued with the essence of the fighting spirit and boosts the power of the holders Fighting-type moves.
-113,https://www.serebii.net/itemdex/sprites/flameorb.png,Flame Orb,An item to be held by a Pokemon. Its a bizarre orb that gives off heat when touched and will afflict the holder with a burn during battle.
-114,https://www.serebii.net/itemdex/sprites/flameplate.png,Flame Plate,An item to be held by a Pokemon. This stone tablet is imbued with the essence of fire and boosts the power of the holders Fire-type moves.
-115,https://www.serebii.net/itemdex/sprites/floatstone.png,Float Stone,An item to be held by a Pokemon. This very light stone reduces the weight of the holder.
-116,https://www.serebii.net/itemdex/sprites/flowersweet.png,Flower Sweet,"A flower-shaped sweet. When a Milcery holds this, it spins around happily."
-117,https://www.serebii.net/itemdex/sprites/flyinggem.png,Flying Gem,An item to be held by a Pokemon. This gem is imbued with the essence of flight and will boost the power of a Flying-type move—but only once.
-118,https://www.serebii.net/itemdex/sprites/flyingmemory.png,Flying Memory,A memory disc that contains Flying-type data. It changes the type of the holder if held by a certain species of Pokemon.
-119,https://www.serebii.net/itemdex/sprites/flyiniumz.png,Flyinium Z,It converts Z-Power into crystals that upgrade Flying-type moves to Flying-type Z-Moves.
-120,https://www.serebii.net/itemdex/sprites/focusband.png,Focus Band,"An item to be held by a Pokemon. When the holder is hit with a move that should knock it out, it may be able to endure with 1 HP."
-121,https://www.serebii.net/itemdex/sprites/focussash.png,Focus Sash,"An item to be held by a Pokemon. If the holder has full HP and it is hit with a move that should knock it out, it will endure with 1 HP—but only once."
-122,https://www.serebii.net/itemdex/sprites/fullincense.png,Full Incense,An item to be held by a Pokemon. This incense has a curious aroma that makes the holder move slower than usual.
-123,https://www.serebii.net/itemdex/sprites/ghostgem.png,Ghost Gem,An item to be held by a Pokemon. This gem is imbued with the essence of ghosts and will boost the power of a Ghost-type move—but only once.
-124,https://www.serebii.net/itemdex/sprites/ghostmemory.png,Ghost Memory,A memory disc that contains Ghost-type data. It changes the type of the holder if held by a certain species of Pokemon.
-125,https://www.serebii.net/itemdex/sprites/ghostiumz.png,Ghostium Z,It converts Z-Power into crystals that upgrade Ghost-type moves to Ghost-type Z-Moves.
-126,https://www.serebii.net/itemdex/sprites/grassgem.png,Grass Gem,An item to be held by a Pokemon. This gem is imbued with the essence of plants and will boost the power of a Grass-type move—but only once.
-127,https://www.serebii.net/itemdex/sprites/grassmemory.png,Grass Memory,A memory disc that contains Grass-type data. It changes the type of the holder if held by a certain species of Pokemon.
-128,https://www.serebii.net/itemdex/sprites/grassiumz.png,Grassium Z,It converts Z-Power into crystals that upgrade Grass-type moves to Grass-type Z-Moves.
-129,https://www.serebii.net/itemdex/sprites/grassyseed.png,Grassy Seed,"An item to be held by a Pokemon. If the terrain becomes Grassy Terrain, the holder will use this seed to boost its own Defense stat."
-130,https://www.serebii.net/itemdex/sprites/greenscarf.png,Green Scarf,"When a Pokemon holds this during a contest, it looks even cleverer than usual."
-131,https://www.serebii.net/itemdex/sprites/gripclaw.png,Grip Claw,"An item to be held by a Pokemon. When the holder uses moves that deal damage over several turns, such as Bind or Wrap, their effects will last longer than usual."
-132,https://www.serebii.net/itemdex/sprites/griseouscore.png,Griseous Core,"An item to be held by Giratina. This large, glowing gem wells with power and allows the Pokemon to change form."
-133,https://www.serebii.net/itemdex/sprites/griseousorb.png,Griseous Orb,A shining gem to be held by Giratina. It boosts the power of Giratinas Dragon- and Ghost-type moves.
-134,https://www.serebii.net/itemdex/sprites/groundgem.png,Ground Gem,An item to be held by a Pokemon. This gem is imbued with the essence of the earth and will boost the power of a Ground-type move—but only once.
-135,https://www.serebii.net/itemdex/sprites/groundmemory.png,Ground Memory,A memory disc that contains Ground-type data. It changes the type of the holder if held by a certain species of Pokemon.
-136,https://www.serebii.net/itemdex/sprites/groundiumz.png,Groundium Z,It converts Z-Power into crystals that upgrade Ground-type moves to Ground-type Z-Moves.
-137,https://www.serebii.net/itemdex/sprites/hardstone.png,Hard Stone,An item to be held by a Pokemon. Its a durable stone that boosts the power of the holders Rock-type moves.
-138,https://www.serebii.net/itemdex/sprites/hearthflamemask.png,Hearthflame Mask,An item to be held by Ogerpon. This carved wooden mask is adorned with crystals and allows Ogerpon to wield the Fire type during battle.
-139,https://www.serebii.net/itemdex/sprites/heatrock.png,Heat Rock,"An item to be held by a Pokemon. When the holder changes the weather to harsh sunlight, the sunlight will persist for longer than usual."
-140,https://www.serebii.net/itemdex/sprites/heavy-dutyboots.png,Heavy-Duty Boots,An item to be held by a Pokemon. These boots protect the holder from the effects of traps and the like set on the battlefield.
-141,https://www.serebii.net/itemdex/sprites/icegem.png,Ice Gem,An item to be held by a Pokemon. This gem is imbued with the essence of ice and will boost the power of an Ice-type move—but only once.
-142,https://www.serebii.net/itemdex/sprites/icememory.png,Ice Memory,A memory disc that contains Ice-type data. It changes the type of the holder if held by a certain species of Pokemon.
-143,https://www.serebii.net/itemdex/sprites/icicleplate.png,Icicle Plate,An item to be held by a Pokemon. This stone tablet is imbued with the essence of ice and boosts the power of the holders Ice-type moves.
-144,https://www.serebii.net/itemdex/sprites/iciumz.png,Icium Z,It converts Z-Power into crystals that upgrade Ice-type moves to Ice-type Z-Moves.
-145,https://www.serebii.net/itemdex/sprites/icyrock.png,Icy Rock,"An item to be held by a Pokemon. When the holder changes the weather to snow, the snow will persist for longer than usual."
-146,https://www.serebii.net/itemdex/sprites/inciniumz.png,Incinium Z,It converts Z-Power into crystals that upgrade Incineroars Darkest Lariat to a Z-Move.
-147,https://www.serebii.net/itemdex/sprites/insectplate.png,Insect Plate,An item to be held by a Pokemon. This stone tablet is imbued with the essence of bugs and boosts the power of the holders Bug-type moves.
-148,https://www.serebii.net/itemdex/sprites/ironball.png,Iron Ball,An item to be held by a Pokemon. It lowers the holders Speed stat and makes the holder vulnerable to Ground- type moves even if it is a Flying type or is levitating.
-149,https://www.serebii.net/itemdex/sprites/ironplate.png,Iron Plate,An item to be held by a Pokemon. This stone tablet is imbued with the essence of steel and boosts the power of the holders Steel-type moves.
-150,https://www.serebii.net/itemdex/sprites/king'srock.png,Kings Rock,An item to be held by a Pokemon. It may cause the target to flinch whenever the holder successfully inflicts damage on them with an attack.
-151,https://www.serebii.net/itemdex/sprites/kommoniumz.png,Kommonium Z,It converts Z-Power into crystals that upgrade Kommo-os Clanging Scales to a Z-Move.
-152,https://www.serebii.net/itemdex/sprites/laggingtail.png,Lagging Tail,"An item to be held by a Pokemon. A tail of something, this item is tremendously heavy and makes the holder move slower than usual."
-153,https://www.serebii.net/itemdex/sprites/laxincense.png,Lax Incense,An item to be held by a Pokemon. The curious aroma of this incense may cause moves to miss its holder.
-154,https://www.serebii.net/itemdex/sprites/leek.png,Leek,An item to be held by Farfetchd. This very long and stiff stalk of leek boosts the critical-hit ratio of Farfetchds moves.
-155,https://www.serebii.net/itemdex/sprites/leftovers.png,Leftovers,An item to be held by a Pokemon. The holders HP is slowly but steadily restored throughout a battle.
-156,https://www.serebii.net/itemdex/sprites/lifeorb.png,Life Orb,"An item to be held by a Pokemon. It boosts the power of the holders moves, but the holder also loses a small amount of HP with each attack it lands."
-157,https://www.serebii.net/itemdex/sprites/lightball.png,Light Ball,An item to be held by Pikachu. Its a mysterious orb that boosts Pikachus Attack and Sp. Atk stats.
-158,https://www.serebii.net/itemdex/sprites/lightclay.png,Light Clay,"An item to be held by a Pokemon. When the holder uses protective moves like Light Screen or Reflect, their effects will last longer than usual."
-159,https://www.serebii.net/itemdex/sprites/loadeddice.png,Loaded Dice,"An item to be held by a Pokemon. This loaded dice always rolls a good number, and holding one can ensure that the holders multistrike moves hit more times."
-160,https://www.serebii.net/itemdex/sprites/lovesweet.png,Love Sweet,"A heart-shaped sweet. When a Milcery holds this, it spins around happily."
-161,https://www.serebii.net/itemdex/sprites/luckincense.png,Luck Incense,An item to be held by a Pokemon. It doubles any prize money received as long as the holder joins the battle at least once.
-162,https://www.serebii.net/itemdex/sprites/luckyegg.png,Lucky Egg,An item to be held by a Pokemon. Its an egg filled with happiness that earns the holder extra Exp. Points.
-163,https://www.serebii.net/itemdex/sprites/luckypunch.png,Lucky Punch,An item to be held by Chansey. This lucky boxing glove boosts the critical-hit ratio of Chanseys moves.
-164,https://www.serebii.net/itemdex/sprites/luminousmoss.png,Luminous Moss,An item to be held by a Pokemon. This single-use luminous moss boosts the Sp. Def stat if the holder is damaged by a Water-type move.
-165,https://www.serebii.net/itemdex/sprites/lunaliumz.png,Lunalium Z,It converts Z-Power into crystals that upgrade Lunalas Moongeist Beam to a Z-Move.
-166,https://www.serebii.net/itemdex/sprites/lustrousglobe.png,Lustrous Globe,"An item to be held by Palkia. This large, glowing orb wells with power and allows the Pokemon to change form."
-167,https://www.serebii.net/itemdex/sprites/lustrousorb.png,Lustrous Orb,A beautifully shining gem to be held by Palkia. It boosts the power of Palkias Dragon- and Water-type moves.
-168,https://www.serebii.net/itemdex/sprites/lycaniumz.png,Lycanium Z,It converts Z-Power into crystals that upgrade Lycanrocs Stone Edge to a Z-Move.
-169,https://www.serebii.net/itemdex/sprites/machobrace.png,Macho Brace,"An item to be held by a Pokemon. Holding this stiff, heavy brace reduces a Pokemons Speed in battle but allows its stats to grow more quickly."
-170,https://www.serebii.net/itemdex/sprites/magmarizer.png,Magmarizer,A box packed with a tremendous amount of magma energy. Its loved by a certain Pokemon.
-171,https://www.serebii.net/itemdex/sprites/magnet.png,Magnet,An item to be held by a Pokemon. Its a powerful magnet that boosts the power of the holders Electric-type moves.
-172,https://www.serebii.net/itemdex/sprites/marshadiumz.png,Marshadium Z,It converts Z-Power into crystals that upgrade Marshadows Spectral Thief to a Z-Move.
-173,https://www.serebii.net/itemdex/sprites/meadowplate.png,Meadow Plate,An item to be held by a Pokemon. This stone tablet is imbued with the essence of plants and boosts the power of the holders Grass-type moves.
-174,https://www.serebii.net/itemdex/sprites/mentalherb.png,Mental Herb,An item to be held by a Pokemon. The holder will be able to shake off move-binding effects to move freely— but only once.
-175,https://www.serebii.net/itemdex/sprites/metalcoat.png,Metal Coat,An item to be held by a Pokemon. Its a special metallic coating that boosts the power of the holders Steel-type moves.
-176,https://www.serebii.net/itemdex/sprites/metalpowder.png,Metal Powder,"An item to be held by Ditto. Extremely fine yet hard, this odd powder boosts Dittos Defense stat."
-177,https://www.serebii.net/itemdex/sprites/metronome.png,Metronome,"An item to be held by a Pokemon. It boosts the power of a move thats used repeatedly. Once the chain is broken, the moves power returns to normal."
-178,https://www.serebii.net/itemdex/sprites/mewniumz.png,Mewnium Z,It converts Z-Power into crystals that upgrade Mews Psychic to a Z-Move.
-179,https://www.serebii.net/itemdex/sprites/mimikiumz.png,Mimikium Z,It converts Z-Power into crystals that upgrade Mimikyus Play Rough to a Z-Move.
-180,https://www.serebii.net/itemdex/sprites/mindplate.png,Mind Plate,An item to be held by a Pokemon. This stone tablet is imbued with the essence of psychic energy and boosts the power of the holders Psychic-type moves.
-181,https://www.serebii.net/itemdex/sprites/miracleseed.png,Miracle Seed,An item to be held by a Pokemon. Its a seed imbued with life-force that boosts the power of the holders Grass-type moves.
-182,https://www.serebii.net/itemdex/sprites/mirrorherb.png,Mirror Herb,An item to be held by a Pokemon. This herb will allow the holder to mirror an opponents stat increases to boost its own stats—but only once.
-183,https://www.serebii.net/itemdex/sprites/mistyseed.png,Misty Seed,"An item to be held by a Pokemon. If the terrain becomes Misty Terrain, the holder will use this seed to boost its own Sp. Def stat."
-184,https://www.serebii.net/itemdex/sprites/muscleband.png,Muscle Band,"An item to be held by a Pokemon. This headband exudes strength, slightly boosting the power of the holders physical moves."
-185,https://www.serebii.net/itemdex/sprites/mysticwater.png,Mystic Water,An item to be held by a Pokemon. This teardrop-shaped gem boosts the power of the holders Water-type moves.
-186,https://www.serebii.net/itemdex/sprites/never-meltice.png,Never-Melt Ice,An item to be held by a Pokemon. Its a heat-repelling piece of ice that boosts the power of the holders Ice- type moves.
-187,https://www.serebii.net/itemdex/sprites/normalgem.png,Normal Gem,An item to be held by a Pokemon. This gem is imbued with the essence of normalcy and will boost the power of a Normal-type move—but only once.
-188,https://www.serebii.net/itemdex/sprites/normaliumz.png,Normalium Z,It converts Z-Power into crystals that upgrade Normal-type moves to Normal-type Z-Moves.
-189,https://www.serebii.net/itemdex/sprites/oddincense.png,Odd Incense,An item to be held by a Pokemon. This incense has a curious aroma that boosts the power of the holders Psychic-type moves.
-190,https://www.serebii.net/itemdex/sprites/pikaniumz.png,Pikanium Z,It converts Z-Power into crystals that upgrade Pikachus Volt Tackle to a Z-Move.
-191,https://www.serebii.net/itemdex/sprites/pikashuniumz.png,Pikashunium Z,This is a crystallized form of Z-Power. It upgrades Thunderbolt to a Z-Move when used by a Pikachu wearing a cap.
-192,"",Pink Bow,Powers up normal-type moves.
-193,https://www.serebii.net/itemdex/sprites/pinkscarf.png,Pink Scarf,"When a Pokemon holds this during a contest, it looks even cuter than usual."
-194,https://www.serebii.net/itemdex/sprites/pixieplate.png,Pixie Plate,An item to be held by a Pokemon. This stone tablet is imbued with the essence of fairies and boosts the power of the holders Fairy-type moves.
-195,https://www.serebii.net/itemdex/sprites/poisonbarb.png,Poison Barb,An item to be held by a Pokemon. This small poisonous barb boosts the power of the holders Poison-type moves.
-196,https://www.serebii.net/itemdex/sprites/poisongem.png,Poison Gem,An item to be held by a Pokemon. This gem is imbued with the essence of poison and will boost the power of a Poison-type move—but only once.
-197,https://www.serebii.net/itemdex/sprites/poisonmemory.png,Poison Memory,A memory disc that contains Poison-type data. It changes the type of the holder if held by a certain species of Pokemon.
-198,https://www.serebii.net/itemdex/sprites/poisoniumz.png,Poisonium Z,It converts Z-Power into crystals that upgrade Poison-type moves to Poison-type Z-Moves.
-199,"",Polkadot Bow,Powers up normal-type moves.
-200,https://www.serebii.net/itemdex/sprites/poweranklet.png,Power Anklet,An item to be held by a Pokemon. Holding this anklet reduces a Pokemons Speed in battle but allows its Speed stat to grow more quickly.
-201,https://www.serebii.net/itemdex/sprites/powerband.png,Power Band,An item to be held by a Pokemon. Holding this band reduces a Pokemons Speed in battle but allows its Sp. Def stat to grow more quickly.
-202,https://www.serebii.net/itemdex/sprites/powerbelt.png,Power Belt,An item to be held by a Pokemon. Holding this belt reduces a Pokemons Speed in battle but allows its Defense stat to grow more quickly.
-203,https://www.serebii.net/itemdex/sprites/powerbracer.png,Power Bracer,An item to be held by a Pokemon. Holding this bracer reduces a Pokemons Speed in battle but allows its Attack stat to grow more quickly.
-204,https://www.serebii.net/itemdex/sprites/powerherb.png,Power Herb,An item to be held by a Pokemon. It allows the holder to immediately use a move that normally requires a turn to charge—but only once.
-205,https://www.serebii.net/itemdex/sprites/powerlens.png,Power Lens,An item to be held by a Pokemon. Holding this lens reduces a Pokemons Speed in battle but allows its Sp. Atk stat to grow more quickly.
-206,https://www.serebii.net/itemdex/sprites/powerweight.png,Power Weight,An item to be held by a Pokemon. Holding this weight reduces a Pokemons Speed in battle but allows its HP stat to grow more quickly.
-207,https://www.serebii.net/itemdex/sprites/primariumz.png,Primarium Z,It converts Z-Power into crystals that upgrade Primarinas Sparkling Aria to a Z-Move.
-208,https://www.serebii.net/itemdex/sprites/protectivepads.png,Protective Pads,An item to be held by a Pokemon. These pads protect the holder from effects triggered by making direct contact with another Pokemon.
-209,https://www.serebii.net/itemdex/sprites/protector.png,Protector,A protective item of some sort. It is extremely stiff and heavy. Its loved by a certain Pokemon.
-210,https://www.serebii.net/itemdex/sprites/psychicgem.png,Psychic Gem,An item to be held by a Pokemon. This gem is imbued with the essence of psychic energy and will boost the power of a Psychic-type move—but only once.
-211,https://www.serebii.net/itemdex/sprites/psychicmemory.png,Psychic Memory,A memory disc that contains Psychic-type data. It changes the type of the holder if held by a certain species of Pokemon.
-212,https://www.serebii.net/itemdex/sprites/psychicseed.png,Psychic Seed,"An item to be held by a Pokemon. If the terrain becomes Psychic Terrain, the holder will use this seed to boost its own Sp. Def stat."
-213,https://www.serebii.net/itemdex/sprites/psychiumz.png,Psychium Z,It converts Z-Power into crystals that upgrade Psychic-type moves to Psychic-type Z-Moves.
-214,https://www.serebii.net/itemdex/sprites/punchingglove.png,Punching Glove,An item to be held by a Pokemon. This protective glove boosts the power of the holders punching moves and prevents direct contact with targets.
-215,https://www.serebii.net/itemdex/sprites/pureincense.png,Pure Incense,An item to be held by a Pokemon. It helps keep wild Pokemon away when the holder is the head of the party.
-216,https://www.serebii.net/itemdex/sprites/quickclaw.png,Quick Claw,"An item to be held by a Pokemon. This light, sharp claw lets the holder move first occasionally."
-217,https://www.serebii.net/itemdex/sprites/quickpowder.png,Quick Powder,"An item to be held by Ditto. Extremely fine yet hard, this odd powder boosts Dittos Speed stat."
-218,https://www.serebii.net/itemdex/sprites/razorclaw.png,Razor Claw,An item to be held by a Pokemon. This sharply hooked claw boosts the critical-hit ratio of the holders moves.
-219,https://www.serebii.net/itemdex/sprites/razorfang.png,Razor Fang,An item to be held by a Pokemon. This sharply hooked fang may cause the target to flinch whenever the holder successfully inflicts damage on them with an attack.
-220,https://www.serebii.net/itemdex/sprites/reapercloth.png,Reaper Cloth,A cloth imbued with horrifyingly strong spiritual energy. Its loved by a certain Pokemon.
-221,https://www.serebii.net/itemdex/sprites/redcard.png,Red Card,"An item to be held by a Pokemon. If the holder is damaged by an attack, the mysterious power of this card can remove the attacker from the battle."
-222,https://www.serebii.net/itemdex/sprites/redorb.png,Red Orb,A shiny red orb that is said to have a deep connection to a legend of the Hoenn region.
-223,https://www.serebii.net/itemdex/sprites/redscarf.png,Red Scarf,"When a Pokemon holds this during a contest, it looks even cooler than usual."
-224,https://www.serebii.net/itemdex/sprites/ribbonsweet.png,Ribbon Sweet,"A ribbon-shaped sweet. When a Milcery holds this, it spins around happily."
-225,https://www.serebii.net/itemdex/sprites/ringtarget.png,Ring Target,An item to be held by a Pokemon. Moves that would normally have no effect due to type matchups will still hit the holder.
-226,https://www.serebii.net/itemdex/sprites/rockgem.png,Rock Gem,An item to be held by a Pokemon. This gem is imbued with the essence of rock and will boost the power of a Rock-type move—but only once.
-227,https://www.serebii.net/itemdex/sprites/rockincense.png,Rock Incense,An item to be held by a Pokemon. This incense has a curious aroma that boosts the power of the holders Rock-type moves.
-228,https://www.serebii.net/itemdex/sprites/rockmemory.png,Rock Memory,A memory disc that contains Rock-type data. It changes the type of the holder if held by a certain species of Pokemon.
-229,https://www.serebii.net/itemdex/sprites/rockiumz.png,Rockium Z,It converts Z-Power into crystals that upgrade Rock-type moves to Rock-type Z-Moves.
-230,https://www.serebii.net/itemdex/sprites/rockyhelmet.png,Rocky Helmet,"An item to be held by a Pokemon. If another Pokemon makes direct contact with the holder, that Pokemon will be damaged."
-231,https://www.serebii.net/itemdex/sprites/roomservice.png,Room Service,"An item to be held by a Pokemon. If Trick Room takes effect, this item will lower the holders Speed stat."
-232,https://www.serebii.net/itemdex/sprites/roseincense.png,Rose Incense,An item to be held by a Pokemon. This incense has a curious aroma that boosts the power of the holders Grass-type moves.
-233,https://www.serebii.net/itemdex/sprites/rustedshield.png,Rusted Shield,It is said that a hero used this shield to halt a terrible disaster in ancient times. But its grown rusty and worn.
-234,https://www.serebii.net/itemdex/sprites/rustedsword.png,Rusted Sword,It is said that a hero used this sword to halt a terrible disaster in ancient times. But its grown rusty and worn.
-235,https://www.serebii.net/itemdex/sprites/safetygoggles.png,Safety Goggles,An item to be held by a Pokemon. These goggles protect the holder from both sandstorm damage and the effects of powders and spores.
-236,https://www.serebii.net/itemdex/sprites/scopelens.png,Scope Lens,An item to be held by a Pokemon. Its a lens for scoping out weak points. It boosts the holders critical-hit ratio.
-237,https://www.serebii.net/itemdex/sprites/seaincense.png,Sea Incense,An item to be held by a Pokemon. This incense has a curious aroma that boosts the power of the holders Water-type moves.
-238,https://www.serebii.net/itemdex/sprites/sharpbeak.png,Sharp Beak,"An item to be held by a Pokemon. Its a long, sharp beak that boosts the power of the holders Flying-type moves."
-239,https://www.serebii.net/itemdex/sprites/shedshell.png,Shed Shell,"An item to be held by a Pokemon. Hard and sturdy, this discarded carapace enables the holder to switch out of battle without fail."
-240,https://www.serebii.net/itemdex/sprites/shellbell.png,Shell Bell,An item to be held by a Pokemon. The holder restores a little HP to itself every time it inflicts damage with an attack.
-241,https://www.serebii.net/itemdex/sprites/shockdrive.png,Shock Drive,A cassette to be held by Genesect. It changes Genesects Techno Blast move so it becomes Electric type.
-242,https://www.serebii.net/itemdex/sprites/silkscarf.png,Silk Scarf,An item to be held by a Pokemon. Its a sumptuous scarf that boosts the power of the holders Normal-type moves.
-243,https://www.serebii.net/itemdex/sprites/silverpowder.png,Silver Powder,An item to be held by a Pokemon. Its a shiny silver powder that boosts the power of the holders Bug-type moves.
-244,https://www.serebii.net/itemdex/sprites/skyplate.png,Sky Plate,An item to be held by a Pokemon. This stone tablet is imbued with the essence of flight and boosts the power of the holders Flying-type moves.
-245,https://www.serebii.net/itemdex/sprites/smokeball.png,Smoke Ball,An item to be held by a Pokemon. It enables the holder to flee from any wild Pokemon encounter without fail.
-246,https://www.serebii.net/itemdex/sprites/smoothrock.png,Smooth Rock,"An item to be held by a Pokemon. When the holder changes the weather to a sandstorm, the storm will persist for longer than usual."
-247,https://www.serebii.net/itemdex/sprites/snorliumz.png,Snorlium Z,It converts Z-Power into crystals that upgrade Snorlaxs Giga Impact to a Z-Move.
-248,https://www.serebii.net/itemdex/sprites/snowball.png,Snowball,An item to be held by a Pokemon. This single-use ball of snow boosts the Attack stat if the holder is damaged by an Ice-type move.
-249,https://www.serebii.net/itemdex/sprites/softsand.png,Soft Sand,"An item to be held by a Pokemon. Its a loose, silky sand that boosts the power of the holders Ground-type moves."
-250,https://www.serebii.net/itemdex/sprites/solganiumz.png,Solganium Z,It converts Z-Power into crystals that upgrade Solgaleos Sunsteel Strike to a Z-Move.
-251,https://www.serebii.net/itemdex/sprites/soothebell.png,Soothe Bell,"An item to be held by a Pokemon. The comforting chime of this bell calms the holder, making it friendly."
-252,https://www.serebii.net/itemdex/sprites/souldew.png,Soul Dew,A wondrous orb to be held by Latios or Latias. It boosts the power of their Psychic- and Dragon-type moves.
-253,https://www.serebii.net/itemdex/sprites/spelltag.png,Spell Tag,"An item to be held by a Pokemon. Its a sinister, eerie tag that boosts the power of the holders Ghost-type moves."
-254,https://www.serebii.net/itemdex/sprites/splashplate.png,Splash Plate,An item to be held by a Pokemon. This stone tablet is imbued with the essence of water and boosts the power of the holders Water-type moves.
-255,https://www.serebii.net/itemdex/sprites/spookyplate.png,Spooky Plate,An item to be held by a Pokemon. This stone tablet is imbued with the essence of ghosts and boosts the power of the holders Ghost-type moves.
-256,https://www.serebii.net/itemdex/sprites/starsweet.png,Star Sweet,"A star-shaped sweet. When a Milcery holds this, it spins around happily."
-257,https://www.serebii.net/itemdex/sprites/steelgem.png,Steel Gem,An item to be held by a Pokemon. This gem is imbued with the essence of steel and will boost the power of a Steel-type move—but only once.
-258,https://www.serebii.net/itemdex/sprites/steelmemory.png,Steel Memory,A memory disc that contains Steel-type data. It changes the type of the holder if held by a certain species of Pokemon.
-259,https://www.serebii.net/itemdex/sprites/steeliumz.png,Steelium Z,It converts Z-Power into crystals that upgrade Steel-type moves to Steel-type Z-Moves.
-260,https://www.serebii.net/itemdex/sprites/stickybarb.png,Sticky Barb,An item to be held by a Pokemon. It damages the holder every turn and may latch on to Pokemon that make direct contact with the holder.
-261,https://www.serebii.net/itemdex/sprites/stoneplate.png,Stone Plate,An item to be held by a Pokemon. This stone tablet is imbued with the essence of rock and boosts the power of the holders Rock-type moves.
-262,https://www.serebii.net/itemdex/sprites/strawberrysweet.png,Strawberry Sweet,"A strawberry-shaped sweet. When a Milcery holds this, it spins around happily."
-263,https://www.serebii.net/itemdex/sprites/tapuniumz.png,Tapunium Z,It converts Z-Power into crystals that upgrade the tapus Natures Madness to a Z-Move.
-264,https://www.serebii.net/itemdex/sprites/terrainextender.png,Terrain Extender,An item to be held by a Pokemon. It extends the duration of terrain caused by the holders move or Ability.
-265,https://www.serebii.net/itemdex/sprites/thickclub.png,Thick Club,An item to be held by Cubone or Marowak. This hard bone of unknown origin boosts their Attack stat.
-266,https://www.serebii.net/itemdex/sprites/throatspray.png,Throat Spray,"An item to be held by a Pokemon. If the holder uses a sound-based move, this throat spray will boost its Sp. Atk stat."
-267,https://www.serebii.net/itemdex/sprites/toxicorb.png,Toxic Orb,An item to be held by a Pokemon. Its a bizarre orb that exudes toxins when touched and will badly poison the holder during battle.
-268,https://www.serebii.net/itemdex/sprites/toxicplate.png,Toxic Plate,An item to be held by a Pokemon. This stone tablet is imbued with the essence of poison and boosts the power of the holders Poison-type moves.
-269,https://www.serebii.net/itemdex/sprites/twistedspoon.png,Twisted Spoon,An item to be held by a Pokemon. This spoon is imbued with telekinetic energy and boosts the power of the holders Psychic-type moves.
-270,https://www.serebii.net/itemdex/sprites/ultranecroziumz.png,Ultranecrozium Z,Its a crystal that turns Necrozma fused with Solgaleo or Lunala into a new form.
-271,https://www.serebii.net/itemdex/sprites/utilityumbrella.png,Utility Umbrella,An item to be held by a Pokemon. This sturdy umbrella protects the holder from the effects of rain and harsh sunlight.
-272,https://www.serebii.net/itemdex/sprites/watergem.png,Water Gem,An item to be held by a Pokemon. This gem is imbued with the essence of water and will boost the power of a Water-type move—but only once.
-273,https://www.serebii.net/itemdex/sprites/watermemory.png,Water Memory,A memory disc that contains Water-type data. It changes the type of the holder if held by a certain species of Pokemon.
-274,https://www.serebii.net/itemdex/sprites/wateriumz.png,Waterium Z,It converts Z-Power into crystals that upgrade Water-type moves to Water-type Z-Moves.
-275,https://www.serebii.net/itemdex/sprites/waveincense.png,Wave Incense,An item to be held by a Pokemon. This incense has a curious aroma that boosts the power of the holders Water-type moves.
-276,https://www.serebii.net/itemdex/sprites/weaknesspolicy.png,Weakness Policy,"An item to be held by a Pokemon. If the holder is hit with a move its weak to, this policy sharply boosts its Attack and Sp. Atk stats."
-277,https://www.serebii.net/itemdex/sprites/wellspringmask.png,Wellspring Mask,An item to be held by Ogerpon. This carved wooden mask is adorned with crystals and allows Ogerpon to wield the Water type during battle.
-278,https://www.serebii.net/itemdex/sprites/whiteherb.png,White Herb,An item to be held by a Pokemon. It will restore any lowered stat in battle—but only once.
-279,https://www.serebii.net/itemdex/sprites/widelens.png,Wide Lens,An item to be held by a Pokemon. Its a magnifying lens that slightly boosts the accuracy of the holders moves.
-280,https://www.serebii.net/itemdex/sprites/wiseglasses.png,Wise Glasses,An item to be held by a Pokemon. This thick pair of glasses slightly boosts the power of the holders special moves.
-281,https://www.serebii.net/itemdex/sprites/yellowscarf.png,Yellow Scarf,"When a Pokemon holds this during a contest, it looks even tougher than usual."
-282,https://www.serebii.net/itemdex/sprites/zapplate.png,Zap Plate,An item to be held by a Pokemon. This stone tablet is imbued with the essence of electricity and boosts the power of the holders Electric-type moves.
-283,https://www.serebii.net/itemdex/sprites/zoomlens.png,Zoom Lens,"An item to be held by a Pokemon. When the holder acts after its target, its move will be more accurate than usual."
-284,https://www.serebii.net/itemdex/sprites/auspiciousarmor.png,Auspicious Armor,A peculiar set of armor that can make a certain species of Pokemon evolve. Auspicious wishes live within it.
-285,https://www.serebii.net/itemdex/sprites/berrysweet.png,Berry Sweet,"A berry-shaped sweet. When a Milcery holds this, it spins around happily."
-286,https://www.serebii.net/itemdex/sprites/blackaugurite.png,Black Augurite,A glassy black stone that produces a sharp cutting edge when split. Its loved by a certain Pokemon.
-287,https://www.serebii.net/itemdex/sprites/chippedpot.png,Chipped Pot,"A peculiar teapot that can make a certain species of Pokemon evolve. It may be chipped, but tea poured from it is delicious."
-288,https://www.serebii.net/itemdex/sprites/cloversweet.png,Clover Sweet,"A clover-shaped sweet. When a Milcery holds this, it spins around happily."
-289,https://www.serebii.net/itemdex/sprites/crackedpot.png,Cracked Pot,"A peculiar teapot that can make a certain species of Pokemon evolve. It may be cracked, but tea poured from it is delicious."
-290,https://www.serebii.net/itemdex/sprites/dawnstone.png,Dawn Stone,A peculiar stone that can make certain species of Pokemon evolve. It sparkles like a glittering eye.
-291,https://www.serebii.net/itemdex/sprites/deepseascale.png,Deep Sea Scale,An item to be held by Clamperl. This scale shines with a faint pink and boosts Clamperls Sp. Def stat.
-292,https://www.serebii.net/itemdex/sprites/deepseatooth.png,Deep Sea Tooth,An item to be held by Clamperl. This fang gleams a sharp silver and boosts Clamperls Sp. Atk stat.
-293,https://www.serebii.net/itemdex/sprites/dragonscale.png,Dragon Scale,A very tough and inflexible scale. Dragon-type Pokemon may be holding this item when caught.
-294,https://www.serebii.net/itemdex/sprites/dubiousdisc.png,Dubious Disc,A transparent device overflowing with dubious data. Its loved by a certain Pokemon.
-295,https://www.serebii.net/itemdex/sprites/duskstone.png,Dusk Stone,A peculiar stone that can make certain species of Pokemon evolve. It holds dark shadows within it.
-296,https://www.serebii.net/itemdex/sprites/electirizer.png,Electirizer,A box packed with a tremendous amount of electric energy. Its loved by a certain Pokemon.
-297,https://www.serebii.net/itemdex/sprites/firestone.png,Fire Stone,A peculiar stone that can make certain species of Pokemon evolve. It has a fiery orange heart.
-298,https://www.serebii.net/itemdex/sprites/flowersweet.png,Flower Sweet,"A flower-shaped sweet. When a Milcery holds this, it spins around happily."
-299,https://www.serebii.net/itemdex/sprites/icestone.png,Ice Stone,A peculiar stone that can make certain species of Pokemon evolve. It has a snowflake pattern in it.
-300,https://www.serebii.net/itemdex/sprites/king'srock.png,Kings Rock,An item to be held by a Pokemon. It may cause the target to flinch whenever the holder successfully inflicts damage on them with an attack.
-301,https://www.serebii.net/itemdex/sprites/leader'screst.png,Leaders Crest,A shard of what appears to be an old blade of some sort. It is held only by Bisharp that head up a group of Pawniard.
-302,https://www.serebii.net/itemdex/sprites/leafstone.png,Leaf Stone,A peculiar stone that can make certain species of Pokemon evolve. It has an unmistakable leaf pattern.
-303,https://www.serebii.net/itemdex/sprites/linkingcord.png,Linking Cord,A string exuding a mysterious energy that makes you feel a strange sense of connection. Its loved by certain Pokemon.
-304,https://www.serebii.net/itemdex/sprites/lovesweet.png,Love Sweet,"A heart-shaped sweet. When a Milcery holds this, it spins around happily."
-305,https://www.serebii.net/itemdex/sprites/magmarizer.png,Magmarizer,A box packed with a tremendous amount of magma energy. Its loved by a certain Pokemon.
-306,https://www.serebii.net/itemdex/sprites/maliciousarmor.png,Malicious Armor,A peculiar set of armor that can make a certain species of Pokemon evolve. Malicious will lurks within it.
-307,https://www.serebii.net/itemdex/sprites/masterpieceteacup.png,Masterpiece Teacup,"A peculiar teacup that can make a certain species of Pokemon evolve. It may be chipped, but tea drunk from it is delicious."
-308,https://www.serebii.net/itemdex/sprites/metalcoat.png,Metal Coat,An item to be held by a Pokemon. Its a special metallic coating that boosts the power of the holders Steel-type moves.
-309,https://www.serebii.net/itemdex/sprites/moonstone.png,Moon Stone,A peculiar stone that can make certain species of Pokemon evolve. It is dark like the night sky.
-310,https://www.serebii.net/itemdex/sprites/ovalstone.png,Oval Stone,A peculiar stone that can make a certain species of Pokemon evolve. It is round and smooth.
-311,https://www.serebii.net/itemdex/sprites/peatblock.png,Peat Block,A block of muddy material that can be used as fuel for burning when it is dried. Its loved by a certain Pokemon.
-312,https://www.serebii.net/itemdex/sprites/prismscale.png,Prism Scale,A mysterious scale that causes a certain Pokemon to evolve. It shines in rainbow colors.
-313,https://www.serebii.net/itemdex/sprites/protector.png,Protector,A protective item of some sort. It is extremely stiff and heavy. Its loved by a certain Pokemon.
-314,https://www.serebii.net/itemdex/sprites/razorclaw.png,Razor Claw,An item to be held by a Pokemon. This sharply hooked claw boosts the critical-hit ratio of the holders moves.
-315,https://www.serebii.net/itemdex/sprites/razorfang.png,Razor Fang,An item to be held by a Pokemon. This sharply hooked fang may cause the target to flinch whenever the holder successfully inflicts damage on them with an attack.
-316,https://www.serebii.net/itemdex/sprites/reapercloth.png,Reaper Cloth,A cloth imbued with horrifyingly strong spiritual energy. Its loved by a certain Pokemon.
-317,https://www.serebii.net/itemdex/sprites/ribbonsweet.png,Ribbon Sweet,"A ribbon-shaped sweet. When a Milcery holds this, it spins around happily."
-318,https://www.serebii.net/itemdex/sprites/sachet.png,Sachet,A sachet filled with fragrant perfumes that are just slightly overwhelming. Yet its loved by a certain Pokemon.
-319,https://www.serebii.net/itemdex/sprites/scrollofdarkness.png,Scroll of Darkness,A peculiar scroll that can make a certain species of Pokemon evolve. Written upon it are the true secrets of the path of darkness.
-320,https://www.serebii.net/itemdex/sprites/scrollofwaters.png,Scroll of Waters,A peculiar scroll that can make a certain species of Pokemon evolve. Written upon it are the true secrets of the path of water.
-321,https://www.serebii.net/itemdex/sprites/shinystone.png,Shiny Stone,A peculiar stone that can make certain species of Pokemon evolve. It shines with a dazzling light.
-322,https://www.serebii.net/itemdex/sprites/starsweet.png,Star Sweet,"A star-shaped sweet. When a Milcery holds this, it spins around happily."
-323,https://www.serebii.net/itemdex/sprites/strawberrysweet.png,Strawberry Sweet,"A strawberry-shaped sweet. When a Milcery holds this, it spins around happily."
-324,https://www.serebii.net/itemdex/sprites/sunstone.png,Sun Stone,A peculiar stone that can make certain species of Pokemon evolve. It burns as red as the evening sun.
-325,https://www.serebii.net/itemdex/sprites/sweetapple.png,Sweet Apple,A peculiar apple that can make a certain species of Pokemon evolve. Its exceptionally sweet.
-326,https://www.serebii.net/itemdex/sprites/syrupyapple.png,Syrupy Apple,A peculiar apple that can make a certain species of Pokemon evolve. Its exceptionally syrupy.
-327,https://www.serebii.net/itemdex/sprites/tartapple.png,Tart Apple,A peculiar apple that can make a certain species of Pokemon evolve. Its exceptionally tart.
-328,https://www.serebii.net/itemdex/sprites/thunderstone.png,Thunder Stone,A peculiar stone that can make certain species of Pokemon evolve. It has a distinct thunderbolt pattern.
-329,https://www.serebii.net/itemdex/sprites/unremarkableteacup.png,Unremarkable Teacup,"A peculiar teacup that can make a certain species of Pokemon evolve. It may be cracked, but tea drunk from it is delicious."
-330,https://www.serebii.net/itemdex/sprites/upgrade.png,Upgrade,A transparent device somehow filled with all sorts of data. It was produced by Silph Co.
-331,https://www.serebii.net/itemdex/sprites/waterstone.png,Water Stone,A peculiar stone that can make certain species of Pokemon evolve. It is the clear blue of a deep pool.
-332,https://www.serebii.net/itemdex/sprites/whippeddream.png,Whipped Dream,"A soft and sweet treat made of fluffy, puffy, whipped, and whirled cream. Its loved by a certain Pokemon."
-333,https://www.serebii.net/itemdex/sprites/aguavberry.png,Aguav Berry,"If a Pokemon holds one of these Berries, it will be able to restore some HP should it find itself in a pinch. But it will become confused if it hates the Berrys taste."
-334,https://www.serebii.net/itemdex/sprites/apicotberry.png,Apicot Berry,"If a Pokemon holds one of these Berries, its Sp. Def stat will be boosted should it find itself in a pinch."
-335,https://www.serebii.net/itemdex/sprites/aspearberry.png,Aspear Berry,"If a Pokemon holds one of these Berries, it will be able to thaw itself after being frozen."
-336,https://www.serebii.net/itemdex/sprites/babiriberry.png,Babiri Berry,"If a Pokemon holding this Berry is hit with a supereffective Steel-type move, the power of that move will be weakened."
-337,https://www.serebii.net/itemdex/sprites/belueberry.png,Belue Berry,Used to make Pokeblocks that will enhance Beauty. This Berry is rare in other regions.
-338,https://www.serebii.net/itemdex/sprites/blukberry.png,Bluk Berry,Used to make Pokeblocks that will enhance Beauty. Its blue flesh is dry if eaten.
-339,https://www.serebii.net/itemdex/sprites/chartiberry.png,Charti Berry,"If a Pokemon holding this Berry is hit with a supereffective Rock-type move, the power of that move will be weakened."
-340,https://www.serebii.net/itemdex/sprites/cheriberry.png,Cheri Berry,"If a Pokemon holds one of these Berries, it will be able to free itself from paralysis."
-341,https://www.serebii.net/itemdex/sprites/chestoberry.png,Chesto Berry,"If a Pokemon holds one of these Berries, it will be able to wake itself from sleep."
-342,https://www.serebii.net/itemdex/sprites/chilanberry.png,Chilan Berry,"If a Pokemon holding this Berry is hit with a Normal-type move, the power of that move will be weakened."
-343,https://www.serebii.net/itemdex/sprites/chopleberry.png,Chople Berry,"If a Pokemon holding this Berry is hit with a supereffective Fighting-type move, the power of that move will be weakened."
-344,https://www.serebii.net/itemdex/sprites/cobaberry.png,Coba Berry,"If a Pokemon holding this Berry is hit with a supereffective Flying-type move, the power of that move will be weakened."
-345,https://www.serebii.net/itemdex/sprites/colburberry.png,Colbur Berry,"If a Pokemon holding this Berry is hit with a supereffective Dark-type move, the power of that move will be weakened."
-346,https://www.serebii.net/itemdex/sprites/cornnberry.png,Cornn Berry,Used to make Pokeblocks that will enhance Beauty. This Berry is rare in other regions.
-347,https://www.serebii.net/itemdex/sprites/custapberry.png,Custap Berry,"If a Pokemon holds one of these Berries, it will be able to act faster should it find itself in a pinch—but only for the next move it uses."
-348,https://www.serebii.net/itemdex/sprites/durinberry.png,Durin Berry,Used to make Pokeblocks that will enhance Cleverness. This Berry is rare in other regions.
-349,https://www.serebii.net/itemdex/sprites/enigmaberry.png,Enigma Berry,"If a Pokemon holds one of these Berries, it will be able to regain some HP if it is hit with a supereffective move."
-350,https://www.serebii.net/itemdex/sprites/figyberry.png,Figy Berry,"If a Pokemon holds one of these Berries, it will be able to restore some HP should it find itself in a pinch. But it will become confused if it hates the Berrys taste."
-351,https://www.serebii.net/itemdex/sprites/ganlonberry.png,Ganlon Berry,"If a Pokemon holds one of these Berries, its Defense stat will be boosted should it find itself in a pinch."
-352,https://www.serebii.net/itemdex/sprites/goldennanabberry.png,Golden Nanab Berry,A Berry that drastically calms Pokemon youre trying to catch when given to them.
-353,https://www.serebii.net/itemdex/sprites/goldenpinapberry.png,Golden Pinap Berry,A Berry that makes you drastically more likely to get an item when given to Pokemon youre trying to catch.
-354,https://www.serebii.net/itemdex/sprites/goldenrazzberry.png,Golden Razz Berry,A Berry that makes it drastically easier to catch Pokemon when given to them.
-355,https://www.serebii.net/itemdex/sprites/grepaberry.png,Grepa Berry,"If a Pokemon is fed this Berry, it will grow more friendly, but it will lose base points for its Sp. Def stat."
-356,https://www.serebii.net/itemdex/sprites/habanberry.png,Haban Berry,"If a Pokemon holding this Berry is hit with a supereffective Dragon-type move, the power of that move will be weakened."
-357,https://www.serebii.net/itemdex/sprites/hondewberry.png,Hondew Berry,"If a Pokemon is fed this Berry, it will grow more friendly, but it will lose base points for its Sp. Atk stat."
-358,https://www.serebii.net/itemdex/sprites/hopoberry.png,Hopo Berry,"A Berry that can be fed to a Pokemon to restore its PP. If a wild Pokemon eats one of these Berries, that Pokemons reactions will be dulled."
-359,https://www.serebii.net/itemdex/sprites/iapapaberry.png,Iapapa Berry,"If a Pokemon holds one of these Berries, it will be able to restore some HP should it find itself in a pinch. But it will become confused if it hates the Berrys taste."
-360,https://www.serebii.net/itemdex/sprites/jabocaberry.png,Jaboca Berry,"If a Pokemon holding this Berry is hit with a physical move, the attacker will also take damage."
-361,https://www.serebii.net/itemdex/sprites/kasibberry.png,Kasib Berry,"If a Pokemon holding this Berry is hit with a supereffective Ghost-type move, the power of that move will be weakened."
-362,https://www.serebii.net/itemdex/sprites/kebiaberry.png,Kebia Berry,"If a Pokemon holding this Berry is hit with a supereffective Poison-type move, the power of that move will be weakened."
-363,https://www.serebii.net/itemdex/sprites/keeberry.png,Kee Berry,"If a Pokemon holding this Berry is hit with a physical move, the holders Defense stat will be boosted."
-364,https://www.serebii.net/itemdex/sprites/kelpsyberry.png,Kelpsy Berry,"If a Pokemon is fed this Berry, it will grow more friendly, but it will lose base points for its Attack stat."
-365,https://www.serebii.net/itemdex/sprites/lansatberry.png,Lansat Berry,"If a Pokemon holds one of these Berries, its critical-hit ratio will be boosted should it find itself in a pinch."
-366,https://www.serebii.net/itemdex/sprites/leppaberry.png,Leppa Berry,"If a Pokemon holds one of these Berries, it will be able to restore 10 PP to a move."
-367,https://www.serebii.net/itemdex/sprites/liechiberry.png,Liechi Berry,"If a Pokemon holds one of these Berries, its Attack stat will be boosted should it find itself in a pinch."
-368,https://www.serebii.net/itemdex/sprites/lumberry.png,Lum Berry,"If a Pokemon holds one of these Berries, it will be able to cure itself of any status condition it may have."
-369,https://www.serebii.net/itemdex/sprites/magoberry.png,Mago Berry,"If a Pokemon holds one of these Berries, it will be able to restore some HP should it find itself in a pinch. But it will become confused if it hates the Berrys taste."
-370,https://www.serebii.net/itemdex/sprites/magostberry.png,Magost Berry,Used to make Pokeblocks that will enhance Cuteness. This Berry is rare in other regions.
-371,https://www.serebii.net/itemdex/sprites/marangaberry.png,Maranga Berry,"If a Pokemon holding this Berry is hit with a special move, the holders Sp. Def stat will be boosted."
-372,https://www.serebii.net/itemdex/sprites/micleberry.png,Micle Berry,"If a Pokemon holds one of these Berries, its accuracy will be boosted should it find itself in a pinch—but only for the next move it uses."
-373,https://www.serebii.net/itemdex/sprites/nanabberry.png,Nanab Berry,Used to make Pokeblocks that will enhance Cuteness. Its pink flesh is sweet if eaten.
-374,https://www.serebii.net/itemdex/sprites/nomelberry.png,Nomel Berry,Used to make Pokeblocks that will enhance Toughness. This Berry is rare in other regions.
-375,https://www.serebii.net/itemdex/sprites/occaberry.png,Occa Berry,"If a Pokemon holding this Berry is hit with a supereffective Fire-type move, the power of that move will be weakened."
-376,https://www.serebii.net/itemdex/sprites/oranberry.png,Oran Berry,"If a Pokemon holds one of these Berries, it will be able to restore 10 HP to itself."
-377,https://www.serebii.net/itemdex/sprites/pamtreberry.png,Pamtre Berry,Used to make Pokeblocks that will enhance Beauty. This Berry is rare in other regions.
-378,https://www.serebii.net/itemdex/sprites/passhoberry.png,Passho Berry,"If a Pokemon holding this Berry is hit with a supereffective Water-type move, the power of that move will be weakened."
-379,https://www.serebii.net/itemdex/sprites/payapaberry.png,Payapa Berry,"If a Pokemon holding this Berry is hit with a supereffective Psychic-type move, the power of that move will be weakened."
-380,https://www.serebii.net/itemdex/sprites/pechaberry.png,Pecha Berry,"If a Pokemon holds one of these Berries, it will be able to lift the effects of being poisoned from itself."
-381,https://www.serebii.net/itemdex/sprites/persimberry.png,Persim Berry,"If a Pokemon holds one of these Berries, it will be able to cure itself of confusion."
-382,https://www.serebii.net/itemdex/sprites/petayaberry.png,Petaya Berry,"If a Pokemon holds one of these Berries, its Sp. Atk stat will be boosted should it find itself in a pinch."
-383,https://www.serebii.net/itemdex/sprites/pinapberry.png,Pinap Berry,Used to make Pokeblocks that will enhance Toughness. Its yellow flesh is sour if eaten.
-384,https://www.serebii.net/itemdex/sprites/pomegberry.png,Pomeg Berry,"If a Pokemon is fed this Berry, it will grow more friendly, but it will lose base points for its HP stat."
-385,https://www.serebii.net/itemdex/sprites/qualotberry.png,Qualot Berry,"If a Pokemon is fed this Berry, it will grow more friendly, but it will lose base points for its Defense stat."
-386,https://www.serebii.net/itemdex/sprites/rabutaberry.png,Rabuta Berry,Used to make Pokeblocks that will enhance Cleverness. This Berry is rare in other regions.
-387,https://www.serebii.net/itemdex/sprites/rawstberry.png,Rawst Berry,"If a Pokemon holds one of these Berries, it will be able to cure itself of a burn."
-388,https://www.serebii.net/itemdex/sprites/razzberry.png,Razz Berry,Used to make Pokeblocks that will enhance Coolness. Its red flesh is spicy if eaten.
-389,https://www.serebii.net/itemdex/sprites/rindoberry.png,Rindo Berry,"If a Pokemon holding this Berry is hit with a supereffective Grass-type move, the power of that move will be weakened."
-390,https://www.serebii.net/itemdex/sprites/roseliberry.png,Roseli Berry,"If a Pokemon holding this Berry is hit with a supereffective Fairy-type move, the power of that move will be weakened."
-391,https://www.serebii.net/itemdex/sprites/rowapberry.png,Rowap Berry,"If a Pokemon holding this Berry is hit with a special move, the attacker will also take damage."
-392,https://www.serebii.net/itemdex/sprites/salacberry.png,Salac Berry,"If a Pokemon holds one of these Berries, its Speed stat will be boosted should it find itself in a pinch."
-393,https://www.serebii.net/itemdex/sprites/shucaberry.png,Shuca Berry,"If a Pokemon holding this Berry is hit with a supereffective Ground-type move, the power of that move will be weakened."
-394,https://www.serebii.net/itemdex/sprites/silvernanabberry.png,Silver Nanab Berry,A Berry that calms Pokemon youre trying to catch when given to them.
-395,https://www.serebii.net/itemdex/sprites/silverpinapberry.png,Silver Pinap Berry,A Berry that makes you more likely to get an item when given to Pokemon youre trying to catch.
-396,https://www.serebii.net/itemdex/sprites/silverrazzberry.png,Silver Razz Berry,A Berry that makes it easier to catch Pokemon when given to them.
-397,https://www.serebii.net/itemdex/sprites/sitrusberry.png,Sitrus Berry,"If a Pokemon holds one of these Berries, it will be able to restore a small amount of HP to itself."
-398,https://www.serebii.net/itemdex/sprites/spelonberry.png,Spelon Berry,Used to make Pokeblocks that will enhance Cuteness. This Berry is rare in other regions.
-399,https://www.serebii.net/itemdex/sprites/starfberry.png,Starf Berry,"If a Pokemon holds one of these Berries, one of its stats will be sharply boosted should it find itself in a pinch."
-400,https://www.serebii.net/itemdex/sprites/tamatoberry.png,Tamato Berry,"If a Pokemon is fed this Berry, it will grow more friendly, but it will lose base points for its Speed stat."
-401,https://www.serebii.net/itemdex/sprites/tangaberry.png,Tanga Berry,"If a Pokemon holding this Berry is hit with a supereffective Bug-type move, the power of that move will be weakened."
-402,https://www.serebii.net/itemdex/sprites/wacanberry.png,Wacan Berry,"If a Pokemon holding this Berry is hit with a supereffective Electric-type move, the power of that move will be weakened."
-403,https://www.serebii.net/itemdex/sprites/watmelberry.png,Watmel Berry,Used to make Pokeblocks that will enhance Cleverness. This Berry is rare in other regions.
-404,https://www.serebii.net/itemdex/sprites/wepearberry.png,Wepear Berry,Used to make Pokeblocks that will enhance Cleverness. Its green flesh is bitter if eaten.
-405,https://www.serebii.net/itemdex/sprites/wikiberry.png,Wiki Berry,"If a Pokemon holds one of these Berries, it will be able to restore some HP should it find itself in a pinch. But it will become confused if it hates the Berrys taste."
-406,https://www.serebii.net/itemdex/sprites/yacheberry.png,Yache Berry,"If a Pokemon holding this Berry is hit with a supereffective Ice-type move, the power of that move will be weakened."
-407,https://www.serebii.net/itemdex/sprites/abilitycapsule.png,Ability Capsule,A capsule that allows a Pokemon to switch its current Ability to the other Ability its species can have.
-408,https://www.serebii.net/itemdex/sprites/abilitypatch.png,Ability Patch,A patch that can be used to change the regular Ability of a Pokemon to a rarer Ability.
-409,https://www.serebii.net/itemdex/sprites/abracandy.png,Abra Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-410,https://www.serebii.net/itemdex/sprites/adamantmint.png,Adamant Mint,"Having a Pokemon smell this mint can make its Attack stat grow stronger. However, its Sp. Atk stat may suffer."
-411,https://www.serebii.net/itemdex/sprites/aerodactylcandy.png,Aerodactyl Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-412,https://www.serebii.net/itemdex/sprites/articunocandy.png,Articuno Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-413,https://www.serebii.net/itemdex/sprites/bellsproutcandy.png,Bellsprout Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-414,https://www.serebii.net/itemdex/sprites/boldmint.png,Bold Mint,"Having a Pokemon smell this mint can make its Defense stat grow stronger. However, its Attack stat may suffer."
-415,https://www.serebii.net/itemdex/sprites/bravemint.png,Brave Mint,"Having a Pokemon smell this mint can make its Attack stat grow stronger. However, its Speed stat may suffer."
-416,https://www.serebii.net/itemdex/sprites/bulbasaurcandy.png,Bulbasaur Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-417,https://www.serebii.net/itemdex/sprites/calcium.png,Calcium,A nutritious drink for Pokemon. This drink increases base points for a Pokemons Sp. Atk stat.
-418,https://www.serebii.net/itemdex/sprites/calmmint.png,Calm Mint,"Having a Pokemon smell this mint can make its Sp. Def stat grow stronger. However, its Attack stat may suffer."
-419,https://www.serebii.net/itemdex/sprites/carbos.png,Carbos,A nutritious drink for Pokemon. This drink increases base points for a Pokemons Speed stat.
-420,https://www.serebii.net/itemdex/sprites/carefulmint.png,Careful Mint,"Having a Pokemon smell this mint can make its Sp. Def stat grow stronger. However, its Sp. Atk stat may suffer."
-421,https://www.serebii.net/itemdex/sprites/caterpiecandy.png,Caterpie Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-422,https://www.serebii.net/itemdex/sprites/chanseycandy.png,Chansey Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-423,https://www.serebii.net/itemdex/sprites/charmandercandy.png,Charmander Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-424,https://www.serebii.net/itemdex/sprites/clefairycandy.png,Clefairy Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-425,https://www.serebii.net/itemdex/sprites/cleverfeather.png,Clever Feather,An item to be used on a Pokemon. This feather slightly increases base points for a Pokemons Sp. Def stat.
-426,https://www.serebii.net/itemdex/sprites/clevermochi.png,Clever Mochi,A mochi cake with Berries kneaded into its dough. It increases base points for a Pokemons Sp. Def stat.
-427,https://www.serebii.net/itemdex/sprites/couragecandy.png,Courage Candy,"A candy that is packed with energy. When given to a Pokemon, it will increase that Pokemons Sp. Def stat."
-428,https://www.serebii.net/itemdex/sprites/couragecandyl.png,Courage Candy L,"A big candy that is packed with energy. When given to a Pokemon at Lv. 30 or higher, it will increase that Pokemons Sp. Def stat."
-429,https://www.serebii.net/itemdex/sprites/couragecandyxl.png,Courage Candy XL,"A huge candy that is packed with energy. When given to a Pokemon at Lv. 60 or higher, it will increase that Pokemons Sp. Def stat."
-430,https://www.serebii.net/itemdex/sprites/cubonecandy.png,Cubone Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-431,https://www.serebii.net/itemdex/sprites/diglettcandy.png,Diglett Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-432,https://www.serebii.net/itemdex/sprites/dittocandy.png,Ditto Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-433,https://www.serebii.net/itemdex/sprites/doduocandy.png,Doduo Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-434,https://www.serebii.net/itemdex/sprites/dratinicandy.png,Dratini Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-435,https://www.serebii.net/itemdex/sprites/drowzeecandy.png,Drowzee Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-436,https://www.serebii.net/itemdex/sprites/dynamaxcandy.png,Dynamax Candy,"A candy that is packed with energy. If consumed, it raises the Dynamax Level of a Pokemon by one. A higher level means higher HP when Dynamaxed."
-437,https://www.serebii.net/itemdex/sprites/eeveecandy.png,Eevee Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-438,https://www.serebii.net/itemdex/sprites/ekanscandy.png,Ekans Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-439,https://www.serebii.net/itemdex/sprites/electabuzzcandy.png,Electabuzz Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-440,https://www.serebii.net/itemdex/sprites/exeggcutecandy.png,Exeggcute Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-441,https://www.serebii.net/itemdex/sprites/exp.candyl.png,Exp. Candy L,"A candy that is packed with energy. If consumed, it grants a Pokemon a large number of Exp. Points."
-442,https://www.serebii.net/itemdex/sprites/exp.candym.png,Exp. Candy M,"A candy that is packed with energy. If consumed, it grants a Pokemon a moderate number of Exp. Points."
-443,https://www.serebii.net/itemdex/sprites/exp.candys.png,Exp. Candy S,"A candy that is packed with energy. If consumed, it grants a Pokemon a small number of Exp. Points."
-444,https://www.serebii.net/itemdex/sprites/exp.candyxl.png,Exp. Candy XL,"A candy that is packed with energy. If consumed, it grants a Pokemon a very large number of Exp. Points."
-445,https://www.serebii.net/itemdex/sprites/exp.candyxs.png,Exp. Candy XS,"A candy that is packed with energy. If consumed, it grants a Pokemon a very small number of Exp. Points."
-446,https://www.serebii.net/itemdex/sprites/farfetch'dcandy.png,Farfetchd Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-447,https://www.serebii.net/itemdex/sprites/fresh-startmochi.png,Fresh-Start Mochi,A mochi cake with Berries kneaded into its dough. It causes a Pokemon to lose all its base points.
-448,https://www.serebii.net/itemdex/sprites/gastlycandy.png,Gastly Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-449,https://www.serebii.net/itemdex/sprites/geniusfeather.png,Genius Feather,An item to be used on a Pokemon. This feather slightly increases base points for a Pokemons Sp. Atk stat.
-450,https://www.serebii.net/itemdex/sprites/geniusmochi.png,Genius Mochi,A mochi cake with Berries kneaded into its dough. It increases base points for a Pokemons Sp. Atk stat.
-451,https://www.serebii.net/itemdex/sprites/gentlemint.png,Gentle Mint,"Having a Pokemon smell this mint can make its Sp. Def stat grow stronger. However, its Defense stat may suffer."
-452,https://www.serebii.net/itemdex/sprites/geodudecandy.png,Geodude Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-453,https://www.serebii.net/itemdex/sprites/goldeencandy.png,Goldeen Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-454,https://www.serebii.net/itemdex/sprites/grimercandy.png,Grimer Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-455,https://www.serebii.net/itemdex/sprites/gritdust.png,Grit Dust,"Mysterious dust that can raise the effort level for one of a Pokemons stats. It can be used to raise effort levels only up to level three, however."
-456,https://www.serebii.net/itemdex/sprites/gritgravel.png,Grit Gravel,Mysterious gravel that can raise the effort level for one of a Pokemons stats. It can be used only if the effort level is at least level three and no greater than level five.
-457,https://www.serebii.net/itemdex/sprites/gritpebble.png,Grit Pebble,A mysterious pebble that can raise the effort level for one of a Pokemons stats. It can be used only if the effort level is at least level six and no greater than level eight.
-458,https://www.serebii.net/itemdex/sprites/gritrock.png,Grit Rock,A mysterious rock that can raise the effort level for one of a Pokemons stats. It can be used only if the effort level has already reached level nine.
-459,https://www.serebii.net/itemdex/sprites/growlithecandy.png,Growlithe Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-460,https://www.serebii.net/itemdex/sprites/hpup.png,HP Up,A nutritious drink for Pokemon. This drink increases base points for a Pokemons HP stat.
-461,https://www.serebii.net/itemdex/sprites/hastymint.png,Hasty Mint,"Having a Pokemon smell this mint can make its Speed stat grow stronger. However, its Defense stat may suffer."
-462,https://www.serebii.net/itemdex/sprites/healthcandy.png,Health Candy,"A candy that is packed with energy. When given to a Pokemon, it will increase that Pokemons HP."
-463,https://www.serebii.net/itemdex/sprites/healthcandyl.png,Health Candy L,"A big candy that is packed with energy. When given to a Pokemon at Lv. 30 or higher, it will increase that Pokemons HP."
-464,https://www.serebii.net/itemdex/sprites/healthcandyxl.png,Health Candy XL,"A huge candy that is packed with energy. When given to a Pokemon at Lv. 60 or higher, it will increase that Pokemons HP."
-465,https://www.serebii.net/itemdex/sprites/healthfeather.png,Health Feather,An item to be used on a Pokemon. This feather slightly increases base points for a Pokemons HP stat.
-466,https://www.serebii.net/itemdex/sprites/healthmochi.png,Health Mochi,A mochi cake with Berries kneaded into its dough. It increases base points for a Pokemons HP stat.
-467,https://www.serebii.net/itemdex/sprites/hitmonchancandy.png,Hitmonchan Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-468,https://www.serebii.net/itemdex/sprites/hitmonleecandy.png,Hitmonlee Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-469,https://www.serebii.net/itemdex/sprites/horseacandy.png,Horsea Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-470,https://www.serebii.net/itemdex/sprites/impishmint.png,Impish Mint,"Having a Pokemon smell this mint can make its Defense stat grow stronger. However, its Sp. Atk stat may suffer."
-471,https://www.serebii.net/itemdex/sprites/iron.png,Iron,A nutritious drink for Pokemon. This drink increases base points for a Pokemons Defense stat.
-472,https://www.serebii.net/itemdex/sprites/jigglypuffcandy.png,Jigglypuff Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-473,https://www.serebii.net/itemdex/sprites/jollymint.png,Jolly Mint,"Having a Pokemon smell this mint can make its Speed stat grow stronger. However, its Sp. Atk stat may suffer."
-474,https://www.serebii.net/itemdex/sprites/jynxcandy.png,Jynx Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-475,https://www.serebii.net/itemdex/sprites/kabutocandy.png,Kabuto Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-476,https://www.serebii.net/itemdex/sprites/kangaskhancandy.png,Kangaskhan Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-477,https://www.serebii.net/itemdex/sprites/koffingcandy.png,Koffing Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-478,https://www.serebii.net/itemdex/sprites/krabbycandy.png,Krabby Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-479,https://www.serebii.net/itemdex/sprites/laprascandy.png,Lapras Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-480,https://www.serebii.net/itemdex/sprites/laxmint.png,Lax Mint,"Having a Pokemon smell this mint can make its Defense stat grow stronger. However, its Sp. Def stat may suffer."
-481,https://www.serebii.net/itemdex/sprites/lickitungcandy.png,Lickitung Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-482,https://www.serebii.net/itemdex/sprites/lonelymint.png,Lonely Mint,"Having a Pokemon smell this mint can make its Attack stat grow stronger. However, its Defense stat may suffer."
-483,https://www.serebii.net/itemdex/sprites/machopcandy.png,Machop Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-484,https://www.serebii.net/itemdex/sprites/magikarpcandy.png,Magikarp Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-485,https://www.serebii.net/itemdex/sprites/magmarcandy.png,Magmar Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-486,https://www.serebii.net/itemdex/sprites/magnemitecandy.png,Magnemite Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-487,https://www.serebii.net/itemdex/sprites/mankeycandy.png,Mankey Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-488,https://www.serebii.net/itemdex/sprites/meltancandy.png,Meltan Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-489,https://www.serebii.net/itemdex/sprites/meowthcandy.png,Meowth Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-490,https://www.serebii.net/itemdex/sprites/mewcandy.png,Mew Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-491,https://www.serebii.net/itemdex/sprites/mewtwocandy.png,Mewtwo Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-492,https://www.serebii.net/itemdex/sprites/mightycandy.png,Mighty Candy,"A candy that is packed with energy. When given to a Pokemon, it will increase that Pokemons Attack stat."
-493,https://www.serebii.net/itemdex/sprites/mightycandyl.png,Mighty Candy L,"A big candy that is packed with energy. When given to a Pokemon at Lv. 30 or higher, it will increase that Pokemons Attack stat."
-494,https://www.serebii.net/itemdex/sprites/mightycandyxl.png,Mighty Candy XL,"A huge candy that is packed with energy. When given to a Pokemon at Lv. 60 or higher, it will increase that Pokemons Attack stat."
-495,https://www.serebii.net/itemdex/sprites/mildmint.png,Mild Mint,"Having a Pokemon smell this mint can make its Sp. Atk stat grow stronger. However, its Defense stat may suffer."
-496,https://www.serebii.net/itemdex/sprites/modestmint.png,Modest Mint,"Having a Pokemon smell this mint can make its Sp. Atk stat grow stronger. However, its Attack stat may suffer."
-497,https://www.serebii.net/itemdex/sprites/moltrescandy.png,Moltres Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-498,https://www.serebii.net/itemdex/sprites/mr.mimecandy.png,Mr. Mime Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-499,https://www.serebii.net/itemdex/sprites/musclefeather.png,Muscle Feather,An item to be used on a Pokemon. This feather slightly increases base points for a Pokemons Attack stat.
-500,https://www.serebii.net/itemdex/sprites/musclemochi.png,Muscle Mochi,A mochi cake with Berries kneaded into its dough. It increases base points for a Pokemons Attack stat.
-501,https://www.serebii.net/itemdex/sprites/naivemint.png,Naive Mint,"Having a Pokemon smell this mint can make its Speed stat grow stronger. However, its Sp. Def stat may suffer."
-502,https://www.serebii.net/itemdex/sprites/naughtymint.png,Naughty Mint,"Having a Pokemon smell this mint can make its Attack stat grow stronger. However, its Sp. Def stat may suffer."
-503,https://www.serebii.net/itemdex/sprites/nidoranfcandy.png,NidoranF Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-504,https://www.serebii.net/itemdex/sprites/nidoranmcandy.png,NidoranM Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-505,https://www.serebii.net/itemdex/sprites/oddishcandy.png,Oddish Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-506,https://www.serebii.net/itemdex/sprites/omanytecandy.png,Omanyte Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-507,https://www.serebii.net/itemdex/sprites/onixcandy.png,Onix Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-508,https://www.serebii.net/itemdex/sprites/ppmax.png,PP Max,A medicine that can be used to raise the max PP of a single move that a Pokemon knows as high as it can possibly go.
-509,https://www.serebii.net/itemdex/sprites/ppup.png,PP Up,A medicine that can be used to slightly raise the max PP of a single move that a Pokemon knows.
-510,https://www.serebii.net/itemdex/sprites/parascandy.png,Paras Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-511,https://www.serebii.net/itemdex/sprites/pidgeycandy.png,Pidgey Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-512,https://www.serebii.net/itemdex/sprites/pikachucandy.png,Pikachu Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-513,https://www.serebii.net/itemdex/sprites/pinsircandy.png,Pinsir Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-514,https://www.serebii.net/itemdex/sprites/poliwagcandy.png,Poliwag Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-515,https://www.serebii.net/itemdex/sprites/ponytacandy.png,Ponyta Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-516,https://www.serebii.net/itemdex/sprites/porygoncandy.png,Porygon Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-517,https://www.serebii.net/itemdex/sprites/protein.png,Protein,A nutritious drink for Pokemon. This drink increases base points for a Pokemons Attack stat.
-518,https://www.serebii.net/itemdex/sprites/psyduckcandy.png,Psyduck Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-519,https://www.serebii.net/itemdex/sprites/quickcandy.png,Quick Candy,"A candy that is packed with energy. When given to a Pokemon, it will increase that Pokemons Speed stat."
-520,https://www.serebii.net/itemdex/sprites/quickcandyl.png,Quick Candy L,"A big candy that is packed with energy. When given to a Pokemon at Lv. 30 or higher, it will increase that Pokemons Speed stat."
-521,https://www.serebii.net/itemdex/sprites/quickcandyxl.png,Quick Candy XL,"A huge candy that is packed with energy. When given to a Pokemon at Lv. 60 or higher, it will increase that Pokemons Speed stat."
-522,https://www.serebii.net/itemdex/sprites/quietmint.png,Quiet Mint,"Having a Pokemon smell this mint can make its Sp. Atk stat grow stronger. However, its Speed stat may suffer."
-523,https://www.serebii.net/itemdex/sprites/rarecandy.png,Rare Candy,"A candy that is packed with energy. If consumed, it raises a Pokemons level by one."
-524,https://www.serebii.net/itemdex/sprites/rashmint.png,Rash Mint,"Having a Pokemon smell this mint can make its Sp. Atk stat grow stronger. However, its Sp. Def stat may suffer."
-525,https://www.serebii.net/itemdex/sprites/rattatacandy.png,Rattata Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-526,https://www.serebii.net/itemdex/sprites/relaxedmint.png,Relaxed Mint,"Having a Pokemon smell this mint can make its Defense stat grow stronger. However, its Speed stat may suffer."
-527,https://www.serebii.net/itemdex/sprites/resistfeather.png,Resist Feather,An item to be used on a Pokemon. This feather slightly increases base points for a Pokemons Defense stat.
-528,https://www.serebii.net/itemdex/sprites/resistmochi.png,Resist Mochi,A mochi cake with Berries kneaded into its dough. It increases base points for a Pokemons Defense stat.
-529,https://www.serebii.net/itemdex/sprites/rhyhorncandy.png,Rhyhorn Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-530,https://www.serebii.net/itemdex/sprites/sandshrewcandy.png,Sandshrew Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-531,https://www.serebii.net/itemdex/sprites/sassymint.png,Sassy Mint,"Having a Pokemon smell this mint can make its Sp. Def stat grow stronger. However, its Speed stat may suffer."
-532,https://www.serebii.net/itemdex/sprites/scythercandy.png,Scyther Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-533,https://www.serebii.net/itemdex/sprites/seelcandy.png,Seel Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-534,https://www.serebii.net/itemdex/sprites/seriousmint.png,Serious Mint,"Having a Pokemon smell this mint will cause its Attack, Defense, Sp. Atk, Sp. Def, and Speed stats to grow at an equal rate."
-535,https://www.serebii.net/itemdex/sprites/shelldercandy.png,Shellder Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-536,https://www.serebii.net/itemdex/sprites/slowpokecandy.png,Slowpoke Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-537,https://www.serebii.net/itemdex/sprites/smartcandy.png,Smart Candy,"A candy that is packed with energy. When given to a Pokemon, it will increase that Pokemons Sp. Atk stat."
-538,https://www.serebii.net/itemdex/sprites/smartcandyl.png,Smart Candy L,"A big candy that is packed with energy. When given to a Pokemon at Lv. 30 or higher, it will increase that Pokemons Sp. Atk stat."
-539,https://www.serebii.net/itemdex/sprites/smartcandyxl.png,Smart Candy XL,"A huge candy that is packed with energy. When given to a Pokemon at Lv. 60 or higher, it will increase that Pokemons Sp. Atk stat."
-540,https://www.serebii.net/itemdex/sprites/snorlaxcandy.png,Snorlax Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-541,https://www.serebii.net/itemdex/sprites/spearowcandy.png,Spearow Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-542,https://www.serebii.net/itemdex/sprites/squirtlecandy.png,Squirtle Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-543,https://www.serebii.net/itemdex/sprites/staryucandy.png,Staryu Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-544,https://www.serebii.net/itemdex/sprites/swiftfeather.png,Swift Feather,An item to be used on a Pokemon. This feather slightly increases base points for a Pokemons Speed stat.
-545,https://www.serebii.net/itemdex/sprites/swiftmochi.png,Swift Mochi,A mochi cake with Berries kneaded into its dough. It increases base points for a Pokemons Speed stat.
-546,https://www.serebii.net/itemdex/sprites/tangelacandy.png,Tangela Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-547,https://www.serebii.net/itemdex/sprites/tauroscandy.png,Tauros Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-548,https://www.serebii.net/itemdex/sprites/tentacoolcandy.png,Tentacool Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-549,https://www.serebii.net/itemdex/sprites/timidmint.png,Timid Mint,"Having a Pokemon smell this mint can make its Speed stat grow stronger. However, its Attack stat may suffer."
-550,https://www.serebii.net/itemdex/sprites/toughcandy.png,Tough Candy,"A candy that is packed with energy. When given to a Pokemon, it will increase that Pokemons Defense stat."
-551,https://www.serebii.net/itemdex/sprites/toughcandyl.png,Tough Candy L,"A big candy that is packed with energy. When given to a Pokemon at Lv. 30 or higher, it will increase that Pokemons Defense stat."
-552,https://www.serebii.net/itemdex/sprites/toughcandyxl.png,Tough Candy XL,"A huge candy that is packed with energy. When given to a Pokemon at Lv. 60 or higher, it will increase that Pokemons Defense stat."
-553,https://www.serebii.net/itemdex/sprites/venonatcandy.png,Venonat Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-554,https://www.serebii.net/itemdex/sprites/voltorbcandy.png,Voltorb Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-555,https://www.serebii.net/itemdex/sprites/vulpixcandy.png,Vulpix Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-556,https://www.serebii.net/itemdex/sprites/weedlecandy.png,Weedle Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-557,https://www.serebii.net/itemdex/sprites/wishingpiece.png,Wishing Piece,Throw one into a Pokemon Den to attract a wild Dynamax Pokemon.
-558,https://www.serebii.net/itemdex/sprites/zapdoscandy.png,Zapdos Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-559,https://www.serebii.net/itemdex/sprites/zinc.png,Zinc,A nutritious drink for Pokemon. This drink increases base points for a Pokemons Sp. Def stat.
-560,https://www.serebii.net/itemdex/sprites/zubatcandy.png,Zubat Candy,"A candy that is packed with energy. When given to certain Pokemon, it will increase all their stats at once."
-561,https://www.serebii.net/itemdex/sprites/armorfossil.png,Armor Fossil,A fossil from a prehistoric Pokemon that once lived on the land. It looks to be from some kind of protective collar.
-562,https://www.serebii.net/itemdex/sprites/clawfossil.png,Claw Fossil,A fossil from a prehistoric Pokemon that once lived in the sea. It appears to be a fragment of a claw.
-563,https://www.serebii.net/itemdex/sprites/coverfossil.png,Cover Fossil,A fossil from a prehistoric Pokemon that once lived in the sea. It appears as though it could be part of a creatures back.
-564,https://www.serebii.net/itemdex/sprites/domefossil.png,Dome Fossil,A fossil from a prehistoric Pokemon that once lived in the sea. It could be a shell or carapace.
-565,https://www.serebii.net/itemdex/sprites/fossilizedbird.png,Fossilized Bird,A fossil piece left behind by a prehistoric Pokemon that once soared through the sky. What it looked like is a mystery.
-566,https://www.serebii.net/itemdex/sprites/fossilizeddino.png,Fossilized Dino,A fossil piece left behind by a prehistoric Pokemon that once lived in the sea. What it looked like is a mystery.
-567,https://www.serebii.net/itemdex/sprites/fossilizeddrake.png,Fossilized Drake,A fossil piece left behind by a prehistoric Pokemon that once roamed the land. What it looked like is a mystery.
-568,https://www.serebii.net/itemdex/sprites/fossilizedfish.png,Fossilized Fish,A fossil piece left behind by a prehistoric Pokemon that once lived in the sea. What it looked like is a mystery.
-569,https://www.serebii.net/itemdex/sprites/helixfossil.png,Helix Fossil,A fossil from a prehistoric Pokemon that once lived in the sea. It might be a piece of a seashell.
-570,https://www.serebii.net/itemdex/sprites/jawfossil.png,Jaw Fossil,A fossil from a prehistoric Pokemon that once lived on the land. It looks as if it could be a piece of a large jaw.
-571,https://www.serebii.net/itemdex/sprites/oldamber.png,Old Amber,"A piece of amber that still contains the genetic material of a prehistoric Pokemon. Its clear with a tawny, reddish tint."
-572,https://www.serebii.net/itemdex/sprites/plumefossil.png,Plume Fossil,A fossil from a prehistoric Pokemon said to be an ancestor to modern bird Pokemon. It looks as if it could have come from part of some creatures wing.
-573,https://www.serebii.net/itemdex/sprites/rootfossil.png,Root Fossil,A fossil from a prehistoric Pokemon that once lived in the sea. It looks as if it could be part of a plants root.
-574,https://www.serebii.net/itemdex/sprites/sailfossil.png,Sail Fossil,A fossil from a prehistoric Pokemon that once lived on the land. It looks like the impression from a skin sail.
-575,https://www.serebii.net/itemdex/sprites/skullfossil.png,Skull Fossil,A fossil from a prehistoric Pokemon that once lived on the land. It appears as though its part of a head.
-576,https://www.serebii.net/itemdex/sprites/adrenalineorb.png,Adrenaline Orb,An item to be held by a Pokemon. This orb boosts the Speed stat if the holder is intimidated.
-577,https://www.serebii.net/itemdex/sprites/amazemulch.png,Amaze Mulch,"A fertilizer for growing Berries. However, it appears to be unsuitable for the soil in the Hoenn region and has no effect."
-578,https://www.serebii.net/itemdex/sprites/armoriteore.png,Armorite Ore,Rare ore that can be obtained on the Isle of Armor. Something good will happen if you give it to a collector on the Isle of Armor.
-579,https://www.serebii.net/itemdex/sprites/ballofmud.png,Ball of Mud,"A ball of mud that has become stiff and hard. Hitting a Pokemon with one may stun the Pokemon, creating an opening for you to act."
-580,https://www.serebii.net/itemdex/sprites/balmmushroom.png,Balm Mushroom,A rare mushroom that gives off a nice fragrance. It can be sold at a high price to shops.
-581,https://www.serebii.net/itemdex/sprites/basculegionfood.png,Basculegion Food,"A favored food of Basculegion, a Pokemon that will bear you on its back. This food is crafted in an unusual way, from ingredients gathered via equally unusual methods."
-582,https://www.serebii.net/itemdex/sprites/beachglass.png,Beach Glass,A piece of colored glass. Waves have rounded its edges. Its slightly rough to the touch.
-583,https://www.serebii.net/itemdex/sprites/beancake.png,Bean Cake,"A cake made by combining beans with a Cake-Lure Base. These cakes are potently effective at attracting fish Pokemon, as well as bird Pokemon and their flying ilk."
-584,https://www.serebii.net/itemdex/sprites/bigbambooshoot.png,Big Bamboo Shoot,A large and rare bamboo shoot. Its extremely popular with a certain class of gourmands.
-585,https://www.serebii.net/itemdex/sprites/bigmushroom.png,Big Mushroom,A large and rare mushroom. Its extremely popular with a certain class of collectors.
-586,https://www.serebii.net/itemdex/sprites/bignugget.png,Big Nugget,A big nugget of pure gold that gives off a lustrous gleam. It can be sold at a high price to shops.
-587,https://www.serebii.net/itemdex/sprites/bigpearl.png,Big Pearl,A rather large pearl that has a nice silvery sheen to it. It can be sold at a high price to shops.
-588,https://www.serebii.net/itemdex/sprites/blackapricorn.png,Black Apricorn,A black Apricorn. It has a smell that cannot be captured in words.
-589,https://www.serebii.net/itemdex/sprites/blackflute.png,Black Flute,A flute made from black glass. It makes it easier to encounter high-level Pokemon in the place you use it.
-590,https://www.serebii.net/itemdex/sprites/blueapricorn.png,Blue Apricorn,"A yellow Apricorn. It has a light, refreshing scent."
-591,https://www.serebii.net/itemdex/sprites/blueflute.png,Blue Flute,A flute made from blue glass. It awakens sleeping Pokemon.
-592,https://www.serebii.net/itemdex/sprites/blueshard.png,Blue Shard,A small blue shard. It appears to be a fragment of some sort of implement made long ago.
-593,https://www.serebii.net/itemdex/sprites/boostmulch.png,Boost Mulch,"A fertilizer for growing Berries. However, it appears to be unsuitable for the soil in the Hoenn region and has no effect."
-594,https://www.serebii.net/itemdex/sprites/bottlecap.png,Bottle Cap,A lovely silver bottle cap. Certain people are delighted to be given one of these.
-595,"",Brick Piece,A rare chunk of brick.
-596,https://www.serebii.net/itemdex/sprites/bugterashard.png,Bug Tera Shard,"On rare occasions, these shards form when a Tera Pokemon falls in battle and its Tera Jewel shatters."
-597,https://www.serebii.net/itemdex/sprites/chalkystone.png,Chalky Stone,A small whitish stone picked up at the edge of the road.
-598,https://www.serebii.net/itemdex/sprites/cometshard.png,Comet Shard,A shard that fell to the ground when a comet passed nearby. It can be sold at a high price to shops.
-599,https://www.serebii.net/itemdex/sprites/commonstone.png,Common Stone,A perfectly normal stone that might appear to be valuable to some. Its all in the eye of the beholder.
-600,https://www.serebii.net/itemdex/sprites/dampmulch.png,Damp Mulch,"A fertilizer for growing Berries. However, it appears to be unsuitable for the soil in the Hoenn region and has no effect."
-601,https://www.serebii.net/itemdex/sprites/darkterashard.png,Dark Tera Shard,"On rare occasions, these shards form when a Tera Pokemon falls in battle and its Tera Jewel shatters."
-602,"",Data Card 1,It holds Pokeathlon records. It is a card that shows how many victories you have had in the Pokeathlon.
-603,"",Data Card 10,It holds Pokeathlon records. It is a card that shows how many times you won the Pokeathlons Snow Throw.
-604,"",Data Card 11,It holds Pokeathlon records. It is a card that shows how many points your Pokemon scored in the Pokeathlon.
-605,"",Data Card 12,It holds Pokeathlon records. It is a card that shows how many times your Pokemon failed in the Pokeathlon.
-606,"",Data Card 13,It holds Pokeathlon records. It is a card that shows how many times your Pokemon impeded themselves.
-607,"",Data Card 14,It holds Pokeathlon records. It is a card that shows how many times your Pokemon tackled in the Pokeathlon.
-608,"",Data Card 15,It holds Pokeathlon records. It is a card that shows how many times your Pokemon fell down in the Pokeathlon.
-609,"",Data Card 16,It holds Pokeathlon records. It is a card that shows how many times you won the Pokeathlons Ring Drop.
-610,"",Data Card 17,It holds Pokeathlon records. It is a card that shows how many times you won the Pokeathlons Lamp Jump.
-611,"",Data Card 18,It holds Pokeathlon records. It is a card that shows how many times you won the Pokeathlons Circle Push.
-612,"",Data Card 19,It holds Pokeathlon records. It is a card that shows how many Link Pokeathlon wins you have had.
-613,"",Data Card 2,It holds Pokeathlon records. It is a card that shows how many losses you have had in the Pokeathlon.
-614,"",Data Card 20,It holds Pokeathlon records. It is a card that shows how many Link Pokeathlon losses you have had.
-615,"",Data Card 21,It holds Pokeathlon records. It is a card that shows how many times you have won a Pokeathlon event.
-616,"",Data Card 22,It holds Pokeathlon records. It is a card that shows how many times you have lost a Pokeathlon event.
-617,"",Data Card 23,It holds Pokeathlon records. It is a card that shows how many times you switched Pokemon in the Pokeathlon.
-618,"",Data Card 24,It holds Pokeathlon records. It is a card that shows how many times you won the Pokeathlons Goal Roll.
-619,"",Data Card 25,It holds Pokeathlon records. It is a card that shows how many times your Pokemon won individual prizes.
-620,"",Data Card 26,It holds Pokeathlon records. It is a card that shows how many times you instructed your Pokemon.
-621,"",Data Card 27,It holds Pokeathlon records. It is a card that shows how much time you spent participating in the Pokeathlon.
-622,"",Data Card 3,It holds Pokeathlon records. It is a card that shows how many times your Pokemon dashed in the Pokeathlon.
-623,"",Data Card 4,It holds Pokeathlon records. It is a card that shows how many times your Pokemon jumped in the Pokeathlon.
-624,"",Data Card 5,It holds Pokeathlon records. It is a card that shows how many times you won the Pokeathlons Hurdle Dash.
-625,"",Data Card 6,It holds Pokeathlon records. It is a card that shows how many times you won the Pokeathlons Relay Run.
-626,"",Data Card 7,It holds Pokeathlon records. It is a card that shows how many times you won the Pokeathlons Pennant Capture.
-627,"",Data Card 8,It holds Pokeathlon records. It is a card that shows how many times you won the Pokeathlons Block Smash.
-628,"",Data Card 9,It holds Pokeathlon records. It is a card that shows how many times you won the Pokeathlons Disc Catch.
-629,https://www.serebii.net/itemdex/sprites/discountcoupon.png,Discount Coupon,This special coupon allows you to buy items at a discount when you are shopping at a boutique.
-630,https://www.serebii.net/itemdex/sprites/discoveryslate.png,Discovery Slate,A slate overflowing with enigmatic energy. You can feel a strong connection between it and the Discovery Room at Ramanas Park.
-631,https://www.serebii.net/itemdex/sprites/distortionslate.png,Distortion Slate,A slate overflowing with enigmatic energy. You can feel a strong connection between it and the Distortion Room at Ramanas Park.
-632,https://www.serebii.net/itemdex/sprites/dragonterashard.png,Dragon Tera Shard,"On rare occasions, these shards form when a Tera Pokemon falls in battle and its Tera Jewel shatters."
-633,https://www.serebii.net/itemdex/sprites/dyniteore.png,Dynite Ore,Mysterious ore that can be obtained in the Max Lair. Something good will happen if you give it to a collector in the Crown Tundra.
-634,"",EXP. All,
-635,https://www.serebii.net/itemdex/sprites/electricterashard.png,Electric Tera Shard,"On rare occasions, these shards form when a Tera Pokemon falls in battle and its Tera Jewel shatters."
-636,https://www.serebii.net/itemdex/sprites/escaperope.png,Escape Rope,A long and durable rope. Use it to escape instantly from locations like caves or dungeons. It can be used any number of times.
-637,https://www.serebii.net/itemdex/sprites/fairyterashard.png,Fairy Tera Shard,"On rare occasions, these shards form when a Tera Pokemon falls in battle and its Tera Jewel shatters."
-638,https://www.serebii.net/itemdex/sprites/festivalticket.png,Festival Ticket,A ticket that allows you to host a mission in Festival Plaza.
-639,https://www.serebii.net/itemdex/sprites/fightingterashard.png,Fighting Tera Shard,"On rare occasions, these shards form when a Tera Pokemon falls in battle and its Tera Jewel shatters."
-640,https://www.serebii.net/itemdex/sprites/fireterashard.png,Fire Tera Shard,"On rare occasions, these shards form when a Tera Pokemon falls in battle and its Tera Jewel shatters."
-641,https://www.serebii.net/itemdex/sprites/fluffytail.png,Fluffy Tail,A toy that attracts the attention of Pokemon. It guarantees escape from any battle with wild Pokemon.
-642,https://www.serebii.net/itemdex/sprites/flyingterashard.png,Flying Tera Shard,"On rare occasions, these shards form when a Tera Pokemon falls in battle and its Tera Jewel shatters."
-643,https://www.serebii.net/itemdex/sprites/galaricacuff.png,Galarica Cuff,A cuff made from woven-together Galarica Twigs. Giving it to a Galarian Slowpoke makes the Pokemon very happy.
-644,https://www.serebii.net/itemdex/sprites/galaricatwig.png,Galarica Twig,A twig from a species of tree called Galarica that grows in certain areas around the Galar region. Its a material for an accessory for a certain Pokemon.
-645,https://www.serebii.net/itemdex/sprites/genomeslate.png,Genome Slate,A slate overflowing with enigmatic energy. You can feel a strong connection between it and the Genome Room at Ramanas Park.
-646,https://www.serebii.net/itemdex/sprites/ghostterashard.png,Ghost Tera Shard,"On rare occasions, these shards form when a Tera Pokemon falls in battle and its Tera Jewel shatters."
-647,https://www.serebii.net/itemdex/sprites/goldbottlecap.png,Gold Bottle Cap,"A lovely gold bottle cap, which is even rarer than a silver bottle cap. Certain people are delighted to be given one of these."
-648,https://www.serebii.net/itemdex/sprites/goldleaf.png,Gold Leaf,A mysterious gold leaf. No trees with this leaf have been found yet.
-649,"",Gold Leaf,"A strange, gold-colored leaf."
-650,https://www.serebii.net/itemdex/sprites/gooeymulch.png,Gooey Mulch,"A fertilizer for growing Berries. However, it appears to be unsuitable for the soil in the Hoenn region and has no effect."
-651,"",Gorgeous Box,Open it and see whats inside.
-652,https://www.serebii.net/itemdex/sprites/graincake.png,Grain Cake,A cake made by combining grains with a Cake-Lure Base. These cakes are potently effective at attracting Pokemon that dwell and wander among the fields.
-653,https://www.serebii.net/itemdex/sprites/grassterashard.png,Grass Tera Shard,"On rare occasions, these shards form when a Tera Pokemon falls in battle and its Tera Jewel shatters."
-654,https://www.serebii.net/itemdex/sprites/greenapricorn.png,Green Apricorn,A green Apricorn. It has a mysterious and aromatic scent.
-655,https://www.serebii.net/itemdex/sprites/greenshard.png,Green Shard,A small green shard. It appears to be a fragment of some sort of implement made long ago.
-656,https://www.serebii.net/itemdex/sprites/groundterashard.png,Ground Tera Shard,"On rare occasions, these shards form when a Tera Pokemon falls in battle and its Tera Jewel shatters."
-657,https://www.serebii.net/itemdex/sprites/growthmulch.png,Growth Mulch,"A fertilizer for growing Berries. However, it appears to be unsuitable for the soil in the Hoenn region and has no effect."
-658,https://www.serebii.net/itemdex/sprites/heartscale.png,Heart Scale,"A pretty, heart-shaped scale that is extremely rare. Certain people are delighted to be given one of these."
-659,https://www.serebii.net/itemdex/sprites/hometownmuffin.png,Hometown Muffin,"A baked treat made from Berries and other ingredients, which is often eaten in regions such as Galar. It is beloved by a surprising number of Pokemon."
-660,https://www.serebii.net/itemdex/sprites/honey.png,Honey,Honey collected thanks to Pokemons efforts. It has a sweet aroma and can be sold at a low price to shops.
-661,https://www.serebii.net/itemdex/sprites/honeycake.png,Honey Cake,A cake made by combining honey with a Cake-Lure Base. These cakes are potently effective at attracting bug Pokemon and also those with fairylike charms.
-662,https://www.serebii.net/itemdex/sprites/iceterashard.png,Ice Tera Shard,"On rare occasions, these shards form when a Tera Pokemon falls in battle and its Tera Jewel shatters."
-663,https://www.serebii.net/itemdex/sprites/johtoslate.png,Johto Slate,A slate overflowing with enigmatic energy. You can feel a strong connection between it and the Johto Room at Ramanas Park.
-664,https://www.serebii.net/itemdex/sprites/kantoslate.png,Kanto Slate,A slate overflowing with enigmatic energy. You can feel a strong connection between it and the Kanto Room at Ramanas Park.
-665,https://www.serebii.net/itemdex/sprites/leafletter.png,Leaf Letter,A letter written on a leaf. Something is written using Pikachus footprints.
-666,https://www.serebii.net/itemdex/sprites/leafletter.png,Leaf Letter,A letter written on a leaf. Something is written using Eevees footprints.
-667,https://www.serebii.net/itemdex/sprites/loneearring.png,Lone Earring,A single earring that somebody dropped.
-668,https://www.serebii.net/itemdex/sprites/lure.png,Lure,A bottle of perfume that makes rare Pokemon more likely to appear for a short time when sprayed about.
-669,https://www.serebii.net/itemdex/sprites/marble.png,Marble,A round glass marble. You can see colored glass inside the transparent marble.
-670,https://www.serebii.net/itemdex/sprites/maxlure.png,Max Lure,A bottle of perfume that makes rare Pokemon more likely to appear when sprayed about. Its effect lasts longer than that of a Super Lure.
-671,https://www.serebii.net/itemdex/sprites/maxrepel.png,Max Repel,An item that prevents low-level wild Pokemon from jumping out at you for a time. It lasts longer than Super Repel.
-672,https://www.serebii.net/itemdex/sprites/mushroomcake.png,Mushroom Cake,"A cake made by combining mushrooms with a Cake-Lure Base. These cakes are potently effective at attracting the more monstrous Pokemon, as well as dragon Pokemon."
-673,https://www.serebii.net/itemdex/sprites/mysteriousshardl.png,Mysterious Shard L,"A large shard that emanates an enigmatic power. Inside the shard, you can see a pattern that looks like Ramanas roses."
-674,https://www.serebii.net/itemdex/sprites/mysteriousshards.png,Mysterious Shard S,"A small shard that emanates an enigmatic power. Inside the shard, you can see a pattern that looks like Ramanas roses."
-675,"",Normal Box,Open it and see whats inside.
-676,https://www.serebii.net/itemdex/sprites/normalterashard.png,Normal Tera Shard,"On rare occasions, these shards form when a Tera Pokemon falls in battle and its Tera Jewel shatters."
-677,https://www.serebii.net/itemdex/sprites/nugget.png,Nugget,A nugget of pure gold that gives off a lustrous gleam. It can be sold at a high price to shops.
-678,https://www.serebii.net/itemdex/sprites/oceanicslate.png,Oceanic Slate,A slate overflowing with enigmatic energy. You can feel a strong connection between it and the Oceanic Room at Ramanas Park.
-679,https://www.serebii.net/itemdex/sprites/oddkeystone.png,Odd Keystone,A vital item that is needed to keep a stone tower from collapsing. Voices can be heard from it occasionally.
-680,https://www.serebii.net/itemdex/sprites/passorb.png,Pass Orb,"A mysterious orb containing the power of the Unova region, to be used when generating Pass Power."
-681,https://www.serebii.net/itemdex/sprites/pearl.png,Pearl,A rather small pearl that has a nice silvery sheen to it. It can be sold at a low price to shops.
-682,https://www.serebii.net/itemdex/sprites/pearlstring.png,Pearl String,Very large pearls that have a nice silvery sheen to them. They can be sold at a high price to shops.
-683,https://www.serebii.net/itemdex/sprites/pinkapricorn.png,Pink Apricorn,A pink Apricorn. It has a pleasantly sweet scent.
-684,https://www.serebii.net/itemdex/sprites/pinknectar.png,Pink Nectar,Flower nectar obtained from a pink flower. It changes the form of a certain species of Pokemon.
-685,https://www.serebii.net/itemdex/sprites/poisonterashard.png,Poison Tera Shard,"On rare occasions, these shards form when a Tera Pokemon falls in battle and its Tera Jewel shatters."
-686,https://www.serebii.net/itemdex/sprites/pokedoll.png,Poke Doll,A doll that attracts the attention of Pokemon. It guarantees escape from any battle with wild Pokemon.
-687,https://www.serebii.net/itemdex/sprites/poketoy.png,Poke Toy,A toy that attracts the attention of Pokemon. It guarantees escape from any battle with wild Pokemon.
-688,https://www.serebii.net/itemdex/sprites/pokeshidoll.png,Pokeshi Doll,A wooden toy carved in the image of a Pokemon. It can be sold to the general store.
-689,https://www.serebii.net/itemdex/sprites/polishedmudball.png,Polished Mud Ball,A ball made of mud. It had been polished for such a long time that the surface is very shiny.
-690,https://www.serebii.net/itemdex/sprites/prettyfeather.png,Pretty Feather,"Though this feather is beautiful, its just a regular feather and has no effect."
-691,https://www.serebii.net/itemdex/sprites/psychicterashard.png,Psychic Tera Shard,"On rare occasions, these shards form when a Tera Pokemon falls in battle and its Tera Jewel shatters."
-692,https://www.serebii.net/itemdex/sprites/purplenectar.png,Purple Nectar,Flower nectar obtained from a purple flower. It changes the form of a certain species of Pokemon.
-693,https://www.serebii.net/itemdex/sprites/rainbowslate.png,Rainbow Slate,A slate overflowing with enigmatic energy. You can feel a strong connection between it and the Rainbow Room at Ramanas Park.
-694,https://www.serebii.net/itemdex/sprites/rarebone.png,Rare Bone,A rare bone that is extremely valuable for the study of Pokemon archeology. It can be sold at a high price to shops.
-695,https://www.serebii.net/itemdex/sprites/redapricorn.png,Red Apricorn,A red Apricorn. It has a pungent scent that assails the nostrils.
-696,https://www.serebii.net/itemdex/sprites/redflute.png,Red Flute,A flute made from red glass. It snaps Pokemon out of infatuation.
-697,https://www.serebii.net/itemdex/sprites/rednectar.png,Red Nectar,Flower nectar obtained from a red flower. It changes the form of a certain species of Pokemon.
-698,https://www.serebii.net/itemdex/sprites/redshard.png,Red Shard,A small red shard. It appears to be a fragment of some sort of implement made long ago.
-699,https://www.serebii.net/itemdex/sprites/relicband.png,Relic Band,A bracelet made by an ancient civilization about three thousand years ago.
-700,https://www.serebii.net/itemdex/sprites/reliccopper.png,Relic Copper,A copper coin used by an ancient civilization about three thousand years ago.
-701,https://www.serebii.net/itemdex/sprites/reliccrown.png,Relic Crown,A crown made by an ancient civilization about three thousand years ago.
-702,https://www.serebii.net/itemdex/sprites/relicgold.png,Relic Gold,A gold coin used by an ancient civilization about three thousand years ago.
-703,https://www.serebii.net/itemdex/sprites/relicsilver.png,Relic Silver,A silver coin used by an ancient civilization about three thousand years ago.
-704,https://www.serebii.net/itemdex/sprites/relicstatue.png,Relic Statue,A stone figurine made by an ancient civilization about three thousand years ago.
-705,https://www.serebii.net/itemdex/sprites/relicvase.png,Relic Vase,A vase made by an ancient civilization about three thousand years ago.
-706,https://www.serebii.net/itemdex/sprites/repel.png,Repel,An item that prevents low-level wild Pokemon from jumping out at you for a short time.
-707,https://www.serebii.net/itemdex/sprites/richmulch.png,Rich Mulch,"A fertilizer for growing Berries. However, it appears to be unsuitable for the soil in the Hoenn region and has no effect."
-708,https://www.serebii.net/itemdex/sprites/rockterashard.png,Rock Tera Shard,"On rare occasions, these shards form when a Tera Pokemon falls in battle and its Tera Jewel shatters."
-709,https://www.serebii.net/itemdex/sprites/rotobargain.png,Roto Bargain,"One of the Rotom Powers. When used, it reduces the prices of products at Poke Marts by half."
-710,https://www.serebii.net/itemdex/sprites/rotocatch.png,Roto Catch,"One of the Rotom Powers. When used, it makes you far likelier to succeed at catching the wild Pokemon in the immediate area."
-711,https://www.serebii.net/itemdex/sprites/rotoencounter.png,Roto Encounter,"One of the Rotom Powers. When used, it increases the chance of encountering high-level wild Pokemon for a certain period of time."
-712,https://www.serebii.net/itemdex/sprites/rotoexp.points.png,Roto Exp. Points,"One of the Rotom Powers. When used, it slightly increases the Exp. Points your Pokemon receive after battle."
-713,https://www.serebii.net/itemdex/sprites/rotofriendship.png,Roto Friendship,"One of the Rotom Powers. When used, it helps Pokemon in your party grow friendly quite a lot faster."
-714,https://www.serebii.net/itemdex/sprites/rotohatch.png,Roto Hatch,"One of the Rotom Powers. When used, it helps Eggs hatch faster."
-715,https://www.serebii.net/itemdex/sprites/rotoprizemoney.png,Roto Prize Money,"One of the Rotom Powers. When used, it triples the prize money you receive after battle."
-716,https://www.serebii.net/itemdex/sprites/rotostealth.png,Roto Stealth,"One of the Rotom Powers. When used, it prevents you from encountering any wild Pokemon for a certain period of time."
-717,https://www.serebii.net/itemdex/sprites/saltcake.png,Salt Cake,"A cake made by combining salt with a Cake-Lure Base. These cakes are potently effective at attracting Pokemon that bear a resemblance to grass, plants, or minerals."
-718,https://www.serebii.net/itemdex/sprites/scatterbang.png,Scatter Bang,"When thrown at the ground, these balls produce a loud noise and scare off low-level Pokemon in the area, sending them running."
-719,https://www.serebii.net/itemdex/sprites/seedofmastery.png,Seed of Mastery,A rare seed that can be given to the captain of the Security Corps to have a Pokemon master a move so it can be used in the agile style or strong style.
-720,https://www.serebii.net/itemdex/sprites/shoalsalt.png,Shoal Salt,Salt that was found inside Shoal Cave.
-721,https://www.serebii.net/itemdex/sprites/shoalshell.png,Shoal Shell,A seashell that was found inside Shoal Cave.
-722,https://www.serebii.net/itemdex/sprites/silverleaf.png,Silver Leaf,A mysterious silver leaf. No trees with this leaf have been found yet.
-723,"",Silver Leaf,"A strange, silver-colored leaf."
-724,https://www.serebii.net/itemdex/sprites/slowpoketail.png,Slowpoketail,A very tasty tail of something. It can be sold at a high price to shops.
-725,https://www.serebii.net/itemdex/sprites/smallbouquet.png,Small Bouquet,A small bouquet that was made with heart and soul for a single Trainer.
-726,https://www.serebii.net/itemdex/sprites/smokebomb.png,Smoke Bomb,"When thrown at the ground, these balls produce a cloud of fine powder that will reduce visibility in the area and keep wild Pokemon from noticing you."
-727,https://www.serebii.net/itemdex/sprites/snowballlegends.png,Snowball,"A hard ball made of compressed snow. Hitting a Pokemon with one may stun the Pokemon, creating an opening for you to act."
-728,https://www.serebii.net/itemdex/sprites/soulslate.png,Soul Slate,A slate overflowing with enigmatic energy. You can feel a strong connection between it and the Soul Room at Ramanas Park.
-729,https://www.serebii.net/itemdex/sprites/spoiledapricorn.png,Spoiled Apricorn,"An Apricorn thats had its insides eaten. Hitting a Pokemon with one may stun the Pokemon, creating an opening for you to act."
-730,https://www.serebii.net/itemdex/sprites/squallslate.png,Squall Slate,A slate overflowing with enigmatic energy. You can feel a strong connection between it and the Squall Room at Ramanas Park.
-731,https://www.serebii.net/itemdex/sprites/stablemulch.png,Stable Mulch,"A fertilizer for growing Berries. However, it appears to be unsuitable for the soil in the Hoenn region and has no effect."
-732,https://www.serebii.net/itemdex/sprites/starpiece.png,Star Piece,A small shard of a beautiful gem that gives off a distinctly red sparkle. It can be sold at a high price to shops.
-733,https://www.serebii.net/itemdex/sprites/stardust.png,Stardust,"Lovely red sand that flows between the fingers with a loose, silky feel. It can be sold at a low price to shops."
-734,https://www.serebii.net/itemdex/sprites/stealthspray.png,Stealth Spray,"When used in the field, this spray muffles the sound of your footsteps and makes wild Pokemon less likely to notice you for a short time."
-735,https://www.serebii.net/itemdex/sprites/steelterashard.png,Steel Tera Shard,"On rare occasions, these shards form when a Tera Pokemon falls in battle and its Tera Jewel shatters."
-736,https://www.serebii.net/itemdex/sprites/stickyglob.png,Sticky Glob,"A ball of some kind of sticky substance. Hitting a Pokemon with one may stun the Pokemon, creating an opening for you to act."
-737,https://www.serebii.net/itemdex/sprites/strangesouvenir.png,Strange Souvenir,An ornament depicting a mysterious Pokemon that has been venerated as a guardian deity for an extremely long time in the Alola region.
-738,https://www.serebii.net/itemdex/sprites/stratosphericslate.png,Stratospheric Slate,A slate overflowing with enigmatic energy. You can feel a strong connection between it and the Stratospheric Room at Ramanas Park.
-739,https://www.serebii.net/itemdex/sprites/stretchyspring.png,Stretchy Spring,"A thin small spring. Its totally stretched out, and what its used for is unknown."
-740,https://www.serebii.net/itemdex/sprites/superlure.png,Super Lure,A bottle of perfume that makes rare Pokemon more likely to appear when sprayed about. Its effect lasts longer than that of a Lure.
-741,https://www.serebii.net/itemdex/sprites/superrepel.png,Super Repel,An item that prevents low-level wild Pokemon from jumping out at you for a time. It lasts longer than Repel.
-742,https://www.serebii.net/itemdex/sprites/surprisemulch.png,Surprise Mulch,"A fertilizer for growing Berries. However, it appears to be unsuitable for the soil in the Hoenn region and has no effect."
-743,https://www.serebii.net/itemdex/sprites/survivalcharmb.png,Survival Charm B,A mysterious charm that holds the power to protect a person from fainting while out in the field. This type of charm comes in five different colors.
-744,https://www.serebii.net/itemdex/sprites/survivalcharmp.png,Survival Charm P,A mysterious charm that holds the power to protect a person from fainting while out in the field. This type of charm comes in five different colors.
-745,https://www.serebii.net/itemdex/sprites/survivalcharmr.png,Survival Charm R,A mysterious charm that holds the power to protect a person from fainting while out in the field. This type of charm comes in five different colors.
-746,https://www.serebii.net/itemdex/sprites/survivalcharmt.png,Survival Charm T,A mysterious charm that holds the power to protect a person from fainting while out in the field. This type of charm comes in five different colors.
-747,https://www.serebii.net/itemdex/sprites/survivalcharmy.png,Survival Charm Y,A mysterious charm that holds the power to protect a person from fainting while out in the field. This type of charm comes in five different colors.
-748,https://www.serebii.net/itemdex/sprites/tectonicslate.png,Tectonic Slate,A slate overflowing with enigmatic energy. You can feel a strong connection between it and the Tectonic Room at Ramanas Park.
-749,https://www.serebii.net/itemdex/sprites/temptingcharmb.png,Tempting Charm B,A mysterious charm that tends to be lost before any other item when you faint in the field. This type of charm comes in five different colors.
-750,https://www.serebii.net/itemdex/sprites/temptingcharmp.png,Tempting Charm P,A mysterious charm that tends to be lost before any other item when you faint in the field. This type of charm comes in five different colors.
-751,https://www.serebii.net/itemdex/sprites/temptingcharmr.png,Tempting Charm R,A mysterious charm that tends to be lost before any other item when you faint in the field. This type of charm comes in five different colors.
-752,https://www.serebii.net/itemdex/sprites/temptingcharmt.png,Tempting Charm T,A mysterious charm that tends to be lost before any other item when you faint in the field. This type of charm comes in five different colors.
-753,https://www.serebii.net/itemdex/sprites/temptingcharmy.png,Tempting Charm Y,A mysterious charm that tends to be lost before any other item when you faint in the field. This type of charm comes in five different colors.
-754,https://www.serebii.net/itemdex/sprites/tinybambooshoot.png,Tiny Bamboo Shoot,A small and rare bamboo shoot. Its quite popular with a certain class of gourmands.
-755,https://www.serebii.net/itemdex/sprites/tinymushroom.png,Tiny Mushroom,A small and rare mushroom. Its quite popular with a certain class of collectors.
-756,https://www.serebii.net/itemdex/sprites/tropicalshell.png,Tropical Shell,A beautiful white shell that may have drifted from a sea in a warm region.
-757,https://www.serebii.net/itemdex/sprites/wardingcharmb.png,Warding Charm B,A mysterious charm that holds the power to protect a person from being afflicted with status conditions. This type of charm comes in five different colors.
-758,https://www.serebii.net/itemdex/sprites/wardingcharmp.png,Warding Charm P,A mysterious charm that holds the power to protect a person from being afflicted with status conditions. This type of charm comes in five different colors.
-759,https://www.serebii.net/itemdex/sprites/wardingcharmr.png,Warding Charm R,A mysterious charm that holds the power to protect a person from being afflicted with status conditions. This type of charm comes in five different colors.
-760,https://www.serebii.net/itemdex/sprites/wardingcharmt.png,Warding Charm T,A mysterious charm that holds the power to protect a person from being afflicted with status conditions. This type of charm comes in five different colors.
-761,https://www.serebii.net/itemdex/sprites/wardingcharmy.png,Warding Charm Y,A mysterious charm that holds the power to protect a person from being afflicted with status conditions. This type of charm comes in five different colors.
-762,https://www.serebii.net/itemdex/sprites/waterterashard.png,Water Tera Shard,"On rare occasions, these shards form when a Tera Pokemon falls in battle and its Tera Jewel shatters."
-763,https://www.serebii.net/itemdex/sprites/whiteapricorn.png,White Apricorn,A white Apricorn. It doesnt have any aroma at all.
-764,https://www.serebii.net/itemdex/sprites/whiteflute.png,White Flute,A flute made from white glass. It makes it easier to encounter low-level Pokemon in the place you use it.
-765,https://www.serebii.net/itemdex/sprites/wishingchip.png,Wishing Chip,Toss a number of them into a Pokemon Den for the chance to attract a wild Dynamax Pokemon.
-766,"",Yellow Apricorn,A blue Apricorn. It has a slightly grassy smell to it.
-767,https://www.serebii.net/itemdex/sprites/yellowflute.png,Yellow Flute,A flute made from yellow glass. It snaps Pokemon out of confusion.
-768,https://www.serebii.net/itemdex/sprites/yellownectar.png,Yellow Nectar,Flower nectar obtained from a yellow flower. It changes the form of a certain species of Pokemon.
-769,https://www.serebii.net/itemdex/sprites/yellowshard.png,Yellow Shard,A small yellow shard. It appears to be a fragment of some sort of implement made long ago.
+index,name,type,category,pp,power,accuracy
+0,Accelerock,rock,physical,20,40,100
+1,Acid Downpour,poison,physical,1,--,101
+2,Acrobatics,flying,physical,15,55,100
+3,Aerial Ace,flying,physical,20,60,101
+4,All-Out Pummeling,fighting,physical,1,--,101
+5,Anchor Shot,steel,physical,20,80,100
+6,Aqua Cutter,water,physical,20,70,100
+7,Aqua Jet,water,physical,20,40,100
+8,Aqua Step,water,physical,10,80,100
+9,Aqua Tail,water,physical,10,90,90
+10,Arm Thrust,fighting,physical,20,15,100
+11,Assurance,dark,physical,10,60,100
+12,Astonish,ghost,physical,15,30,100
+13,Attack Order,bug,physical,15,90,100
+14,Aura Wheel,electric,physical,10,110,100
+15,Avalanche,ice,physical,10,60,100
+16,Axe Kick,fighting,physical,10,120,90
+17,Barb Barrage,poison,physical,10,60,100
+18,Barrage,normal,physical,20,15,85
+19,Beak Blast,flying,physical,15,100,100
+20,Beat Up,dark,physical,10,--,100
+21,Behemoth Bash,steel,physical,5,100,100
+22,Behemoth Blade,steel,physical,5,100,100
+23,Bide,normal,physical,10,--,101
+24,Bind,normal,physical,20,15,85
+25,Bite,dark,physical,25,60,100
+26,Bitter Blade,fire,physical,10,90,100
+27,Black Hole Eclipse,dark,physical,1,--,101
+28,Blaze Kick,fire,physical,10,85,90
+29,Blazing Torque,fire,physical,10,80,100
+30,Bloom Doom,grass,physical,1,--,101
+31,Body Press,fighting,physical,10,80,100
+32,Body Slam,normal,physical,15,85,100
+33,Bolt Beak,electric,physical,10,85,100
+34,Bolt Strike,electric,physical,5,130,85
+35,Bone Club,ground,physical,20,65,85
+36,Bone Rush,ground,physical,10,25,90
+37,Bonemerang,ground,physical,10,50,90
+38,Bounce,flying,physical,5,85,85
+39,Branch Poke,grass,physical,40,40,100
+40,Brave Bird,flying,physical,15,120,100
+41,Breaking Swipe,dragon,physical,15,60,100
+42,Breakneck Blitz,normal,physical,1,--,101
+43,Brick Break,fighting,physical,15,75,100
+44,Brutal Swing,dark,physical,20,60,100
+45,Bug Bite,bug,physical,20,60,100
+46,Bulldoze,ground,physical,20,60,100
+47,Bullet Punch,steel,physical,30,40,100
+48,Bullet Seed,grass,physical,30,25,100
+49,Catastropika,electric,physical,1,210,101
+50,Ceaseless Edge,dark,physical,15,65,90
+51,Chip Away,normal,physical,20,70,100
+52,Circle Throw,fighting,physical,10,60,90
+53,Clamp,water,physical,15,35,85
+54,Close Combat,fighting,physical,5,120,100
+55,Collision Course,fighting,physical,5,100,100
+56,Combat Torque,fighting,physical,10,100,100
+57,Comet Punch,normal,physical,15,18,85
+58,Comeuppance,dark,physical,10,--,100
+59,Constrict,normal,physical,35,10,100
+60,Continental Crush,rock,physical,1,--,101
+61,Corkscrew Crash,steel,physical,1,--,101
+62,Counter,fighting,physical,20,--,100
+63,Covet,normal,physical,25,60,100
+64,Crabhammer,water,physical,10,100,90
+65,Cross Chop,fighting,physical,5,100,80
+66,Cross Poison,poison,physical,20,70,100
+67,Crunch,dark,physical,15,80,100
+68,Crush Claw,normal,physical,10,75,95
+69,Crush Grip,normal,physical,5,--,100
+70,Cut,normal,physical,30,50,95
+71,Darkest Lariat,dark,physical,10,85,100
+72,Devastating Drake,dragon,physical,1,--,101
+73,Diamond Storm,rock,physical,5,100,95
+74,Dig,ground,physical,10,80,100
+75,Dire Claw,poison,physical,15,80,100
+76,Dive,water,physical,10,80,100
+77,Dizzy Punch,normal,physical,10,70,100
+78,Double Hit,normal,physical,10,35,90
+79,Double Iron Bash,steel,physical,5,60,100
+80,Double Kick,fighting,physical,30,30,100
+81,Double Shock,electric,physical,5,120,100
+82,Double Slap,normal,physical,10,15,85
+83,Double-Edge,normal,physical,15,120,100
+84,Dragon Ascent,flying,physical,5,120,100
+85,Dragon Claw,dragon,physical,15,80,100
+86,Dragon Darts,dragon,physical,10,50,100
+87,Dragon Hammer,dragon,physical,15,90,100
+88,Dragon Rush,dragon,physical,10,100,75
+89,Dragon Tail,dragon,physical,10,60,90
+90,Drain Punch,fighting,physical,10,75,100
+91,Drill Peck,flying,physical,20,80,100
+92,Drill Run,ground,physical,10,80,95
+93,Drum Beating,grass,physical,10,80,100
+94,Dual Chop,dragon,physical,15,40,90
+95,Dual Wingbeat,flying,physical,10,40,90
+96,Dynamic Punch,fighting,physical,5,100,50
+97,Earthquake,ground,physical,10,100,100
+98,Egg Bomb,normal,physical,10,100,75
+99,Endeavor,normal,physical,5,--,100
+100,Explosion,normal,physical,5,250,100
+101,Extreme Speed,normal,physical,5,80,100
+102,Facade,normal,physical,20,70,100
+103,Fake Out,normal,physical,10,40,100
+104,False Surrender,dark,physical,10,80,101
+105,False Swipe,normal,physical,40,40,100
+106,Feint,normal,physical,10,30,100
+107,Feint Attack,dark,physical,20,60,101
+108,Fell Stinger,bug,physical,25,50,100
+109,Fire Fang,fire,physical,15,65,95
+110,Fire Lash,fire,physical,15,80,100
+111,Fire Punch,fire,physical,15,75,100
+112,First Impression,bug,physical,10,90,100
+113,Fishious Rend,water,physical,10,85,100
+114,Fissure,ground,physical,5,--,30
+115,Flail,normal,physical,15,--,100
+116,Flame Charge,fire,physical,20,50,100
+117,Flame Wheel,fire,physical,25,60,100
+118,Flare Blitz,fire,physical,15,120,100
+119,Fling,dark,physical,10,--,100
+120,Flip Turn,water,physical,20,60,100
+121,Floaty Fall,flying,physical,15,90,95
+122,Flower Trick,grass,physical,10,70,101
+123,Fly,flying,physical,15,90,95
+124,Flying Press,fighting,physical,10,100,95
+125,Focus Punch,fighting,physical,20,150,100
+126,Force Palm,fighting,physical,10,60,100
+127,Foul Play,dark,physical,15,95,100
+128,Freeze Shock,ice,physical,5,140,90
+129,Frustration,normal,physical,20,--,100
+130,Fury Attack,normal,physical,20,15,85
+131,Fury Cutter,bug,physical,20,40,95
+132,Fury Swipes,normal,physical,15,18,80
+133,Fusion Bolt,electric,physical,5,100,100
+134,Gear Grind,steel,physical,15,50,85
+135,Giga Impact,normal,physical,5,150,90
+136,Gigaton Hammer,steel,physical,5,160,100
+137,Gigavolt Havoc,electric,physical,1,--,101
+138,Glacial Lance,ice,physical,5,120,100
+139,Glaive Rush,dragon,physical,5,120,100
+140,Grassy Glide,grass,physical,20,55,100
+141,Grav Apple,grass,physical,10,80,100
+142,Guillotine,normal,physical,5,--,30
+143,Gunk Shot,poison,physical,5,120,80
+144,Gyro Ball,steel,physical,5,--,100
+145,Hammer Arm,fighting,physical,10,100,90
+146,Head Charge,normal,physical,15,120,100
+147,Head Smash,rock,physical,5,150,80
+148,Headbutt,normal,physical,15,70,100
+149,Headlong Rush,ground,physical,5,120,100
+150,Heart Stamp,psychic,physical,25,60,100
+151,Heat Crash,fire,physical,10,--,100
+152,Heavy Slam,steel,physical,10,--,100
+153,High Horsepower,ground,physical,10,95,95
+154,High Jump Kick,fighting,physical,10,130,90
+155,Hold Back,normal,physical,40,40,100
+156,Horn Attack,normal,physical,25,65,100
+157,Horn Drill,normal,physical,5,--,30
+158,Horn Leech,grass,physical,10,75,100
+159,Hydro Vortex,water,physical,1,--,101
+160,Hyper Drill,normal,physical,5,100,100
+161,Hyper Fang,normal,physical,15,80,90
+162,Hyperspace Fury,dark,physical,5,100,101
+163,Ice Ball,ice,physical,20,30,90
+164,Ice Fang,ice,physical,15,65,95
+165,Ice Hammer,ice,physical,10,100,90
+166,Ice Punch,ice,physical,15,75,100
+167,Ice Shard,ice,physical,30,40,100
+168,Ice Spinner,ice,physical,15,80,100
+169,Icicle Crash,ice,physical,10,85,90
+170,Icicle Spear,ice,physical,30,25,100
+171,Inferno Overdrive,fire,physical,1,--,101
+172,Iron Head,steel,physical,15,80,100
+173,Iron Tail,steel,physical,15,100,75
+174,Ivy Cudgel,grass,physical,10,100,100
+175,Jaw Lock,dark,physical,10,80,100
+176,Jet Punch,water,physical,15,60,100
+177,Jump Kick,fighting,physical,10,100,95
+178,Karate Chop,fighting,physical,25,50,100
+179,Knock Off,dark,physical,20,65,100
+180,Kowtow Cleave,dark,physical,10,85,101
+181,Lands Wrath,ground,physical,10,90,100
+182,Lash Out,dark,physical,5,75,100
+183,Last Resort,normal,physical,5,140,100
+184,Last Respects,ghost,physical,10,50,100
+185,Leaf Blade,grass,physical,15,90,100
+186,Leafage,grass,physical,40,40,100
+187,Leech Life,bug,physical,10,80,100
+188,Lets Snuggle Forever,fairy,physical,1,190,101
+189,Lick,ghost,physical,30,30,100
+190,Liquidation,water,physical,10,85,100
+191,Low Kick,fighting,physical,20,--,100
+192,Low Sweep,fighting,physical,20,65,100
+193,Lunge,bug,physical,15,80,100
+194,Mach Punch,fighting,physical,30,40,100
+195,Magical Torque,fairy,physical,10,100,100
+196,Magnet Bomb,steel,physical,20,60,101
+197,Magnitude,ground,physical,30,--,100
+198,Malicious Moonsault,dark,physical,1,180,101
+199,Max Airstream,flying,physical,10,10,101
+200,Max Darkness,dark,physical,10,10,101
+201,Max Flare,fire,physical,10,100,101
+202,Max Flutterby,bug,physical,10,10,101
+203,Max Geyser,water,physical,10,10,101
+204,Max Hailstorm,ice,physical,10,10,101
+205,Max Knuckle,fighting,physical,10,10,101
+206,Max Lightning,electric,physical,10,10,101
+207,Max Mindstorm,psychic,physical,10,10,101
+208,Max Ooze,poison,physical,10,10,101
+209,Max Overgrowth,grass,physical,10,10,101
+210,Max Phantasm,ghost,physical,10,10,101
+211,Max Quake,ground,physical,10,10,101
+212,Max Rockfall,rock,physical,10,10,101
+213,Max Starfall,fairy,physical,10,10,101
+214,Max Steelspike,steel,physical,10,10,101
+215,Max Strike,normal,physical,10,10,101
+216,Max Wyrmwind,dragon,physical,10,10,101
+217,Mega Kick,normal,physical,5,120,75
+218,Mega Punch,normal,physical,20,80,85
+219,Megahorn,bug,physical,10,120,85
+220,Metal Burst,steel,physical,10,--,100
+221,Metal Claw,steel,physical,35,50,95
+222,Meteor Assault,fighting,physical,5,150,100
+223,Meteor Mash,steel,physical,10,90,90
+224,Mortal Spin,poison,physical,15,30,100
+225,Mountain Gale,ice,physical,10,100,85
+226,Multi-Attack,normal,physical,10,120,100
+227,Natural Gift,normal,physical,15,--,100
+228,Needle Arm,grass,physical,15,60,100
+229,Never-Ending Nightmare,ghost,physical,1,--,101
+230,Night Slash,dark,physical,15,70,100
+231,Noxious Torque,poison,physical,10,100,100
+232,Nuzzle,electric,physical,20,20,100
+233,Order Up,dragon,physical,10,80,100
+234,Outrage,dragon,physical,10,120,100
+235,Pay Day,normal,physical,20,40,100
+236,Payback,dark,physical,10,50,100
+237,Peck,flying,physical,35,35,100
+238,Petal Blizzard,grass,physical,15,90,100
+239,Phantom Force,ghost,physical,10,90,100
+240,Pin Missile,bug,physical,20,25,95
+241,Plasma Fists,electric,physical,15,100,100
+242,Play Rough,fairy,physical,10,90,90
+243,Pluck,flying,physical,20,60,100
+244,Poison Fang,poison,physical,15,50,100
+245,Poison Jab,poison,physical,20,80,100
+246,Poison Sting,poison,physical,35,15,100
+247,Poison Tail,poison,physical,25,50,100
+248,Poltergeist,ghost,physical,5,110,90
+249,Population Bomb,normal,physical,10,20,90
+250,Pounce,bug,physical,20,50,100
+251,Pound,normal,physical,35,40,100
+252,Power Trip,dark,physical,10,20,100
+253,Power Whip,grass,physical,10,120,85
+254,Power-Up Punch,fighting,physical,20,40,100
+255,Precipice Blades,ground,physical,10,120,85
+256,Present,normal,physical,15,--,90
+257,Psyblade,psychic,physical,15,80,100
+258,Psychic Fangs,psychic,physical,10,85,100
+259,Psycho Cut,psychic,physical,20,70,100
+260,Psyshield Bash,psychic,physical,10,70,90
+261,Pulverizing Pancake,normal,physical,1,210,101
+262,Punishment,dark,physical,5,--,100
+263,Pursuit,dark,physical,20,40,100
+264,Pyro Ball,fire,physical,5,120,90
+265,Quick Attack,normal,physical,30,40,100
+266,Rage,normal,physical,20,20,100
+267,Rage Fist,ghost,physical,10,50,100
+268,Raging Bull,normal,physical,10,90,100
+269,Raging Fury,fire,physical,10,120,100
+270,Rapid Spin,normal,physical,40,50,100
+271,Razor Leaf,grass,physical,25,55,95
+272,Razor Shell,water,physical,10,75,95
+273,Retaliate,normal,physical,5,70,100
+274,Return,normal,physical,20,--,100
+275,Revenge,fighting,physical,10,60,100
+276,Reversal,fighting,physical,15,--,100
+277,Rock Blast,rock,physical,10,25,90
+278,Rock Climb,normal,physical,20,90,85
+279,Rock Slide,rock,physical,10,75,90
+280,Rock Smash,fighting,physical,15,40,100
+281,Rock Throw,rock,physical,15,50,90
+282,Rock Tomb,rock,physical,15,60,95
+283,Rock Wrecker,rock,physical,5,150,90
+284,Rolling Kick,fighting,physical,15,60,85
+285,Rollout,rock,physical,20,30,90
+286,Sacred Fire,fire,physical,5,100,95
+287,Sacred Sword,fighting,physical,15,90,100
+288,Salt Cure,rock,physical,15,40,100
+289,Sand Tomb,ground,physical,15,35,85
+290,Sappy Seed,grass,physical,10,100,90
+291,Savage Spin-Out,bug,physical,1,--,101
+292,Scale Shot,dragon,physical,20,25,90
+293,Scratch,normal,physical,35,40,100
+294,Searing Sunraze Smash,steel,physical,1,200,101
+295,Secret Power,normal,physical,20,70,100
+296,Seed Bomb,grass,physical,15,80,100
+297,Seismic Toss,fighting,physical,20,--,100
+298,Self-Destruct,normal,physical,5,200,100
+299,Shadow Bone,ghost,physical,10,85,100
+300,Shadow Claw,ghost,physical,15,70,100
+301,Shadow Force,ghost,physical,5,120,100
+302,Shadow Punch,ghost,physical,20,60,101
+303,Shadow Sneak,ghost,physical,30,40,100
+304,Shattered Psyche,psychic,physical,1,--,101
+305,Sinister Arrow Raid,ghost,physical,1,180,101
+306,Sizzly Slide,fire,physical,20,60,100
+307,Skitter Smack,bug,physical,10,70,90
+308,Skull Bash,normal,physical,10,130,100
+309,Sky Attack,flying,physical,5,140,90
+310,Sky Drop,flying,physical,10,60,100
+311,Sky Uppercut,fighting,physical,15,85,90
+312,Slam,normal,physical,20,80,75
+313,Slash,normal,physical,20,70,100
+314,Smack Down,rock,physical,15,50,100
+315,Smart Strike,steel,physical,10,70,101
+316,Smelling Salts,normal,physical,10,70,100
+317,Snap Trap,grass,physical,15,35,100
+318,Solar Blade,grass,physical,10,125,100
+319,Soul-Stealing 7-Star Strike,ghost,physical,1,195,101
+320,Spark,electric,physical,20,65,100
+321,Spectral Thief,ghost,physical,10,90,100
+322,Spike Cannon,normal,physical,15,20,100
+323,Spin Out,steel,physical,5,100,100
+324,Spirit Break,fairy,physical,15,75,100
+325,Spirit Shackle,ghost,physical,10,80,100
+326,Splintered Stormshards,rock,physical,1,190,101
+327,Steamroller,bug,physical,20,65,100
+328,Steel Roller,steel,physical,5,130,100
+329,Steel Wing,steel,physical,25,70,90
+330,Stomp,normal,physical,20,65,100
+331,Stomping Tantrum,ground,physical,10,75,100
+332,Stone Axe,rock,physical,15,65,90
+333,Stone Edge,rock,physical,5,100,80
+334,Storm Throw,fighting,physical,10,60,100
+335,Strength,normal,physical,15,80,100
+336,Struggle,normal,physical,1,50,101
+337,Submission,fighting,physical,20,80,80
+338,Subzero Slammer,ice,physical,1,--,101
+339,Sucker Punch,dark,physical,5,70,100
+340,Sunsteel Strike,steel,physical,5,100,100
+341,Super Fang,normal,physical,10,--,90
+342,Superpower,fighting,physical,5,120,100
+343,Supersonic Skystrike,flying,physical,1,--,101
+344,Surging Strikes,water,physical,5,25,100
+345,Tackle,normal,physical,35,40,100
+346,Tail Slap,normal,physical,10,25,85
+347,Take Down,normal,physical,20,90,85
+348,Tectonic Rage,ground,physical,1,--,101
+349,Thief,dark,physical,25,60,100
+350,Thousand Arrows,ground,physical,10,90,100
+351,Thousand Waves,ground,physical,10,90,100
+352,Thrash,normal,physical,10,120,100
+353,Throat Chop,dark,physical,15,80,100
+354,Thunder Fang,electric,physical,15,65,95
+355,Thunder Punch,electric,physical,15,75,100
+356,Thunderous Kick,fighting,physical,10,90,100
+357,Trailblaze,grass,physical,20,50,100
+358,Triple Arrows,fighting,physical,10,90,100
+359,Triple Axel,ice,physical,10,20,90
+360,Triple Dive,water,physical,10,30,95
+361,Triple Kick,fighting,physical,10,10,90
+362,Trop Kick,grass,physical,15,70,100
+363,Twineedle,bug,physical,20,25,100
+364,Twinkle Tackle,fairy,physical,1,--,101
+365,U-turn,bug,physical,20,70,100
+366,V-create,fire,physical,5,180,95
+367,Veevee Volley,normal,physical,20,--,101
+368,Vine Whip,grass,physical,25,45,100
+369,Vise Grip,normal,physical,30,55,100
+370,Vital Throw,fighting,physical,10,70,101
+371,Volt Tackle,electric,physical,15,120,100
+372,Wake-Up Slap,fighting,physical,10,70,100
+373,Waterfall,water,physical,15,80,100
+374,Wave Crash,water,physical,10,120,100
+375,Wicked Blow,dark,physical,5,75,100
+376,Wicked Torque,dark,physical,10,80,100
+377,Wild Charge,electric,physical,15,90,100
+378,Wing Attack,flying,physical,35,60,100
+379,Wood Hammer,grass,physical,15,120,100
+380,Wrap,normal,physical,20,15,90
+381,X-Scissor,bug,physical,15,80,100
+382,Zen Headbutt,psychic,physical,15,80,90
+383,Zing Zap,electric,physical,10,80,100
+384,Zippy Zap,electric,physical,10,80,100
+385,"10,000,000 Volt Thunderbolt",electric,special,1,195,101
+386,Absorb,grass,special,25,20,100
+387,Acid,poison,special,30,40,100
+388,Acid Downpour,poison,special,1,--,101
+389,Acid Spray,poison,special,20,40,100
+390,Aeroblast,flying,special,5,100,95
+391,Air Cutter,flying,special,25,60,95
+392,Air Slash,flying,special,15,75,95
+393,All-Out Pummeling,fighting,special,1,--,101
+394,Ancient Power,rock,special,5,60,100
+395,Apple Acid,grass,special,10,80,100
+396,Armor Cannon,fire,special,5,120,100
+397,Astral Barrage,ghost,special,5,120,100
+398,Aura Sphere,fighting,special,20,80,101
+399,Aurora Beam,ice,special,20,65,100
+400,Baddy Bad,dark,special,15,80,95
+401,Belch,poison,special,10,120,90
+402,Bitter Malice,ghost,special,10,75,100
+403,Black Hole Eclipse,dark,special,1,--,101
+404,Blast Burn,fire,special,5,150,90
+405,Bleakwind Storm,flying,special,10,100,80
+406,Blizzard,ice,special,5,110,70
+407,Blood Moon,normal,special,5,140,100
+408,Bloom Doom,grass,special,1,--,101
+409,Blue Flare,fire,special,5,130,85
+410,Boomburst,normal,special,10,140,100
+411,Bouncy Bubble,water,special,20,60,100
+412,Breakneck Blitz,normal,special,1,--,101
+413,Brine,water,special,10,65,100
+414,Bubble,water,special,30,40,100
+415,Bubble Beam,water,special,20,65,100
+416,Bug Buzz,bug,special,10,90,100
+417,Burn Up,fire,special,5,130,100
+418,Burning Jealousy,fire,special,5,70,100
+419,Buzzy Buzz,electric,special,20,60,100
+420,Charge Beam,electric,special,10,50,90
+421,Chatter,flying,special,20,65,100
+422,Chilling Water,water,special,20,50,100
+423,Chloroblast,grass,special,5,150,95
+424,Clanging Scales,dragon,special,5,110,100
+425,Clangorous Soulblaze,dragon,special,1,185,101
+426,Clear Smog,poison,special,15,50,101
+427,Confusion,psychic,special,25,50,100
+428,Continental Crush,rock,special,1,--,101
+429,Core Enforcer,dragon,special,10,100,100
+430,Corkscrew Crash,steel,special,1,--,101
+431,Dark Pulse,dark,special,15,80,100
+432,Dazzling Gleam,fairy,special,10,80,100
+433,Devastating Drake,dragon,special,1,--,101
+434,Disarming Voice,fairy,special,15,40,101
+435,Discharge,electric,special,15,80,100
+436,Doom Desire,steel,special,5,140,100
+437,Draco Meteor,dragon,special,5,130,90
+438,Dragon Breath,dragon,special,20,60,100
+439,Dragon Energy,dragon,special,5,150,100
+440,Dragon Pulse,dragon,special,10,85,100
+441,Dragon Rage,dragon,special,10,--,100
+442,Draining Kiss,fairy,special,10,50,100
+443,Dream Eater,psychic,special,15,100,100
+444,Dynamax Cannon,dragon,special,5,100,100
+445,Earth Power,ground,special,10,90,100
+446,Echoed Voice,normal,special,15,40,100
+447,Eerie Spell,psychic,special,5,80,100
+448,Electro Ball,electric,special,10,--,100
+449,Electro Drift,electric,special,5,100,100
+450,Electroweb,electric,special,15,55,95
+451,Ember,fire,special,25,40,100
+452,Energy Ball,grass,special,10,90,100
+453,Eruption,fire,special,5,150,100
+454,Esper Wing,psychic,special,10,80,100
+455,Eternabeam,dragon,special,5,160,90
+456,Expanding Force,psychic,special,10,80,100
+457,Extrasensory,psychic,special,20,80,100
+458,Fairy Wind,fairy,special,30,40,100
+459,Fiery Dance,fire,special,10,80,100
+460,Fiery Wrath,dark,special,10,90,100
+461,Final Gambit,fighting,special,5,--,100
+462,Fire Blast,fire,special,5,110,85
+463,Fire Pledge,fire,special,10,80,100
+464,Fire Spin,fire,special,15,35,85
+465,Flame Burst,fire,special,15,70,100
+466,Flamethrower,fire,special,15,90,100
+467,Flash Cannon,steel,special,10,80,100
+468,Fleur Cannon,fairy,special,5,130,90
+469,Focus Blast,fighting,special,5,120,70
+470,Freeze-Dry,ice,special,20,70,100
+471,Freezing Glare,psychic,special,10,90,100
+472,Freezy Frost,ice,special,10,100,90
+473,Frenzy Plant,grass,special,5,150,90
+474,Frost Breath,ice,special,10,60,90
+475,Fusion Flare,fire,special,5,100,100
+476,Future Sight,psychic,special,10,120,100
+477,Genesis Supernova,psychic,special,1,185,101
+478,Giga Drain,grass,special,10,75,100
+479,Gigavolt Havoc,electric,special,1,--,101
+480,Glaciate,ice,special,10,65,95
+481,Glitzy Glow,psychic,special,15,80,95
+482,Grass Knot,grass,special,20,--,100
+483,Grass Pledge,grass,special,10,80,100
+484,Guardian of Alola,fairy,special,1,--,101
+485,Gust,flying,special,35,40,100
+486,Heat Wave,fire,special,10,95,90
+487,Hex,ghost,special,10,65,100
+488,Hidden Power,normal,special,15,60,100
+489,Hurricane,flying,special,10,110,70
+490,Hydro Cannon,water,special,5,150,90
+491,Hydro Pump,water,special,5,110,80
+492,Hydro Steam,water,special,15,80,100
+493,Hydro Vortex,water,special,1,--,101
+494,Hyper Beam,normal,special,5,150,90
+495,Hyper Voice,normal,special,10,90,100
+496,Hyperspace Hole,psychic,special,5,80,101
+497,Ice Beam,ice,special,10,90,100
+498,Ice Burn,ice,special,5,140,90
+499,Icy Wind,ice,special,15,55,95
+500,Incinerate,fire,special,15,60,100
+501,Infernal Parade,ghost,special,15,60,100
+502,Inferno,fire,special,5,100,50
+503,Inferno Overdrive,fire,special,1,--,101
+504,Infestation,bug,special,20,20,100
+505,Judgment,normal,special,10,100,100
+506,Lava Plume,fire,special,15,80,100
+507,Leaf Storm,grass,special,5,130,90
+508,Leaf Tornado,grass,special,10,65,90
+509,Light That Burns the Sky,psychic,special,1,200,101
+510,Light of Ruin,fairy,special,5,140,90
+511,Lumina Crash,psychic,special,10,80,100
+512,Luster Purge,psychic,special,5,70,100
+513,Magical Leaf,grass,special,20,60,101
+514,Magma Storm,fire,special,5,100,75
+515,Make It Rain,steel,special,5,120,100
+516,Matcha Gotcha,grass,special,15,80,90
+517,Mega Drain,grass,special,15,40,100
+518,Menacing Moonraze Maelstrom,ghost,special,1,200,101
+519,Meteor Beam,rock,special,10,120,90
+520,Mind Blown,fire,special,5,150,100
+521,Mirror Coat,psychic,special,20,--,100
+522,Mirror Shot,steel,special,10,65,85
+523,Mist Ball,psychic,special,5,70,100
+524,Misty Explosion,fairy,special,5,100,100
+525,Moonblast,fairy,special,15,95,100
+526,Moongeist Beam,ghost,special,5,100,100
+527,Mud Bomb,ground,special,10,65,85
+528,Mud Shot,ground,special,15,55,95
+529,Mud-Slap,ground,special,10,20,100
+530,Muddy Water,water,special,10,90,85
+531,Mystical Fire,fire,special,10,75,100
+532,Mystical Power,psychic,special,10,70,90
+533,Natures Madness,fairy,special,10,--,90
+534,Never-Ending Nightmare,ghost,special,1,--,101
+535,Night Daze,dark,special,10,85,95
+536,Night Shade,ghost,special,15,--,100
+537,Oblivion Wing,flying,special,10,80,100
+538,Oceanic Operetta,water,special,1,195,101
+539,Octazooka,water,special,10,65,85
+540,Ominous Wind,ghost,special,5,60,100
+541,Origin Pulse,water,special,10,110,85
+542,Overdrive,electric,special,10,80,100
+543,Overheat,fire,special,5,130,90
+544,Parabolic Charge,electric,special,20,65,100
+545,Petal Dance,grass,special,10,120,100
+546,Photon Geyser,psychic,special,5,100,100
+547,Pika Papow,electric,special,20,--,101
+548,Pollen Puff,bug,special,15,90,100
+549,Powder Snow,ice,special,25,40,100
+550,Power Gem,rock,special,20,80,100
+551,Prismatic Laser,psychic,special,10,160,100
+552,Psybeam,psychic,special,20,65,100
+553,Psychic,psychic,special,10,90,100
+554,Psycho Boost,psychic,special,5,140,90
+555,Psyshock,psychic,special,10,80,100
+556,Psystrike,psychic,special,10,100,100
+557,Psywave,psychic,special,15,--,100
+558,Razor Wind,normal,special,10,80,100
+559,Relic Song,normal,special,10,75,100
+560,Revelation Dance,normal,special,15,90,100
+561,Rising Voltage,electric,special,20,70,100
+562,Roar of Time,dragon,special,5,150,90
+563,Round,normal,special,15,60,100
+564,Ruination,dark,special,10,--,90
+565,Sandsear Storm,ground,special,10,100,80
+566,Savage Spin-Out,bug,special,1,--,101
+567,Scald,water,special,15,80,100
+568,Scorching Sands,ground,special,10,70,100
+569,Searing Shot,fire,special,5,100,100
+570,Secret Sword,fighting,special,10,85,100
+571,Seed Flare,grass,special,5,120,85
+572,Shadow Ball,ghost,special,15,80,100
+573,Shattered Psyche,psychic,special,1,--,101
+574,Sheer Cold,ice,special,5,--,30
+575,Shell Side Arm,poison,special,10,90,100
+576,Shell Trap,fire,special,5,150,100
+577,Shock Wave,electric,special,20,60,101
+578,Signal Beam,bug,special,15,75,100
+579,Silver Wind,bug,special,5,60,100
+580,Sludge,poison,special,20,65,100
+581,Sludge Bomb,poison,special,10,90,100
+582,Sludge Wave,poison,special,10,95,100
+583,Smog,poison,special,20,30,70
+584,Snarl,dark,special,15,55,95
+585,Snipe Shot,water,special,15,80,100
+586,Snore,normal,special,15,50,100
+587,Solar Beam,grass,special,10,120,100
+588,Sonic Boom,normal,special,20,--,90
+589,Spacial Rend,dragon,special,5,100,95
+590,Sparkling Aria,water,special,10,90,100
+591,Sparkly Swirl,fairy,special,5,120,85
+592,Spit Up,normal,special,10,--,100
+593,Splishy Splash,water,special,15,90,100
+594,Springtide Storm,fairy,special,5,100,80
+595,Steam Eruption,water,special,5,110,95
+596,Steel Beam,steel,special,5,140,95
+597,Stoked Sparksurfer,electric,special,1,175,101
+598,Stored Power,psychic,special,10,20,100
+599,Strange Steam,fairy,special,10,90,95
+600,Struggle Bug,bug,special,20,50,100
+601,Subzero Slammer,ice,special,1,--,101
+602,Supersonic Skystrike,flying,special,1,--,101
+603,Surf,water,special,15,90,100
+604,Swift,normal,special,20,60,101
+605,Synchronoise,psychic,special,10,120,100
+606,Syrup Bomb,grass,special,10,60,85
+607,Techno Blast,normal,special,5,120,100
+608,Tectonic Rage,ground,special,1,--,101
+609,Tera Blast,normal,special,10,80,100
+610,Terrain Pulse,normal,special,10,50,100
+611,Thunder,electric,special,10,110,70
+612,Thunder Cage,electric,special,15,80,90
+613,Thunder Shock,electric,special,30,40,100
+614,Thunderbolt,electric,special,15,90,100
+615,Torch Song,fire,special,10,80,100
+616,Tri Attack,normal,special,10,80,100
+617,Trump Card,normal,special,5,--,101
+618,Twin Beam,psychic,special,10,40,100
+619,Twinkle Tackle,fairy,special,1,--,101
+620,Twister,dragon,special,20,40,100
+621,Uproar,normal,special,10,90,100
+622,Vacuum Wave,fighting,special,30,40,100
+623,Venoshock,poison,special,10,65,100
+624,Volt Switch,electric,special,20,70,100
+625,Water Gun,water,special,25,40,100
+626,Water Pledge,water,special,10,80,100
+627,Water Pulse,water,special,20,60,100
+628,Water Shuriken,water,special,20,15,100
+629,Water Spout,water,special,5,150,100
+630,Weather Ball,normal,special,10,50,100
+631,Whirlpool,water,special,15,35,85
+632,Wildbolt Storm,electric,special,10,100,80
+633,Wring Out,normal,special,5,--,100
+634,Zap Cannon,electric,special,5,120,50
+635,Acid Armor,poison,other,20,--,101
+636,Acupressure,normal,other,30,--,101
+637,After You,normal,other,15,--,101
+638,Agility,psychic,other,30,--,101
+639,Ally Switch,psychic,other,15,--,101
+640,Amnesia,psychic,other,20,--,101
+641,Aqua Ring,water,other,20,--,101
+642,Aromatherapy,grass,other,5,--,101
+643,Aromatic Mist,fairy,other,20,--,101
+644,Assist,normal,other,20,--,101
+645,Attract,normal,other,15,--,100
+646,Aurora Veil,ice,other,20,--,101
+647,Autotomize,steel,other,15,--,101
+648,Baby-Doll Eyes,fairy,other,30,--,100
+649,Baneful Bunker,poison,other,10,--,101
+650,Barrier,psychic,other,20,--,101
+651,Baton Pass,normal,other,40,--,101
+652,Belly Drum,normal,other,10,--,101
+653,Bestow,normal,other,15,--,101
+654,Block,normal,other,5,--,101
+655,Bulk Up,fighting,other,20,--,101
+656,Calm Mind,psychic,other,20,--,101
+657,Camouflage,normal,other,20,--,101
+658,Captivate,normal,other,20,--,100
+659,Celebrate,normal,other,40,--,101
+660,Charge,electric,other,20,--,101
+661,Charm,fairy,other,20,--,100
+662,Chilly Reception,ice,other,10,--,101
+663,Clangorous Soul,dragon,other,5,--,101
+664,Coaching,fighting,other,10,--,101
+665,Coil,poison,other,20,--,101
+666,Confide,normal,other,20,--,101
+667,Confuse Ray,ghost,other,10,--,100
+668,Conversion,normal,other,30,--,101
+669,Conversion 2,normal,other,30,--,101
+670,Copycat,normal,other,20,--,101
+671,Corrosive Gas,poison,other,40,--,100
+672,Cosmic Power,psychic,other,20,--,101
+673,Cotton Guard,grass,other,10,--,101
+674,Cotton Spore,grass,other,40,--,100
+675,Court Change,normal,other,10,--,100
+676,Crafty Shield,fairy,other,10,--,101
+677,Curse,ghost,other,10,--,101
+678,Dark Void,dark,other,10,--,50
+679,Decorate,fairy,other,15,--,101
+680,Defend Order,bug,other,10,--,101
+681,Defense Curl,normal,other,40,--,101
+682,Defog,flying,other,15,--,101
+683,Destiny Bond,ghost,other,5,--,101
+684,Detect,fighting,other,5,--,101
+685,Disable,normal,other,20,--,100
+686,Doodle,normal,other,10,--,100
+687,Double Team,normal,other,15,--,101
+688,Dragon Dance,dragon,other,20,--,101
+689,Eerie Impulse,electric,other,15,--,100
+690,Electric Terrain,electric,other,10,--,101
+691,Electrify,electric,other,20,--,101
+692,Embargo,dark,other,15,--,100
+693,Encore,normal,other,5,--,100
+694,Endure,normal,other,10,--,101
+695,Entrainment,normal,other,15,--,100
+696,Extreme Evoboost,normal,other,1,--,101
+697,Fairy Lock,fairy,other,10,--,101
+698,Fake Tears,dark,other,20,--,100
+699,Feather Dance,flying,other,15,--,100
+700,Fillet Away,normal,other,10,--,101
+701,Flash,normal,other,20,--,100
+702,Flatter,dark,other,15,--,100
+703,Floral Healing,fairy,other,10,--,101
+704,Flower Shield,fairy,other,10,--,101
+705,Focus Energy,normal,other,30,--,101
+706,Follow Me,normal,other,20,--,101
+707,Foresight,normal,other,40,--,101
+708,Forests Curse,grass,other,20,--,100
+709,Gastro Acid,poison,other,10,--,100
+710,Gear Up,steel,other,20,--,101
+711,Geomancy,fairy,other,10,--,101
+712,Glare,normal,other,30,--,100
+713,Grass Whistle,grass,other,15,--,55
+714,Grassy Terrain,grass,other,10,--,101
+715,Gravity,psychic,other,5,--,101
+716,Growl,normal,other,40,--,100
+717,Growth,normal,other,20,--,101
+718,Grudge,ghost,other,5,--,101
+719,Guard Split,psychic,other,10,--,101
+720,Guard Swap,psychic,other,10,--,101
+721,Hail,ice,other,10,--,101
+722,Happy Hour,normal,other,30,--,101
+723,Harden,normal,other,30,--,101
+724,Haze,ice,other,30,--,101
+725,Heal Bell,normal,other,5,--,101
+726,Heal Block,psychic,other,15,--,100
+727,Heal Order,bug,other,10,--,101
+728,Heal Pulse,psychic,other,10,--,101
+729,Healing Wish,psychic,other,10,--,101
+730,Heart Swap,psychic,other,10,--,101
+731,Helping Hand,normal,other,20,--,101
+732,Hold Hands,normal,other,40,--,101
+733,Hone Claws,dark,other,15,--,101
+734,Howl,normal,other,40,--,101
+735,Hypnosis,psychic,other,20,--,60
+736,Imprison,psychic,other,10,--,101
+737,Ingrain,grass,other,20,--,101
+738,Instruct,psychic,other,15,--,101
+739,Ion Deluge,electric,other,25,--,101
+740,Iron Defense,steel,other,15,--,101
+741,Jungle Healing,grass,other,10,--,101
+742,Kinesis,psychic,other,15,--,80
+743,Kings Shield,steel,other,10,--,101
+744,Laser Focus,normal,other,30,--,101
+745,Leech Seed,grass,other,10,--,90
+746,Leer,normal,other,30,--,100
+747,Life Dew,water,other,10,--,101
+748,Light Screen,psychic,other,30,--,101
+749,Lock-On,normal,other,5,--,101
+750,Lovely Kiss,normal,other,10,--,75
+751,Lucky Chant,normal,other,30,--,101
+752,Lunar Blessing,psychic,other,5,--,101
+753,Lunar Dance,psychic,other,10,--,101
+754,Magic Coat,psychic,other,15,--,101
+755,Magic Powder,psychic,other,20,--,100
+756,Magic Room,psychic,other,10,--,101
+757,Magnet Rise,electric,other,10,--,101
+758,Magnetic Flux,electric,other,20,--,101
+759,Mat Block,fighting,other,10,--,101
+760,Max Guard,normal,other,10,--,101
+761,Me First,normal,other,20,--,101
+762,Mean Look,normal,other,5,--,101
+763,Meditate,psychic,other,40,--,101
+764,Memento,dark,other,10,--,100
+765,Metal Sound,steel,other,40,--,85
+766,Metronome,normal,other,10,--,101
+767,Milk Drink,normal,other,5,--,101
+768,Mimic,normal,other,10,--,101
+769,Mind Reader,normal,other,5,--,101
+770,Minimize,normal,other,10,--,101
+771,Miracle Eye,psychic,other,40,--,101
+772,Mirror Move,flying,other,20,--,101
+773,Mist,ice,other,30,--,101
+774,Misty Terrain,fairy,other,10,--,101
+775,Moonlight,fairy,other,5,--,101
+776,Morning Sun,normal,other,5,--,101
+777,Mud Sport,ground,other,15,--,101
+778,Nasty Plot,dark,other,20,--,101
+779,Nature Power,normal,other,20,--,101
+780,Nightmare,ghost,other,15,--,100
+781,No Retreat,fighting,other,5,--,101
+782,Noble Roar,normal,other,30,--,100
+783,Obstruct,dark,other,10,--,100
+784,Octolock,fighting,other,15,--,100
+785,Odor Sleuth,normal,other,40,--,101
+786,Pain Split,normal,other,20,--,101
+787,Parting Shot,dark,other,20,--,100
+788,Perish Song,normal,other,5,--,101
+789,Play Nice,normal,other,20,--,101
+790,Poison Gas,poison,other,40,--,90
+791,Poison Powder,poison,other,35,--,75
+792,Powder,bug,other,20,--,100
+793,Power Shift,normal,other,10,--,101
+794,Power Split,psychic,other,10,--,101
+795,Power Swap,psychic,other,10,--,101
+796,Power Trick,psychic,other,10,--,101
+797,Protect,normal,other,10,--,101
+798,Psych Up,normal,other,10,--,101
+799,Psychic Terrain,psychic,other,10,--,101
+800,Psycho Shift,psychic,other,10,--,100
+801,Purify,poison,other,20,--,101
+802,Quash,dark,other,15,--,100
+803,Quick Guard,fighting,other,15,--,101
+804,Quiver Dance,bug,other,20,--,101
+805,Rage Powder,bug,other,20,--,101
+806,Rain Dance,water,other,5,--,101
+807,Recover,normal,other,5,--,101
+808,Recycle,normal,other,10,--,101
+809,Reflect,psychic,other,20,--,101
+810,Reflect Type,normal,other,15,--,101
+811,Refresh,normal,other,20,--,101
+812,Rest,psychic,other,5,--,101
+813,Revival Blessing,normal,other,1,--,101
+814,Roar,normal,other,20,--,101
+815,Rock Polish,rock,other,20,--,101
+816,Role Play,psychic,other,10,--,101
+817,Roost,flying,other,5,--,101
+818,Rototiller,ground,other,10,--,101
+819,Safeguard,normal,other,25,--,101
+820,Sand Attack,ground,other,15,--,100
+821,Sandstorm,rock,other,10,--,101
+822,Scary Face,normal,other,10,--,100
+823,Screech,normal,other,40,--,85
+824,Sharpen,normal,other,30,--,101
+825,Shed Tail,normal,other,10,--,101
+826,Shell Smash,normal,other,15,--,101
+827,Shelter,steel,other,10,--,101
+828,Shift Gear,steel,other,10,--,101
+829,Shore Up,ground,other,5,--,101
+830,Silk Trap,bug,other,10,--,101
+831,Simple Beam,normal,other,15,--,100
+832,Sing,normal,other,15,--,55
+833,Sketch,normal,other,1,--,101
+834,Skill Swap,psychic,other,10,--,101
+835,Slack Off,normal,other,5,--,101
+836,Sleep Powder,grass,other,15,--,75
+837,Sleep Talk,normal,other,10,--,101
+838,Smokescreen,normal,other,20,--,100
+839,Snatch,dark,other,10,--,101
+840,Snowscape,ice,other,10,--,101
+841,Soak,water,other,20,--,100
+842,Soft-Boiled,normal,other,5,--,101
+843,Speed Swap,psychic,other,10,--,101
+844,Spicy Extract,grass,other,15,--,101
+845,Spider Web,bug,other,10,--,101
+846,Spikes,ground,other,20,--,101
+847,Spiky Shield,grass,other,10,--,101
+848,Spite,ghost,other,10,--,100
+849,Splash,normal,other,40,--,101
+850,Spore,grass,other,15,--,100
+851,Spotlight,normal,other,15,--,101
+852,Stealth Rock,rock,other,20,--,101
+853,Sticky Web,bug,other,20,--,101
+854,Stockpile,normal,other,20,--,101
+855,Strength Sap,grass,other,10,--,100
+856,String Shot,bug,other,40,--,95
+857,Stuff Cheeks,normal,other,10,--,101
+858,Stun Spore,grass,other,30,--,75
+859,Substitute,normal,other,10,--,101
+860,Sunny Day,fire,other,5,--,101
+861,Supersonic,normal,other,20,--,55
+862,Swagger,normal,other,15,--,85
+863,Swallow,normal,other,10,--,101
+864,Sweet Kiss,fairy,other,10,--,75
+865,Sweet Scent,normal,other,20,--,100
+866,Switcheroo,dark,other,10,--,100
+867,Swords Dance,normal,other,20,--,101
+868,Synthesis,grass,other,5,--,101
+869,Tail Glow,bug,other,20,--,101
+870,Tail Whip,normal,other,30,--,100
+871,Tailwind,flying,other,15,--,101
+872,Take Heart,psychic,other,15,--,101
+873,Tar Shot,rock,other,15,--,100
+874,Taunt,dark,other,20,--,100
+875,Tearful Look,normal,other,20,--,101
+876,Teatime,normal,other,10,--,101
+877,Teeter Dance,normal,other,20,--,100
+878,Telekinesis,psychic,other,15,--,101
+879,Teleport,psychic,other,20,--,101
+880,Thunder Wave,electric,other,20,--,90
+881,Tickle,normal,other,20,--,100
+882,Tidy Up,normal,other,10,--,101
+883,Topsy-Turvy,dark,other,20,--,101
+884,Torment,dark,other,15,--,100
+885,Toxic,poison,other,10,--,90
+886,Toxic Spikes,poison,other,20,--,101
+887,Toxic Thread,poison,other,20,--,100
+888,Transform,normal,other,10,--,101
+889,Trick,psychic,other,10,--,100
+890,Trick Room,psychic,other,5,--,101
+891,Trick-or-Treat,ghost,other,20,--,100
+892,Venom Drench,poison,other,20,--,100
+893,Victory Dance,fighting,other,10,--,101
+894,Water Sport,water,other,15,--,101
+895,Whirlwind,normal,other,20,--,101
+896,Wide Guard,rock,other,10,--,101
+897,Will-O-Wisp,fire,other,15,--,85
+898,Wish,normal,other,10,--,101
+899,Withdraw,water,other,40,--,101
+900,Wonder Room,psychic,other,10,--,101
+901,Work Up,normal,other,30,--,101
+902,Worry Seed,grass,other,10,--,100
+903,Yawn,normal,other,10,--,101
