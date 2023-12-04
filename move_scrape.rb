@@ -112,25 +112,25 @@ CSV.open("output.csv", "wb", write_headers: true, headers: csv_headers) do |csv|
   end
 end
 
-attribute_titles = ["image", "name", "effect"]
-item_array = []
+attribute_titles = ["name", "type", "category", "pp", "power", "accuracy"]
+move_array = []
 count = 0
-pokemon_products.each do |item|
-  single_item = {}
+pokemon_products.each do |move|
+  single_move = {}
   count = 0
-  if item.index.to_i > 0 #just for getting a clean list, we can do this in validations later
+  if move.index.to_i > 0 #just for getting a clean list, we can do this in validations later
     while count < attribute_titles.length
-      single_item[attribute_titles[count].to_sym] = item[count + 1]
+      single_move[attribute_titles[count].to_sym] = move[count + 1]
       count += 1
     end
-    # puts single_item
-    item_array << single_item
+    # puts single_move
+    move_array << single_move
   end
 end
-# pp item_array[0]
+# pp move_array[0]
 count = 1
-item_array.each do |item|
-  puts "creating item model ##{count}"
-  Item.create(item)
+move_array.each do |move|
+  puts "creating move model ##{count}"
+  Move.create(move)
   count += 1
 end
