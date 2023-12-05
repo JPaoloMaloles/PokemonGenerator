@@ -19,5 +19,11 @@ Rails.application.routes.draw do
   resources :trainers
   resources :teams
   resources :pokemon_in_teams
+
+  get "/items/:id" => "items#show"
+  get "/items" => "items#index"
+
+  get "/moves/:id" => "moves#show"
+  get "/moves" => "moves#index"
   # post "/pokemon_in_teams/new_direct", controller: "pokemon_in_teams", action: "new_direct"
 end
