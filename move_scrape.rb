@@ -5,7 +5,7 @@ url_paths = ["physical","special", "other"]
 pokemon_product_index = -1
 pokemon_products = []
 
-MoveProduct = Struct.new(:index, :name, :type, :category, :pp, :power, :accuracy,)
+MoveProduct = Struct.new(:index, :name, :type, :category, :pp, :power, :accuracy, :effect_percent, :description)
 
 url_paths.each do |url_path|
   response = HTTParty.get("https://www.serebii.net/attackdex-sv/#{url_path}.shtml")
@@ -94,7 +94,7 @@ url_paths.each do |url_path|
 
       if name != "rnNamern"
         # MoveProduct = Struct.new(:index, :name, :type, :category, :pp, :power, :accuracy,)
-        pokemon_product = MoveProduct.new(pokemon_product_index, name, type, category, power_points, power, accuracy)
+        pokemon_product = MoveProduct.new(pokemon_product_index, name, type, category, power_points, power, accuracy, description)
         pokemon_products.push(pokemon_product)
       else
         pokemon_product_index += -1
@@ -105,32 +105,32 @@ url_paths.each do |url_path|
 end
 
 
-csv_headers = ["index", "name", "type", "category", "pp", "power", "accuracy"]
+csv_headers = ["index", "name", "type", "category", "pp", "power", "accuracy", "description"]
 CSV.open("output.csv", "wb", write_headers: true, headers: csv_headers) do |csv|
   pokemon_products.each do |pokemon_product|
     csv << pokemon_product
   end
 end
 
-attribute_titles = ["name", "type", "category", "pp", "power", "accuracy"]
-move_array = []
-count = 0
-pokemon_products.each do |move|
-  single_move = {}
-  count = 0
-  if move.index.to_i > 0 #just for getting a clean list, we can do this in validations later
-    while count < attribute_titles.length
-      single_move[attribute_titles[count].to_sym] = move[count + 1]
-      count += 1
-    end
-    # puts single_move
-    move_array << single_move
-  end
-end
-# pp move_array[0]
-count = 1
-move_array.each do |move|
-  puts "creating move model ##{count}"
-  Move.create(move)
-  count += 1
-end
+# attribute_titles = ["name", "type", "category", "pp", "power", "accuracy"]
+# move_array = []
+# count = 0
+# pokemon_products.each do |move|
+#   single_move = {}
+#   count = 0
+#   if move.index.to_i > 0 #just for getting a clean list, we can do this in validations later
+#     while count < attribute_titles.length
+#       single_move[attribute_titles[count].to_sym] = move[count + 1]
+#       count += 1
+#     end
+#     # puts single_move
+#     move_array << single_move
+#   end
+# end
+# # pp move_array[0]
+# count = 1
+# move_array.each do |move|
+#   puts "creating move model ##{count}"
+#   Move.create(move)
+#   count += 1
+# end

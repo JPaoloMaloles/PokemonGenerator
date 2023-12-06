@@ -302,7 +302,7 @@ url_paths = ["physical","special", "other"]
 pokemon_product_index = -1
 pokemon_products = []
 
-MoveProduct = Struct.new(:index, :name, :type, :category, :pp, :power, :accuracy,)
+MoveProduct = Struct.new(:index, :name, :type, :category, :pp, :power, :accuracy, :effect_percent, :description)
 
 url_paths.each do |url_path|
   response = HTTParty.get("https://www.serebii.net/attackdex-sv/#{url_path}.shtml")
@@ -391,7 +391,7 @@ url_paths.each do |url_path|
 
       if name != "rnNamern"
         # MoveProduct = Struct.new(:index, :name, :type, :category, :pp, :power, :accuracy,)
-        pokemon_product = MoveProduct.new(pokemon_product_index, name, type, category, power_points, power, accuracy)
+        pokemon_product = MoveProduct.new(pokemon_product_index, name, type, category, power_points, power, accuracy, description)
         pokemon_products.push(pokemon_product)
       else
         pokemon_product_index += -1
@@ -402,7 +402,7 @@ url_paths.each do |url_path|
 end
 
 
-csv_headers = ["index", "name", "type", "category", "pp", "power", "accuracy"]
+csv_headers = ["index", "name", "type", "category", "pp", "power", "accuracy", "description"]
 CSV.open("output.csv", "wb", write_headers: true, headers: csv_headers) do |csv|
   pokemon_products.each do |pokemon_product|
     csv << pokemon_product
