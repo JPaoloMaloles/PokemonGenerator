@@ -9,14 +9,13 @@ needs_description = false
 
 level_acquire = ""
 name = ""
-type = ""
-category = ""
+type_string = ""
+category_string = ""
 power_points = ""
 power = ""
 accuracy = ""
 effect_percent = ""
 description = ""
-
 
 pokemon_product_index = -1
 pokemon_products = []
@@ -151,6 +150,42 @@ games.each do |game|
           # # p name
           # # p description
 
+
+          # img_check = inforaw.css("img")
+          # type_image = ""
+          # if !img_check.empty?
+          #   type_image = "https://www.serebii.net" + img_check[0].attribute("src").value
+          #   category_image = "https://www.serebii.net" + img_check[1].attribute("src").value
+          #   pp type_image
+          #   pp category_image
+          # end
+
+          img_check = inforaw.css("img")
+          # puts img_check
+          if !img_check.empty?
+            url = "https://www.serebii.net" + html_product.css("a").first.attribute("href").value
+            img_check.each do |image_url|
+              #puts "This is image_url: #{image_url}"
+              #puts "this is image_url.css: #{image_url.attribute("src").value}"
+              typeimage << "https://www.serebii.net" + image_url.attribute("src").value
+            end
+
+            type_url = typeimage[0]
+            category_url = typeimage[1]
+            # second_type_url = typeimage[2]
+
+            #--------- testing parsing out type from substring
+            type_string = type_url.match(/(?<=type\/)(.*)(?=(.gif))/).to_s
+            category_string = category_url.match(/(?<=type\/)(.*)(?=(.png))/).to_s
+
+            pp type_string
+            pp category_string
+            # if second_type_image
+            #   second_type_string = second_type_image.match(/(?<=type\/)(.*)(?=(.gif))/).to_s
+            #   second_type = second_type_string
+            # end
+          end
+
           
           # MoveProduct = Struct.new(:index, :name, :type, :category, :pp, :power, :accuracy,)
           if info.length > 1 && needs_description == false
@@ -158,7 +193,7 @@ games.each do |game|
             needs_description = true
             next
           end
-          pokemon_product = MoveProduct.new(pokemon_product_index, level_acquire, name, "type", "category", power_points, power, accuracy, effect_percent, description)
+          pokemon_product = MoveProduct.new(pokemon_product_index, level_acquire, name, type_string, category_string, power_points, power, accuracy, effect_percent, description)
           pokemon_products.push(pokemon_product)
           puts "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
           needs_description = false
