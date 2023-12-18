@@ -63,4 +63,4 @@ index,level/acquire,name,type,category,pp,power,accuracy,effect_percent,descript
 123,Egg,Ancient Power,rock,special,5,60,100,10,The user attacks with a prehistoric power. This may also boost all the user's stats at once. The user attacks with a prehistoric power. This may also boost all the users stats at once.
 125,Egg,Dragon Rush,dragon,physical,10,100,75,20,The user tackles the target while exhibiting overwhelming menace. This may also make the target flinch. The user tackles the target while exhibiting overwhelming menace. This may also make the target flinch.
 127,Egg,Dragon Tail,dragon,physical,10,60,90,--,"The target is knocked away, and a different Pokémon is dragged out. In the wild, this ends a battle against a single Pokémon. The target is knocked away, and a different Pokmon is dragged out. In the wild, this ends a battle against a single Pokmon."
-129,Fire Spin,35,"",special,100,85,15,  Lv. 32,Lv. 32 Lv. 32
+129,pre-evolution,Fire Spin,"",special,  Lv. 32,15,100,Lv. 32,Lv. 32 Lv. 32
