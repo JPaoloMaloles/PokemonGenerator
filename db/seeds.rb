@@ -409,7 +409,7 @@ CSV.open("output.csv", "wb", write_headers: true, headers: csv_headers) do |csv|
   end
 end
 
-attribute_titles = ["name", "move_type", "category", "pp", "power", "accuracy"]
+attribute_titles = ["name", "move_type", "category", "pp", "power", "accuracy", "description"]
 move_array = []
 count = 0
 pokemon_products.each do |move|
