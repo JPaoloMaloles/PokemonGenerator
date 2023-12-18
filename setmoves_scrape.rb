@@ -20,7 +20,7 @@ description = ""
 pokemon_product_index = -1
 pokemon_products = []
 
-MoveProduct = Struct.new(:index, :level_acquire, :name, :type, :category, :pp, :power, :accuracy, :effect_percent, :description)
+MovesetProduct = Struct.new(:index, :level_acquire, :name, :type, :category, :pp, :power, :accuracy, :effect_percent, :description)
 
 games.each do |game|
   response = HTTParty.get("https://www.serebii.net/#{game}/#{pokemon_target}/")
@@ -124,7 +124,7 @@ games.each do |game|
             needs_description = true
             next
           end
-          pokemon_product = MoveProduct.new(pokemon_product_index, level_acquire, name, type_string, category_string, power_points, power, accuracy, effect_percent, description)
+          pokemon_product = MovesetProduct.new(pokemon_product_index, level_acquire, name, type_string, category_string, power_points, power, accuracy, effect_percent, description)
           pokemon_products.push(pokemon_product)
           # puts "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
           needs_description = false
