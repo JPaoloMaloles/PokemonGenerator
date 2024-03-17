@@ -1,29 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
-
-# Pokemon.create(
-#   national_dex_num: "national_dex_num",
-#   name: "name",
-#   first_type: "first_type",
-#   second_type: "second_type",
-#   abilities: "abilities",
-#   hp: 1,
-#   atk: 1,
-#   defe: 1,
-#   spa: 1,
-#   spd: 1,
-#   spe: 1,
-#   url: "url",
-#   icon: "icon",
-#   first_type_image: "first_type_image",
-#   second_type_image: "second_type_image",
-# )
-
 require "httparty"
 require "nokogiri"
 multiword_ability = ["Air Lock", "Anger Point", "Anger Shell", "Arena Trap", "Armor Tail", "Aroma Veil", "As One", "Aura Break", "Bad Dreams", "Ball Fetch", "Battle Armor", "Battle Bond", "Beads of Ruin", "Beast Boost", "Big Pecks", "Cheek Pouch", "Chilling Neigh", "Clear Body", "Color Change", "Compoundeyes", "Cotton Down", "Cud Chew", "Curious Medicine", "Cursed Body", "Cute Charm", "Dark Aura", "Dauntless Shield", "Delta Stream", "Desolate Land", "Dragon's Maw", "Dry Skin", "Early Bird", "Earth Eater", "Effect Spore", "Electric Surge", "Emergency Exit", "Fairy Aura", "Flame Body", "Flame Boost", "Flash Fire", "Flower Gift", "Flower Veil", "Friend Guard", "Full Metal Body", "Fur Coat", "Gale Wings", "Good as Gold", "Gorilla Tactics", "Grass Pelt", "Grassy Surge", "Grim Neigh", "Guard Dog", "Gulp Missile", "Hadron Engine", "Heavy Metal", "Honey Gather", "Huge Power", "Hunger Switch", "Hyper Cutter", "Ice Body", "Ice Face", "Ice Scales", "Innards Out", "Inner Focus", "Intrepid Sword", "Iron Barbs", "Iron Fist", "Keen Eye", "Leaf Guard", "Light Metal", "Lightning Rod", "Lingering Aroma", "Liquid Ooze", "Liquid Voice", "Long Reach", "Magic Bounce", "Magic Guard", "Magma Armor", "Magnet Pull", "Marvel Scale", "Mega Launcher", "Mirror Armor", "Misty Surge", "Mold Breaker", "Motor Drive", "Mycelium Might", "Natural Cure", "Neutralizing Gas", "No Guard", "Orichalcum Pulse", "Own Tempo", "Parental Bond", "Pastel Veil", "Perish Body", "Poison Heal", "Poison Point", "Poison Touch", "Power Construct", "Power of Alchemy", "Power Spot", "Primordial Sea", "Prism Armor", "Propeller Tail", "Psychic Surge", "Punk Rock", "Pure Power", "Purifying Salt", "Quark Drive", "Queenly Majesty", "Quick Draw", "Quick Feet", "Rain Dish", "RKS System", "Rock Head", "Rocky Payload", "Rough Skin", "Run Away", "Sand Force", "Sand Rush", "Sand Spit", "Sand Stream", "Sand Veil", "Sap Sipper", "Screen Cleaner", "Seed Sower", "Serene Grace", "Shadow Shield", "Shadow Tag", "Sheer Force", "Shed Skin", "Shell Armor", "Shield Dust", "Shields Down", "Skill Link", "Slow Start", "Slush Rush", "Snow Cloack", "Snow Warning", "Solar Power", "Solid Rock", "Speed Boost", "Stance Change", "Steam Engine", "Steely Spirit", "Sticky Hold", "Storm Drain", "Strong Jaw", "Suction Cups", "Super Luck", "Surge Surfer", "Sweet Veil", "Swift Swim", "Sword of Ruin", "Tablets of Ruin", "Tangled Feet", "Tangling Hair", "Thermal Exchange", "Thick Fat", "Tinted Lens", "Tough Claws", "Toxic Boost", "Toxic Debris", "Unseen Fist", "Vessel of Ruin", "Victory Star", "Vital Spirit", "Volt Absorb", "Wandering Spirit", "Water Absorb", "Water Bubble", "Water Veil", "Weak Armor", "Well-Baked Body", "White Smoke", "Wimp Out", "Wind Power", "Wind Rider", "Wonder Guard", "Wonder Skin", "Zen Mode", "Zero to Hero"]
@@ -110,12 +84,6 @@ html_products.each do |html_product|
         second_type = second_type_string
       end
     end
-    # puts "this is typeimage: #{typeimage.inspect}"
-    # if !img_check.empty?
-    #   url = "https://www.serebii.net" + html_product.css("a").first.attribute("href").value
-    #   image = "https://www.serebii.net" + html_product.css("img").attribute("src").value
-    #   image = "https://www.serebii.net" + html_product.css("img").attribute("src").value
-    # end
 
     index = "#{pokemon_product_index}"
     pokemon_product = PokemonProduct.new(index, national_dex_num, name, first_type, second_type, abilities, hp, atk, defe, spa, spd, spe, url, icon, first_type_image, second_type_image)
@@ -152,6 +120,24 @@ pokemon_array.each do |pokemon|
   Pokemon.create(pokemon)
   count += 1
 end
+# Pokemon.create(
+#   national_dex_num: "national_dex_num",
+#   name: "name",
+#   first_type: "first_type",
+#   second_type: "second_type",
+#   abilities: "abilities",
+#   hp: 1,
+#   atk: 1,
+#   defe: 1,
+#   spa: 1,
+#   spd: 1,
+#   spe: 1,
+#   url: "url",
+#   icon: "icon",
+#   first_type_image: "first_type_image",
+#   second_type_image: "second_type_image",
+# )
+
 # return pokemon_array
 
 #Assigns two UniquePokemon to a Team through PokemonInTeam
@@ -168,11 +154,6 @@ Team.create!(trainer_id: 1, name: "ExampleTeam2")
 
 # UniquePokemon.create!(nickname: "a", gender: "gender", shiny: true, nature: "nature", hp_ev: 0, atk_ev: 0, defe_ev: 0, spa_ev: 0, spd_ev: 0, spe_ev: 0, hp_iv: 0, atk_iv: 0, defe_iv: 0, spa_iv: 0, spd_iv: 0, spe_iv: 0, pokemon_id: 2, user_id: 2)
 
-# json.name trainer.name
-# json.title trainer.title
-# json.level trainer.level
-# json.experience trainer.experience
-# json.user_id trainer.user_id
 
 
 
@@ -187,10 +168,8 @@ ItemProduct = Struct.new(:index, :image, :name, :effect)
 
 url_paths.each do |url_path|
   response = HTTParty.get("https://www.serebii.net/itemdex/list/#{url_path}.shtml")
-
   document = Nokogiri::HTML(response.body)
 
-  #national_dex_num, name, abilities, hp, atk, def, spa, spd, spe
 
   html_products = document.css("table.dextable")
   html_products = html_products.css("tr")
@@ -275,11 +254,10 @@ pokemon_products.each do |item|
       single_item[attribute_titles[count].to_sym] = item[count + 1]
       count += 1
     end
-    # puts single_item
     item_array << single_item
   end
 end
-# pp item_array[0]
+
 count = 1
 item_array.each do |item|
   puts "creating item model ##{count}"
@@ -420,11 +398,11 @@ pokemon_products.each do |move|
       single_move[attribute_titles[count].to_sym] = move[count + 1]
       count += 1
     end
-    # puts single_move
+
     move_array << single_move
   end
 end
-# pp move_array[0]
+
 count = 1
 move_array.each do |move|
   puts "creating move model ##{count}"
@@ -588,13 +566,11 @@ all_pokemons.each do |pokemon_model|
               end
 
               if info.length > 1 && needs_description == false
-                # puts "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&"
                 needs_description = true
                 next
               end
               pokemon_product = MovesetProduct.new(pokemon_product_index, level_acquire, name, type_string, category_string, power_points, power, accuracy, effect_percent, description)
               pokemon_products.push(pokemon_product)
-              # puts "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
               needs_description = false
             else
               pokemon_product_index += -1
@@ -630,7 +606,7 @@ all_pokemons.each do |pokemon_model|
       moveset_array << single_moveset
     end
   end
-  # pp moveset_array[0]
+
   count = 1
   moveset_array.each do |moveset|
     puts "creating moveset model ##{count}"
