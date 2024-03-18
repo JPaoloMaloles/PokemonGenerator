@@ -11,7 +11,6 @@ Pokemon_App utilizes the HTTParty and Nokogiri gems to scrape serebii.com's nati
   <li> Team-trainer ownership </li>
   <li> A functional html frontend for those features </li>
 </ul>
-[backend repo](https://github.com/JPaoloMaloles/Tftraitors_backend)
 
 <h1> Getting Started </h1>
 <h3> Setup:</h3>
