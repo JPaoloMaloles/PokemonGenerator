@@ -1,11 +1,15 @@
+
 Pokemon_App is a Rails project to create a fully functional Pokemon encounter and battle simulator complete with random/custom trainer battles.
 [](app/assets/images/PokemonGenerator-Images-Cropped/pokemon-home-cropped.png)
 
 Pokemon_App utilizes the HTTParty and Nokogiri gems to scrape serebii.com's national dex page when seeding its database with the base pokemon models. 
 
-<div>
-<img src="https://github.com/JPaoloMaloles/PokemonGenerator/blob/main/app/assets/images/PokemonGenerator-Images-Cropped/pokemon-home-cropped.png?raw=true" alt="drawing" width=100%/>
+<div align="center">
+<img src="app/assets/images/starters-stats-image/Bulbasaur-Card.png?raw=true" alt="drawing" width=30%/>
+<img src="app/assets/images/starters-stats-image/Charmander-Card.png?raw=true" alt="drawing" width=30%/>
+<img src="app/assets/images/starters-stats-image/Squirtle-Card.png?raw=true" alt="drawing" width=30%/>
 </div>
+
 
 <h1> Current Features</h1>
 <ul>
