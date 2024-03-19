@@ -1,15 +1,11 @@
+<img src="app/assets/images/starters-stats-image/PokemonGeneratorLogo-Tentative.png?raw=true" alt="drawing" width=100%/>
 
 Pokemon_App is a Rails project to create a fully functional Pokemon encounter and battle simulator complete with random/custom trainer battles.
 [](app/assets/images/PokemonGenerator-Images-Cropped/pokemon-home-cropped.png)
 
 Pokemon_App utilizes the HTTParty and Nokogiri gems to scrape serebii.com's national dex page when seeding its database with the base pokemon models. 
 
-<div align="center">
-<img src="app/assets/images/starters-stats-image/Bulbasaur-Card.png?raw=true" alt="drawing" width=30%/>
-<img src="app/assets/images/starters-stats-image/Charmander-Card.png?raw=true" alt="drawing" width=30%/>
-<img src="app/assets/images/starters-stats-image/Squirtle-Card.png?raw=true" alt="drawing" width=30%/>
-</div>
-
+<img src="app/assets/images/PokemonGenerator-Images-Cropped/pokemon-box-cropped.png?raw=true" alt="drawing" width=100%/>
 
 <h1> Current Features</h1>
 <ul>
@@ -54,6 +50,7 @@ Generating and Managing your pokemon
   <li>Randomly generate a pokemon by clicking "New Unique Pokemon", then clicking "Create Unique Pokemon", a nickname is optional.</li>
   <li>You may delete the pokemon by clicking "destroy unique pokemon" or return to pokemon you own by clicking "back to your own pokemon"</li>
 </ol>
+<img src="app/assets/images/starters-stats-image/Stats-Preview.png?raw=true" alt="drawing" width=100%/>
 Creating and Managing your teams
 <ol>
   <li>Click "Your Teams" to view the teams your trainer owns</li>
