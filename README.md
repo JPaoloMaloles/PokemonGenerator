@@ -1,9 +1,9 @@
 <img src="app/assets/images/starters-stats-image/PokemonGeneratorLogo-Tentative.png?raw=true" alt="drawing" width=100%/>
 
-Pokemon_App is a Rails project to create a fully functional Pokemon encounter and battle simulator complete with random/custom trainer battles.
+PokemonGenerator is a Rails project to create a fully functional Pokemon encounter and battle simulator complete with random/custom trainer battles.
 [](app/assets/images/PokemonGenerator-Images-Cropped/pokemon-home-cropped.png)
 
-Pokemon_App utilizes the HTTParty and Nokogiri gems to scrape serebii.com's national dex page when seeding its database with the base pokemon models. 
+PokemonGenerator utilizes the HTTParty and Nokogiri gems to scrape serebii.com's national dex page when seeding its database with the base pokemon models. 
 
 <img src="app/assets/images/PokemonGenerator-Images-Cropped/pokemon-box-cropped.png?raw=true" alt="drawing" width=100%/>
 
