@@ -44,14 +44,14 @@ To access PokemonGenerator's features users must be logged into an account:
 <ol>
   <ul>Click "Sign Up" to create new user. Upon successful completion, you will be automatically signed in and a default trainer will be assigned active to your user.</ul>
 </ol>
-Generating and Managing your pokemon
+<h3> Generating and Managing your pokemon</h3>
 <ol>
   <li>Click "Your Pokemon" to view the pokemon your trainer owns.</li> 
   <li>Randomly generate a pokemon by clicking "New Unique Pokemon", then clicking "Create Unique Pokemon", a nickname is optional.</li>
   <li>You may delete the pokemon by clicking "destroy unique pokemon" or return to pokemon you own by clicking "back to your own pokemon"</li>
 </ol>
 <img src="app/assets/images/starters-stats-image/Stats-Preview.png?raw=true" alt="drawing" width=100%/>
-Creating and Managing your teams
+<h3> Creating and Managing your teams</h3>
 <ol>
   <li>Click "Your Teams" to view the teams your trainer owns</li>
   <li>Click "New Team" to create a new team for your trainer</li>
@@ -61,16 +61,14 @@ Creating and Managing your teams
   <li>Click "Switch Pokemon in Box" to switch that pokemon with another pokemon that you own that is not on a team</li>
   <li>Click "Remove Pokemon from team" to remove that pokemon from that team</li>
 </ol>
-Creating and Managing your trainers
+<img src="app/assets/images/PokemonGenerator-Images-Cropped/pokemon-teams-cropped.png?raw=true" alt="drawing" width=100%/>
+<h3> Creating and Managing your trainers</h3>
   <ol>
   <li>Click "Your Trainers" to view the trainer you own.</li>
   <li>Click "Go to Page" To view all the pokemon that trainer owns</li>
   <li>Click "Set Current Trainer" to change active trainer.</li>
   <li>Click "Destroy Trainer" to delete that trainer</li>
   <li>Click "New Trainer" then "Create Trainer" to create a new Trainer. Newly created trainers will <i><b>not</b></i> be automatically set to current trainer.</li>
-  
-  
-  
 </ol>
 
 <h1> Roadmap</h1>
