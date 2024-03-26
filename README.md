@@ -72,3 +72,6 @@ To access PokemonGenerator's features users must be logged into an account:
 </ol>
 
 <h1> Roadmap</h1>
+<h1>Other</h1>
+For those interested, PokemonGenerator does include tests!
+To check 
