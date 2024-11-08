@@ -76,16 +76,14 @@
   <% index = 0 %>
   <% @pokemon_movesets = Moveset.where(pokemon_name: "#{@pokemon.name}") %>
   <ul>
-        <div> hello <%= @pokemon_movesets.length %></div>
-    <% while index < @pokemon_movesets.length %>
-
-      <% @pokemon_moveset = @pokemon_movesets.find_by(id: index+1)%>
-      <% @pokemon_move = Move.find_by(name: @pokemon_moveset.move_name) %>
+        <div> # of Moves: <%= @pokemon_movesets.length %></div>
+    <% @pokemon_movesets.each do |pokemon_moveset|%>
+      <% @pokemon_move = Move.find_by(name: pokemon_moveset.move_name) %>
 
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title"><%= @pokemon_moveset.move_name%></h5>
-          <p class="card=text"><b> Acquired (lvl): </b> <%= @pokemon_moveset.level_acquire%> <b>Type:</b> <%= @pokemon_move.move_type%> <b>Category:</b> <%= @pokemon_move.category%> </p> 
+          <h5 class="card-title"><%= pokemon_moveset.move_name%></h5>
+          <p class="card=text"><b> Acquired (lvl): </b> <%= pokemon_moveset.level_acquire%> <b>Type:</b> <%= @pokemon_move.move_type%> <b>Category:</b> <%= @pokemon_move.category%> </p> 
           <p class="card=text"><b> PP: </b> <%= @pokemon_move.pp%> <b>Power:</b> <%= @pokemon_move.power%> <b>Accuracy:</b> <%= @pokemon_move.accuracy%> </p> 
           <p><b>Effect Percent:</b> <%= @pokemon_move.effect_percent%></p>
           <div><%= @pokemon_move.description%></div>
