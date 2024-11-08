@@ -25,5 +25,8 @@ Rails.application.routes.draw do
 
   get "/moves/:id" => "moves#show"
   get "/moves" => "moves#index"
+
+  get "/movesets/:id" => "movesets#show"
+  get "/movesets" => "movesets#index"
   # post "/pokemon_in_teams/new_direct", controller: "pokemon_in_teams", action: "new_direct"
 end
