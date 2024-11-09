@@ -485,8 +485,33 @@ all_pokemons.each do |pokemon_model|
               # puts "this is Clean_Inspect: #{clean_inspect}"
               tempinfo << clean_inspect
               puts "This is tempinfo: #{tempinfo}"
+              # case tempinfo[0]
+              # when "Standard Level Up"
+              #   is_move = true
+              # when tempinfo[0] == "Stats"
+              #   is_move = false
+              #   is_egg_move = false
+              #   is_preev_move = false
+              #   is_over = true
+              # when "Egg Moves Details"
+              #   is_egg_move = true
+              # when "Pre-Evolution Only Moves"
+              #   is_preev_move = true
+              #   is_egg_move = false
+              # end
+              # 
               if tempinfo[0] == "Standard Level Up"
                 is_move = true
+              elsif tempinfo[0] == "Alola Form Level Up"
+                is_move = true
+              elsif tempinfo[0] == "Galarian Form Level Up"
+                is_move = true
+              elsif tempinfo[0] == "Paldean Form Level Up"
+                is_move = true
+              elsif tempinfo[0] == "Technical Machine Attacks"
+                is_move = true
+                puts "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+                puts tempinfo[0]
               elsif tempinfo[0] == "Stats"
                 is_move = false
                 is_egg_move = false
@@ -536,6 +561,19 @@ all_pokemons.each do |pokemon_model|
                 power_points = info[5]
                 effect_percent = info[6]
               end
+              puts "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+              puts "NAME IS 1#{name}1"
+              puts "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+              if name
+                if name.match(/-/)
+                  name = name.downcase.gsub!(/(\b[a-z](?!\s))/) do |match|
+                    match.upcase
+                  end
+                  puts "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
+                  puts "NAME IS #{name}"
+                  puts "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
+                end
+              end
             else
               description = info
             end
@@ -569,6 +607,7 @@ all_pokemons.each do |pokemon_model|
                 needs_description = true
                 next
               end
+
               pokemon_product = MovesetProduct.new(pokemon_product_index, level_acquire, name, type_string, category_string, power_points, power, accuracy, effect_percent, description)
               pokemon_products.push(pokemon_product)
               needs_description = false
@@ -590,6 +629,8 @@ all_pokemons.each do |pokemon_model|
     end
   end
 
+  puts "Creating moveset"
+
   attribute_titles = ["pokemon_name","move_name", "level_acquire", "pokemon_id", "move_id"]
   moveset_array = []
   count = 0
@@ -602,6 +643,16 @@ all_pokemons.each do |pokemon_model|
       single_moveset[:move_name] = moveset[2]
       single_moveset[:level_acquire] = moveset[1]
       single_moveset[:pokemon_id] = Pokemon.find_by(name: pokemon_model.name).id
+      # case moveset[2].downcase
+      # when "will-o-wisp"
+      #   moveset[2] = "Will-O-Wisp"
+      # when "freeze-dry"
+      #   moveset[2] = "Freeze-Dry"
+      # end
+      puts "%%%%"
+      puts moveset
+      puts moveset[2]
+      puts "%%%%"
       single_moveset[:move_id] = Move.find_by(name: moveset[2]).id
       moveset_array << single_moveset
     end
