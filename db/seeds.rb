@@ -330,6 +330,17 @@ url_paths.each do |url_path|
       power = info[2]
       accuracy = info[3]
 
+      if name
+        if name.match(/-/)
+          name = name.downcase.gsub!(/(\b[a-z](?!\s))/) do |match|
+            match.upcase
+          end
+          puts "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
+          puts "NAME IS #{name}"
+          puts "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
+        end
+      end
+
       if info[4]
         puts "info1 is #{info[4]}"
         description = info[4].gsub!("Pok", "Poke") || info[4]
