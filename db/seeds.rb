@@ -442,6 +442,7 @@ all_pokemons.each do |pokemon_model|
   is_egg_move = false
   is_preev_move = false
   is_move_reminder_only = false
+  is_special_move = false
   is_over = false
   needs_description = false
 
@@ -513,23 +514,34 @@ all_pokemons.each do |pokemon_model|
               # end
               # 
               is_move_indicators = [ "Standard Level Up", "Alola Form Level Up", "Galarian Form Level Up", "Paldean Form Level Up","Technical Machine Attacks"]
+              puts "Tempinfo is #{tempinfo[0]}"
               if is_move_indicators.include? tempinfo[0]
                 is_move = true
+
+                  puts "Special==========="
+                  puts info
+                  puts "================="
               elsif tempinfo[0] == "Stats"
                 is_move = false
+                is_special_move = false
                 is_move_reminder_only = false
                 is_egg_move = false
                 is_preev_move = false
                 is_over = true
+              elsif tempinfo[0] == "Special Moves"
+                is_special_move = true
               elsif tempinfo[0] == "Egg Moves Details"
                 is_egg_move = true
+                is_special_move = false
               elsif tempinfo[0] == "Move Reminder Only Attacks"
                 is_move_reminder_only = true
                 is_egg_move = false
+                is_special_move = false
               elsif tempinfo[0] == "Pre-Evolution Only Moves"
                 is_preev_move = true
                 is_egg_move = false
                 is_move_reminder_only = false
+                is_special_move = false
               end 
 
               if is_move == true
@@ -547,13 +559,23 @@ all_pokemons.each do |pokemon_model|
             # pp "info is #{info}"
             # pp "info1 -------------#{info[1]}"
             if needs_description == false
-              if is_egg_move == false && is_preev_move == false && is_move_reminder_only == false
+              if is_egg_move == false && is_preev_move == false && is_move_reminder_only == false && is_special_move == false
                 level_acquire = info[0]
                 name = info[1]
                 power = info[2]
                 accuracy = info[3]
                 power_points = info[4]
                 effect_percent = info[5]
+              elsif is_special_move == true
+                level_acquire = "Special Move"
+                name = info[0]
+                power = info[1]
+                accuracy = info[2]
+                power_points = info[3]
+                effect_percent = info[4]
+                puts "Special=================================================================================="
+                puts info
+                puts "=================================================================================="
               elsif is_egg_move == true
                 level_acquire = "Egg"
                 name = info[0]
@@ -568,9 +590,6 @@ all_pokemons.each do |pokemon_model|
                 accuracy = info[2]
                 power_points = info[3]
                 effect_percent = info[4]
-                puts "Reminder=================================================================================="
-                puts info
-                puts "=================================================================================="
               elsif is_preev_move == true
                 level_acquire = "Pre-Evolution"
                 name = info[0]
