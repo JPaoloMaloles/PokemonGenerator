@@ -441,6 +441,7 @@ all_pokemons.each do |pokemon_model|
   is_move = false
   is_egg_move = false
   is_preev_move = false
+  is_move_reminder_only = false
   is_over = false
   needs_description = false
 
@@ -516,14 +517,19 @@ all_pokemons.each do |pokemon_model|
                 is_move = true
               elsif tempinfo[0] == "Stats"
                 is_move = false
+                is_move_reminder_only = false
                 is_egg_move = false
                 is_preev_move = false
                 is_over = true
               elsif tempinfo[0] == "Egg Moves Details"
                 is_egg_move = true
+              elsif tempinfo[0] == "Move Reminder Only Attacks"
+                is_move_reminder_only = true
+                is_egg_move = false
               elsif tempinfo[0] == "Pre-Evolution Only Moves"
                 is_preev_move = true
                 is_egg_move = false
+                is_move_reminder_only = false
               end 
 
               if is_move == true
@@ -541,7 +547,7 @@ all_pokemons.each do |pokemon_model|
             # pp "info is #{info}"
             # pp "info1 -------------#{info[1]}"
             if needs_description == false
-              if is_egg_move == false && is_preev_move == false
+              if is_egg_move == false && is_preev_move == false && is_move_reminder_only == false
                 level_acquire = info[0]
                 name = info[1]
                 power = info[2]
@@ -555,6 +561,16 @@ all_pokemons.each do |pokemon_model|
                 accuracy = info[2]
                 power_points = info[3]
                 effect_percent = info[4]
+              elsif is_move_reminder_only == true
+                level_acquire = "Move_Reminder"
+                name = info[0]
+                power = info[1]
+                accuracy = info[2]
+                power_points = info[3]
+                effect_percent = info[4]
+                puts "Reminder=================================================================================="
+                puts info
+                puts "=================================================================================="
               elsif is_preev_move == true
                 level_acquire = "Pre-Evolution"
                 name = info[0]
