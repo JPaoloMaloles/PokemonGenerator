@@ -1,0 +1,43 @@
+<head>
+    <title></title>
+    <style>
+      .base_bar {
+          display: inline;
+          height: 10px;
+      }
+    </style>
+</head>
+
+<body>
+<h1> All Moves </h1>
+<% index = 0 %>
+
+
+  <% index = 0 %>
+  <% @moves = Move.all %>
+  <ul>
+        <div> # of Moves: <%= @moves.length %></div>
+    <% @moves.each do |move|%>
+  <%move.movesets.each do |moveset|%>
+    <%moveset.pokemon%>
+  <%end%>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><%= move.name%></h5>
+          <p class="card=text"><b>Type:</b> <%= move.move_type%> <b>Category:</b> <%= move.category%> </p> 
+          <p class="card=text"><b> PP: </b> <%= move.pp%> <b>Power:</b> <%= move.power%> <b>Accuracy:</b> <%= move.accuracy%> </p> 
+          <p><b>Effect Percent:</b> <%= move.effect_percent%></p>
+          <div><%= move.description%></div>
+          <p class="card=text"></p>
+          <p class="card=text"><b>Pokemon that learn this move:</b></p>
+          <p class="card=text"></p>
+        </div>
+      </div>
+    <% index += 1 %>
+    <% end %>
+        
+  
+
+
+  </ul>
+</body>
