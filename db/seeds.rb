@@ -511,18 +511,9 @@ all_pokemons.each do |pokemon_model|
               #   is_egg_move = false
               # end
               # 
-              if tempinfo[0] == "Standard Level Up"
+              is_move_indicators = [ "Standard Level Up", "Alola Form Level Up", "Galarian Form Level Up", "Paldean Form Level Up","Technical Machine Attacks"]
+              if is_move_indicators.include? tempinfo[0]
                 is_move = true
-              elsif tempinfo[0] == "Alola Form Level Up"
-                is_move = true
-              elsif tempinfo[0] == "Galarian Form Level Up"
-                is_move = true
-              elsif tempinfo[0] == "Paldean Form Level Up"
-                is_move = true
-              elsif tempinfo[0] == "Technical Machine Attacks"
-                is_move = true
-                puts "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
-                puts tempinfo[0]
               elsif tempinfo[0] == "Stats"
                 is_move = false
                 is_egg_move = false
