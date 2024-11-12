@@ -277,7 +277,7 @@ end
 
 url_paths = ["physical","special", "other"]
 
-pokemon_product_index = -1
+pokemon_product_index = 0
 pokemon_products = []
 
 MoveProduct = Struct.new(:index, :name, :type, :category, :pp, :power, :accuracy, :effect_percent, :description)
