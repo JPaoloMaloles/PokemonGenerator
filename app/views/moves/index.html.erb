@@ -10,17 +10,10 @@
 
 <body>
 <h1> All Moves </h1>
-<% index = 0 %>
-
-
-  <% index = 0 %>
-  <% @moves = Move.all %>
+<% @moves = Move.all %>
   <ul>
         <div> # of Moves: <%= @moves.length %></div>
-    <% @moves.each do |move|%>
-  <%move.movesets.each do |moveset|%>
-    <%moveset.pokemon%>
-  <%end%>
+    <% @moves.each_with_index do |move, index|%>
       <div class="card">
         <div class="card-body">
           <h5 class="card-title"><%= move.name%></h5>
@@ -29,8 +22,7 @@
           <p><b>Effect Percent:</b> <%= move.effect_percent%></p>
           <div><%= move.description%></div>
           <p class="card=text"></p>
-          <p class="card=text"><b>Pokemon that learn this move:</b></p>
-          <p class="card=text"></p>
+          <a href="/moves/<%=index+1%>">Go to Page</a>
         </div>
       </div>
     <% index += 1 %>
